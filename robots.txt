@@ -1,0 +1,26 @@
+# ===========================================
+# Centre Médical Paris-Levallois - robots.txt
+# ===========================================
+
+# Autoriser tous les robots
+User-agent: *
+Allow: /
+
+# Bloquer les dossiers non-publics
+Disallow: /docs/
+Disallow: /.windsurf/
+Disallow: /.github/
+
+# Bloquer les fichiers de backup
+Disallow: /*-backup.html
+Disallow: /*-original.jpg
+Disallow: /*-original.png
+
+# Bloquer les fichiers de documentation
+Disallow: /*.md$
+
+# Sitemap
+Sitemap: https://www.centremedicalparislevallois.fr/sitemap.xml
+
+# Crawl-delay (optionnel, respecté par certains robots)
+Crawl-delay: 1
