@@ -1,0 +1,77 @@
+# ===========================================
+# Centre Médical Paris-Levallois - .gitignore
+# ===========================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Node.js (si utilisé pour build)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Backup files
+*.bak
+*.backup
+*-backup.*
+*-original.*
+index-v1-backup.html
+
+# Archives de déploiement (générées automatiquement)
+deploy-*.zip
+*.tar.gz
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# Logs
+*.log
+logs/
+
+# Images originales haute résolution (optionnel, à décommenter si trop lourdes)
+# *-original.jpg
+# *-original.png
+
+# HEIC files (raw photos)
+*.HEIC
+*.heic
+
+# Fichiers de test locaux
+test_*.html
+*_test.html
+
+# FTP credentials (ne jamais commiter!)
+.ftpconfig
+.ftpquota
+ftp-sync.json
+sftp-config.json

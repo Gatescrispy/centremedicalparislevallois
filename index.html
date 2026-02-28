@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Stable Layout - Éviter CLS -->
+    <style id="cm-stable-layout">
+        #header-placeholder{min-height:80px;}
+        i.fas, i.fa-solid, i.far, i.fa-regular, i.fab, i.fa-brands{display:inline-block;width:1.25em;}
+        /* Scroll margin pour ancres avec header sticky */
+        [id]{scroll-margin-top:100px;}
+        /* Safe area pour iPhone avec encoche */
+        .safe-area-bottom{padding-bottom:env(safe-area-inset-bottom, 0);}
+        /* Padding footer pour barre sticky mobile */
+        @media (max-width: 767px) {
+            #footer-placeholder{padding-bottom:60px;}
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-525BNW8J');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) - GA4 pour Centre Médical -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ9CEHQVW3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MQ9CEHQVW3');
+    gtag('config', 'AW-11456521545');
+    
+    // Conversion Google Ads - RDV CDS (Doctolib)
+    function gtagSendEventDoctolib() {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11456521545/ypsQCO_RwuEbEMnK8tYq'
+        });
+        console.log('🎯 CONVERSION RDV CDS - Google Ads');
+    }
+    
+    // Conversion Google Ads - Annonce Appel Direct (Téléphone)
+    function gtagSendEventTelephone(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11456521545/xTpdCNWFw-EbEMnK8tYq',
+            'event_callback': callback
+        });
+        console.log('📞 CONVERSION APPEL - Google Ads');
+        return false;
+    }
+    </script>
+    <!-- End Google tag -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimisé selon analyse SERP -->
+    <title>Centre Médical Paris-Levallois (92300) — RDV Ophtalmologie, Orthoptie, Médecine générale</title>
+    <meta name="description" content="Centre de santé au 60 Rue Victor Hugo, Levallois-Perret. RDV en ligne, horaires Lun-Sam, carte Vitale, tiers payant. Ophtalmologie, orthoptie, médecine générale, soins infirmiers.">
+    <meta name="keywords" content="centre médical Levallois-Perret, centre de santé 92300, ophtalmologue Levallois, orthoptiste Levallois, médecin généraliste Levallois, soins infirmiers">
+    <meta name="author" content="Centre Médical Paris-Levallois">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Geo Tags SEO Local -->
+    <meta name="geo.region" content="FR-92">
+    <meta name="geo.placename" content="Levallois-Perret">
+    <meta name="geo.position" content="48.8942;2.2878">
+    <meta name="ICBM" content="48.8942, 2.2878">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Centre Médical Paris-Levallois (92300) — RDV en ligne">
+    <meta property="og:description" content="Centre de santé à Levallois-Perret. Ophtalmologie, orthoptie, médecine générale, soins infirmiers. Carte Vitale, tiers payant.">
+    <meta property="og:image" content="https://www.centremedicalparislevallois.fr/assets/images/og-centre-medical.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.centremedicalparislevallois.fr/">
+    <meta property="og:site_name" content="Centre Médical Paris-Levallois">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Centre Médical Paris-Levallois (92300) — RDV en ligne">
+    <meta name="twitter:description" content="Centre de santé à Levallois-Perret. Ophtalmologie, orthoptie, médecine générale, soins infirmiers.">
+    <meta name="twitter:image" content="https://www.centremedicalparislevallois.fr/assets/images/og-centre-medical.jpg">
+    
+    <!-- Schema.org - MedicalClinic + LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "@id": "https://www.centremedicalparislevallois.fr/#organization",
+        "name": "Centre Médical Paris-Levallois",
+        "alternateName": "CM Paris-Levallois",
+        "description": "Centre de santé pluridisciplinaire à Levallois-Perret proposant ophtalmologie, orthoptie, médecine générale et soins infirmiers",
+        "url": "https://www.centremedicalparislevallois.fr",
+        "logo": "https://www.centremedicalparislevallois.fr/assets/images/logo.png",
+        "image": "https://www.centremedicalparislevallois.fr/assets/images/centre-medical-facade.jpg",
+        "telephone": "+33 1 80 88 37 16",
+        "email": "contact@centremedicalparislevallois.fr",
+        "medicalSpecialty": [
+            "Ophthalmology",
+            "Orthoptics", 
+            "GeneralPractice",
+            "Nursing"
+        ],
+        "availableService": [
+            {
+                "@type": "MedicalProcedure",
+                "name": "Consultation ophtalmologie",
+                "description": "Examen de la vue, dépistage pathologies oculaires, prescription lunettes/lentilles"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Bilan orthoptique",
+                "description": "Bilan orthoptique, rééducation visuelle, champ visuel"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Consultation médecine générale",
+                "description": "Consultations tous âges, suivi médical, vaccinations, certificats"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Soins infirmiers",
+                "description": "Prises de sang, injections, pansements, vaccinations"
+            }
+        ],
+        "priceRange": "€",
+        "paymentAccepted": ["Carte Vitale", "Carte Bancaire", "Espèces", "Chèque"],
+        "currenciesAccepted": "EUR",
+        "isAcceptingNewPatients": true,
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "60 rue Victor Hugo",
+            "addressLocality": "Levallois-Perret",
+            "addressRegion": "Île-de-France",
+            "postalCode": "92300",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "48.8942",
+            "longitude": "2.2878"
+        },
+        "hasMap": "https://maps.google.com/?q=60+rue+Victor+Hugo+92300+Levallois-Perret",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:30",
+                "closes": "13:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "14:00",
+                "closes": "19:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:30",
+                "closes": "13:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "14:00",
+                "closes": "19:30"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "sameAs": [
+            "https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile"
+        ],
+        "areaServed": {
+            "@type": "City",
+            "name": "Levallois-Perret"
+        },
+        "publicAccess": true,
+        "wheelchairAccessible": true
+    }
+    </script>
+
+    <!-- Schema.org - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Comment prendre rendez-vous ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vous pouvez prendre rendez-vous en ligne via Doctolib ou par téléphone au 01 80 88 37 16. Choisissez la spécialité (ophtalmologie, orthoptie, médecine générale ou soins infirmiers) puis le motif."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quelle est l'adresse du centre ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le Centre Médical Paris-Levallois est situé au 60 Rue Victor Hugo, 92300 Levallois-Perret. Le centre est au rez-de-chaussée avec entrée accessible."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quels sont les horaires d'ouverture ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le centre est ouvert du lundi au vendredi de 9h à 19h et le samedi de 9h à 14h. Fermé le dimanche et jours fériés. Gardes de nuit : lundi et jeudi jusqu'à minuit (médecine générale)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Le centre est-il conventionné ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, le centre est conventionné secteur 1 : les tarifs sont conformes à la nomenclature Assurance Maladie."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Carte Vitale et tiers payant : comment ça marche ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La Carte Vitale est acceptée avec télétransmission automatique. Le tiers payant est pratiqué selon droits ouverts (Assurance Maladie + mutuelle selon conditions). CSS/CMU acceptée."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quels moyens de paiement sont acceptés ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le centre accepte la carte bancaire (CB, Visa, Mastercard), les espèces et les chèques."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Acceptez-vous les nouveaux patients ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, le centre accepte les nouveaux patients pour l'ensemble des spécialités. Vous pouvez réserver en ligne ou appeler."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Que faire en cas d'urgence médicale ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En cas d'urgence vitale, appelez le 15 (SAMU) ou le 112. Le centre ne gère pas les urgences vitales. Pour une situation urgente non vitale, contactez-nous par téléphone pour vérifier les disponibilités."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="canonical" href="https://www.centremedicalparislevallois.fr/">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <style>
+        /* 
+        ========================================
+        PALETTE DE COULEURS - Centre Médical Paris-Levallois
+        ========================================
+        Basée sur le logo:
+        - Bleu primaire: #00a7de
+        - Noir: #252525
+        
+        Palette étendue cohérente:
+        - Primaire: #00a7de (bleu logo)
+        - Primaire foncé: #0090c0 (hover)
+        - Primaire très foncé: #007ba3 (active)
+        - Primaire clair: #e6f7fc (backgrounds)
+        - Noir: #252525 (texte principal)
+        - Gris foncé: #4a4a4a (texte secondaire)
+        - Gris: #6b6b6b (texte tertiaire)
+        - Gris clair: #f5f5f5 (backgrounds)
+        ========================================
+        */
+        :root {
+            --primary-500: #00a7de;
+            --primary-600: #0090c0;
+            --primary-700: #007ba3;
+            --primary-50: #e6f7fc;
+            --text-dark: #252525;
+            --text-secondary: #4a4a4a;
+            --text-muted: #6b6b6b;
+        }
+        
+        /* Hero gradient - basé sur le bleu du logo */
+        .hero-gradient { 
+            background: linear-gradient(135deg, #007ba3 0%, #003d52 100%); 
+        }
+        
+        /* Chips/badges info */
+        .info-chip {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        /* CTA Buttons - Bleu primaire du logo */
+        .btn-cta-primary {
+            background: linear-gradient(135deg, #00a7de 0%, #0090c0 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0, 167, 222, 0.4);
+        }
+        .btn-cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 167, 222, 0.5);
+        }
+        
+        .btn-cta-secondary {
+            background: white;
+            color: #252525;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .btn-cta-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            background: #f5f5f5;
+        }
+        
+        /* Specialty cards */
+        .specialty-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .specialty-card:hover {
+            transform: translateY(-4px);
+            border-color: #00a7de;
+            box-shadow: 0 12px 30px rgba(0, 167, 222, 0.15);
+        }
+        
+        /* FAQ accordion */
+        .faq-item {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        .faq-item:hover {
+            border-color: #00a7de;
+        }
+        
+        /* Urgence banner */
+        .urgence-banner {
+            background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Header -->
+    <div id="header-placeholder"><div class="cm-header-sizer" style="height:80px"></div></div>
+
+    <!-- ============================================ -->
+    <!-- BLOC 0 : ABOVE THE FOLD - Hero avec image de fond -->
+    <!-- ============================================ -->
+    <section class="relative min-h-screen flex items-center">
+        <!-- Image de fond plein écran -->
+        <div class="absolute inset-0">
+            <img decoding="async" src="/hero-centre-medical.jpg" 
+                 alt="Centre Médical Paris-Levallois - Salle de consultation moderne" 
+                 class="w-full h-full object-cover"
+                 loading="eager"
+                 fetchpriority="high"
+                 width="1920"
+                 height="1080">
+        </div>
+        <!-- Overlay gradient comme VT Imagerie -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, rgba(15,23,42,0.50), rgba(0,61,82,0.40), rgba(30,41,59,0.60));"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center text-white py-12">
+            
+            <!-- H1 SEO optimisé -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6);">
+                Centre Médical Paris-Levallois
+                <span class="block text-2xl md:text-3xl font-normal mt-3" style="color: #00a7de; text-shadow: 2px 2px 6px rgba(0,0,0,0.9);">
+                    Centre de santé à Levallois-Perret (92300)
+                </span>
+            </h1>
+            
+            <!-- 2 CTA primaires - Above the fold -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+                <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-cta-primary text-center justify-center">
+                    <i class="fas fa-calendar-check"></i>
+                    Prendre rendez-vous
+                </a>
+                <a href="tel:+33180883716" class="btn-cta-secondary text-center justify-center">
+                    <i class="fas fa-phone"></i>
+                    <span style="color:#00a7de;">01 80 88 37 16</span>
+                </a>
+            </div>
+            
+            <!-- Infos clés en chips (6 infos essentielles) -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10 mt-6">
+                <div class="bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white font-medium border border-white/30">
+                    <i class="fas fa-map-marker-alt mr-2" style="color:#00a7de;"></i>
+                    60 Rue Victor Hugo, 92300
+                </div>
+                <div class="bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white font-medium border border-white/30">
+                    <i class="fas fa-clock mr-2" style="color:#00a7de;"></i>
+                    Lun-Ven : 9h-19h • Sam : 9h-14h
+                </div>
+                <div class="bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white font-medium border border-white/30">
+                    <i class="fas fa-id-card mr-2 text-green-400"></i>
+                    Carte Vitale acceptée
+                </div>
+                <div class="bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white font-medium border border-white/30">
+                    <i class="fas fa-hand-holding-medical mr-2 text-green-400"></i>
+                    Tiers payant
+                </div>
+                <div class="bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white font-medium border border-white/30">
+                    <i class="fas fa-credit-card mr-2 text-yellow-400"></i>
+                    CB / Chèque / Espèces
+                </div>
+                <div class="bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white font-medium border border-white/30">
+                    <i class="fas fa-wheelchair mr-2" style="color:#00a7de;"></i>
+                    Accès PMR (RDC)
+                </div>
+            </div>
+            
+            <!-- Spécialités rapides -->
+            <div class="text-center">
+                <p class="mb-4 text-sm uppercase tracking-wide font-semibold text-white" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">Nos spécialités</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-black/50 backdrop-blur-md px-5 py-2.5 rounded-full text-white font-medium border border-white/30">
+                        <i class="fas fa-eye mr-2" style="color:#00a7de;"></i> Ophtalmologie
+                    </span>
+                    <span class="bg-black/50 backdrop-blur-md px-5 py-2.5 rounded-full text-white font-medium border border-white/30">
+                        <i class="fas fa-glasses mr-2" style="color:#00a7de;"></i> Orthoptie
+                    </span>
+                    <span class="bg-black/50 backdrop-blur-md px-5 py-2.5 rounded-full text-white font-medium border border-white/30">
+                        <i class="fas fa-stethoscope mr-2" style="color:#00a7de;"></i> Médecine générale
+                    </span>
+                    <span class="bg-black/50 backdrop-blur-md px-5 py-2.5 rounded-full text-white font-medium border border-white/30">
+                        <i class="fas fa-syringe mr-2" style="color:#00a7de;"></i> Soins infirmiers
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 1 : RDV par spécialité (Conversion) -->
+    <!-- ============================================ -->
+    <section id="rdv" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">
+                    Prendre rendez-vous par spécialité
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Choisissez votre spécialité et réservez en ligne
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Ophtalmologie & Orthoptie (fusionnées) -->
+                <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="relative h-52">
+                        <img src="/Femme ophtalmologie.jpg" alt="Examen ophtalmologique" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
+                    </div>
+                    <div class="flex gap-2 px-6 -mt-3 relative z-10">
+                        <span class="bg-white text-sm font-semibold px-3 py-1.5 rounded-lg shadow-md" style="color: #00a7de;">
+                            <i class="fas fa-eye mr-1"></i> Ophtalmologie
+                        </span>
+                        <span class="bg-white text-sm font-semibold px-3 py-1.5 rounded-lg shadow-md" style="color: #00a7de;">
+                            <i class="fas fa-glasses mr-1"></i> Orthoptie
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" style="color: #252525;">Soins de la vision</h3>
+                        <p class="text-sm mb-3" style="color: #4a4a4a;">
+                            Examen de la vue, dépistage pathologies oculaires, bilan orthoptique, rééducation visuelle.
+                        </p>
+                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                            <i class="fas fa-user mr-1"></i> Ophtalmo : dès 5 ans • Orthoptie : tous âges
+                        </p>
+                        <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=4&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Prendre RDV en ophtalmologie ou orthoptie"
+                           class="block w-full py-3 text-white text-center rounded-lg font-semibold transition-colors" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                            <i class="fas fa-calendar-plus mr-2"></i>
+                            Prendre RDV
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Médecine générale -->
+                <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="relative h-52">
+                        <img src="/angle-eleve-de-femme-medecin-ecrit-une-ordonnance-au-bureau.jpg" alt="Consultation médecine générale" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
+                    </div>
+                    <div class="flex gap-2 px-6 -mt-3 relative z-10">
+                        <span class="bg-white text-sm font-semibold px-3 py-1.5 rounded-lg shadow-md" style="color: #00a7de;">
+                            <i class="fas fa-stethoscope mr-1"></i> Médecine générale
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" style="color: #252525;">Médecine générale</h3>
+                        <p class="text-sm mb-3" style="color: #4a4a4a;">
+                            Consultations, suivi médical, vaccinations, certificats médicaux.
+                        </p>
+                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                            <i class="fas fa-baby mr-1"></i> Dès la naissance • Adultes
+                        </p>
+                        <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=2&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Prendre RDV en médecine générale"
+                           class="block w-full py-3 text-white text-center rounded-lg font-semibold transition-colors" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                            <i class="fas fa-calendar-plus mr-2"></i>
+                            Prendre RDV
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Soins infirmiers -->
+                <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="relative h-52">
+                        <img src="/Femme médecin vaccinant collègue.jpg" alt="Soins infirmiers vaccination" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
+                    </div>
+                    <div class="flex gap-2 px-6 -mt-3 relative z-10">
+                        <span class="bg-white text-sm font-semibold px-3 py-1.5 rounded-lg shadow-md" style="color: #00a7de;">
+                            <i class="fas fa-syringe mr-1"></i> Soins infirmiers
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" style="color: #252525;">Soins infirmiers</h3>
+                        <p class="text-sm mb-3" style="color: #4a4a4a;">
+                            Prises de sang, injections, pansements, vaccinations.
+                        </p>
+                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                            <i class="fas fa-file-medical mr-1"></i> Prescription si nécessaire
+                        </p>
+                        <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=30&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Prendre RDV pour soins infirmiers"
+                           class="block w-full py-3 text-white text-center rounded-lg font-semibold transition-colors" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                            <i class="fas fa-calendar-plus mr-2"></i>
+                            Prendre RDV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 2 : Présentation courte (Confiance) -->
+    <!-- ============================================ -->
+    <section class="py-12" style="background-color: #00a7de;">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20 text-center">
+                
+                <!-- Positionnement -->
+                <h2 class="text-2xl font-bold mb-3 text-white">
+                    Centre de santé pluridisciplinaire à Levallois-Perret
+                </h2>
+                
+                <!-- Spécialités (scalable) -->
+                <p class="text-white/90 leading-relaxed mb-5">
+                    Consultations de santé au quotidien : 
+                    <a href="/#rdv" class="font-medium hover:underline text-white">ophtalmologie</a>, 
+                    <a href="/#rdv" class="font-medium hover:underline text-white">orthoptie</a>, 
+                    <a href="/#rdv" class="font-medium hover:underline text-white">médecine générale</a>, 
+                    <a href="/#rdv" class="font-medium hover:underline text-white">soins infirmiers</a>.
+                </p>
+                
+                <!-- Bloc confiance scannable -->
+                <ul class="space-y-2 mb-5 text-left inline-block">
+                    <li class="flex items-center text-white">
+                        <i class="fas fa-check-circle mr-3 text-white"></i>
+                        <span><strong>Conventionné secteur 1</strong> — tarifs Sécurité Sociale</span>
+                    </li>
+                    <li class="flex items-center text-white">
+                        <i class="fas fa-check-circle mr-3 text-white"></i>
+                        <span><strong>Tiers payant</strong> selon droits ouverts (Assurance Maladie + mutuelle)</span>
+                    </li>
+                    <li class="flex items-center text-white">
+                        <i class="fas fa-check-circle mr-3 text-white"></i>
+                        <span><strong>Accessible PMR</strong> — entrée de plain-pied, rez-de-chaussée</span>
+                    </li>
+                    <li class="flex items-center text-white">
+                        <i class="fas fa-check-circle mr-3 text-white"></i>
+                        <span><strong>Carte Vitale</strong> acceptée • CB, chèque, espèces</span>
+                    </li>
+                </ul>
+                
+                <!-- Mini CTA contextuel -->
+                <p class="text-white/90 text-sm">
+                    Besoin d'un RDV ? 
+                    <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" 
+                       target="_blank" rel="noopener noreferrer" 
+                       class="font-semibold hover:underline text-white">Prenez rendez-vous en ligne</a> 
+                    ou 
+                    <a href="tel:+33180883716" class="font-semibold hover:underline text-white">appelez le 01 80 88 37 16</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3 : Tarifs & Remboursement -->
+    <!-- ============================================ -->
+    <section id="tarifs" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">
+                    <i class="fas fa-euro-sign mr-2" style="color: #00a7de;"></i>
+                    Tarifs & Remboursement
+                </h2>
+                <!-- Phrase de synthèse (pyramide inversée) -->
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Centre conventionné secteur 1 : tarifs conformes à la nomenclature Assurance Maladie.<br>
+                    Carte Vitale acceptée avec télétransmission. Tiers payant selon droits ouverts.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Prise en charge -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-hand-holding-medical text-green-500 mr-3"></i>
+                        Prise en charge
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span><strong>Conventionné secteur 1</strong> — Tarifs Assurance Maladie</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span><strong>Tiers payant</strong> — selon droits ouverts (AM + mutuelle selon conditions)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span><strong>Carte Vitale</strong> — Télétransmission automatique</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span><strong>CSS / CMU</strong> — Acceptée</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Moyens de paiement -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-credit-card mr-3" style="color: #00a7de;"></i>
+                        Moyens de paiement
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check mr-3 mt-1" style="color: #00a7de;"></i>
+                            <span>Carte bancaire (CB, Visa, Mastercard)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mr-3 mt-1" style="color: #00a7de;"></i>
+                            <span>Espèces</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mr-3 mt-1" style="color: #00a7de;"></i>
+                            <span>Chèques</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            <i class="fas fa-folder-open mr-2" style="color: #00a7de;"></i>
+                            Documents à prévoir
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>Carte Vitale à jour</li>
+                            <li>Attestation de mutuelle (si applicable)</li>
+                            <li>Ordonnance (si nécessaire, selon le motif)</li>
+                            <li>Anciens examens / comptes rendus (si première consultation)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 4 : Accès (Carte + Transport + Parking) -->
+    <!-- ============================================ -->
+    <section id="acces" class="py-16" style="background-color: #00a7de;">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white mb-3">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Accès au centre
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Carte Google Maps -->
+                <div class="bg-white rounded-xl overflow-hidden h-80 lg:h-auto shadow-lg" id="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.5!2d2.2878!3d48.8942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9a4a5c5555%3A0x1234567890abcdef!2s60%20Rue%20Victor%20Hugo%2C%2092300%20Levallois-Perret!5e0!3m2!1sfr!2sfr!4v1704067200000"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 320px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localisation Centre Médical Paris-Levallois">
+                    </iframe>
+                </div>
+                
+                <!-- Infos accès -->
+                <div class="space-y-4">
+                    <!-- Adresse + CTAs -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center">
+                            <i class="fas fa-building mr-3" style="color: #00a7de;"></i>
+                            Adresse
+                        </h3>
+                        <p class="text-lg text-gray-800 font-medium">
+                            60 Rue Victor Hugo<br>
+                            92300 Levallois-Perret
+                        </p>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            Rez-de-chaussée, entrée accessible
+                        </p>
+                        
+                        <!-- CTAs Itinéraire -->
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=60+Rue+Victor+Hugo,92300+Levallois-Perret" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center px-4 py-2 text-white rounded-lg text-sm font-medium transition-colors" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                                <i class="fas fa-directions mr-2"></i>
+                                Itinéraire
+                            </a>
+                            <button onclick="copyAddress()" 
+                                    class="inline-flex items-center px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
+                                <i class="fas fa-copy mr-2"></i>
+                                <span id="copy-btn-text">Copier l'adresse</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Transports -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
+                            <i class="fas fa-subway mr-3" style="color: #00a7de;"></i>
+                            Transports en commun
+                        </h3>
+                        <p class="text-xs text-gray-500 mb-4"><i class="fas fa-walking mr-1"></i> Temps indicatifs à pied</p>
+                        <div class="space-y-3">
+                            <!-- Train L - Le plus proche -->
+                            <div class="flex items-center">
+                                <span class="w-8 h-8 text-white rounded-full flex items-center justify-center text-xs font-bold mr-3" style="background-color: #7B4339;">L</span>
+                                <div>
+                                    <span class="text-gray-700 font-medium">Gare de Clichy – Levallois</span>
+                                    <span class="text-xs text-green-600 ml-2">4 min à pied ★</span>
+                                </div>
+                            </div>
+                            <!-- Tramway T3b -->
+                            <div class="flex items-center">
+                                <span class="w-8 h-8 text-white rounded-full flex items-center justify-center text-xs font-bold mr-3" style="background-color: #82C8E6;">T3b</span>
+                                <div>
+                                    <span class="text-gray-700">Marguerite Long</span>
+                                    <span class="text-xs text-gray-500 ml-2">8 min</span>
+                                </div>
+                            </div>
+                            <!-- RER C -->
+                            <div class="flex items-center">
+                                <span class="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3">C</span>
+                                <div>
+                                    <span class="text-gray-700">Péreire – Levallois</span>
+                                    <span class="text-xs text-gray-500 ml-2">12 min</span>
+                                </div>
+                            </div>
+                            <!-- Métro 3 -->
+                            <div class="flex items-center">
+                                <span class="w-8 h-8 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3" style="background-color: #9B993A;">3</span>
+                                <div>
+                                    <span class="text-gray-700">Louise Michel</span>
+                                    <span class="text-xs text-gray-500 ml-2">12 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Bus -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-bus mr-2" style="color: #00a7de;"></i>
+                                Lignes de bus
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">94</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">341</span>
+                                <span class="text-xs text-gray-500">Arrêt "Alsace" (1 min) ★</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">84</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">20</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">174</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">165</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Parking + Accessibilité -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl p-4 shadow-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2 flex items-center">
+                                <i class="fas fa-parking text-blue-500 mr-2"></i>
+                                Stationnement
+                            </h4>
+                            <p class="text-sm text-gray-600">
+                                Parking Victor Hugo<br>
+                                <span class="text-xs text-gray-500">(payant)</span>
+                            </p>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Rue (zone bleue)
+                            </p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2 flex items-center">
+                                <i class="fas fa-wheelchair text-green-500 mr-2"></i>
+                                Accessibilité
+                            </h4>
+                            <p class="text-sm text-gray-600">
+                                Entrée accessible<br>
+                                Rez-de-chaussée<br>
+                                <span class="text-xs text-green-600 font-medium">✓ Accès PMR facilité</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 5 : Horaires -->
+    <!-- ============================================ -->
+    <section id="horaires" class="py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <!-- Titre + phrase de synthèse (pyramide inversée) -->
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">
+                    <i class="fas fa-clock mr-2" style="color: #00a7de;"></i>
+                    Horaires d'ouverture
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Ouvert du lundi au samedi. Horaires de consultation selon spécialité et rendez-vous.
+                </p>
+            </div>
+            
+            <!-- Deux blocs : Accueil + Consultations -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- Accueil / Secrétariat -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-door-open mr-3" style="color: #00a7de;"></i>
+                        Accueil du centre
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex justify-between"><span>Lun - Ven</span><span class="font-medium">9h - 19h</span></li>
+                        <li class="flex justify-between"><span>Samedi</span><span class="font-medium">9h - 14h</span></li>
+                        <li class="flex justify-between text-red-600"><span>Dimanche</span><span class="font-medium">Fermé</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Consultations -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-user-md mr-3" style="color: #00a7de;"></i>
+                        Consultations
+                    </h3>
+                    <p class="text-gray-600 mb-3">
+                        Horaires selon spécialité et disponibilités des praticiens.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-3 text-sm" style="background-color: rgba(0, 167, 222, 0.08);">
+                        <p class="font-medium" style="color: #00a7de;">
+                            <i class="fas fa-moon mr-2"></i>Gardes de nuit
+                        </p>
+                        <p class="text-gray-600">Lundi et jeudi jusqu'à minuit (médecine générale)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tableau détaillé -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+                <div class="bg-gray-50 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-gray-700 text-sm uppercase tracking-wide">Horaires détaillés</h4>
+                </div>
+                <table class="w-full">
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-3 px-6 font-medium text-gray-900">Lundi</td>
+                            <td class="py-3 px-6 text-gray-700 text-right">09h - 00h <span class="text-xs px-2 py-0.5 rounded-full ml-1" style="background-color: rgba(0, 167, 222, 0.15); color: #00a7de;">garde</span></td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50">
+                            <td class="py-3 px-6 font-medium text-gray-900">Mardi</td>
+                            <td class="py-3 px-6 text-gray-700 text-right">09h - 19h</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-3 px-6 font-medium text-gray-900">Mercredi</td>
+                            <td class="py-3 px-6 text-gray-700 text-right">09h - 19h</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50">
+                            <td class="py-3 px-6 font-medium text-gray-900">Jeudi</td>
+                            <td class="py-3 px-6 text-gray-700 text-right">09h - 00h <span class="text-xs px-2 py-0.5 rounded-full ml-1" style="background-color: rgba(0, 167, 222, 0.15); color: #00a7de;">garde</span></td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-3 px-6 font-medium text-gray-900">Vendredi</td>
+                            <td class="py-3 px-6 text-gray-700 text-right">09h - 19h</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50">
+                            <td class="py-3 px-6 font-medium text-gray-900">Samedi</td>
+                            <td class="py-3 px-6 text-gray-700 text-right">09h - 14h</td>
+                        </tr>
+                        <tr class="bg-red-50">
+                            <td class="py-3 px-6 font-medium text-gray-900">Dimanche</td>
+                            <td class="py-3 px-6 text-red-600 font-medium text-right">Fermé</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Micro-CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center px-6 py-3 text-white rounded-xl font-semibold transition-colors shadow-lg" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Voir les disponibilités
+                </a>
+                <a href="tel:+33180883716" 
+                   class="inline-flex items-center justify-center px-6 py-3 bg-white border-2 text-gray-700 rounded-xl font-semibold transition-colors" style="border-color: #00a7de;" onmouseover="this.style.backgroundColor='rgba(0,167,222,0.05)'" onmouseout="this.style.backgroundColor='white'">
+                    <i class="fas fa-phone mr-2" style="color: #00a7de;"></i>
+                    01 80 88 37 16
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 6 : FAQ (SEO + Conversion) -->
+    <!-- ============================================ -->
+    <section id="faq" class="py-16" style="background-color: #00a7de;">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white mb-3">
+                    Questions fréquentes
+                </h2>
+                <p class="text-white/90">
+                    Tout ce que vous devez savoir sur le Centre Médical Paris-Levallois.
+                </p>
+            </div>
+            
+            <div class="space-y-4" x-data="{ open: null }">
+                
+                <!-- FAQ 1 : Comment prendre RDV -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 1 ? null : 1">
+                        <span class="font-semibold text-gray-900">Comment prendre rendez-vous ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 1 }"></i>
+                    </button>
+                    <div x-show="open === 1" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            Vous pouvez prendre rendez-vous <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" target="_blank" rel="noopener noreferrer" class="font-medium underline" style="color: #00a7de;">en ligne via Doctolib</a> ou par téléphone au <a href="tel:+33180883716" class="font-medium" style="color: #00a7de;">01 80 88 37 16</a>. 
+                            Choisissez la spécialité (ophtalmologie, orthoptie, médecine générale ou soins infirmiers) puis le motif.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 : Adresse -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 2 ? null : 2">
+                        <span class="font-semibold text-gray-900">Quelle est l'adresse du centre ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 2 }"></i>
+                    </button>
+                    <div x-show="open === 2" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            Le Centre Médical Paris-Levallois est situé au <strong>60 Rue Victor Hugo, 92300 Levallois-Perret</strong>. 
+                            Le centre est au rez-de-chaussée avec entrée accessible. 
+                            <a href="#acces" class="font-medium underline" style="color: #00a7de;">Voir l'accès</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 : Horaires -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 3 ? null : 3">
+                        <span class="font-semibold text-gray-900">Quels sont les horaires d'ouverture ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 3 }"></i>
+                    </button>
+                    <div x-show="open === 3" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            Le centre est ouvert du <strong>lundi au vendredi de 9h à 19h</strong> et le <strong>samedi de 9h à 14h</strong>. 
+                            Fermé le dimanche et jours fériés.<br>
+                            <em>Gardes de nuit : lundi et jeudi jusqu'à minuit (médecine générale).</em>
+                            <a href="#horaires" class="font-medium underline ml-1" style="color: #00a7de;">Voir les horaires</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 : Conventionnement -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 4 ? null : 4">
+                        <span class="font-semibold text-gray-900">Le centre est-il conventionné ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 4 }"></i>
+                    </button>
+                    <div x-show="open === 4" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            Oui, le centre est <strong>conventionné secteur 1</strong> : les tarifs sont conformes à la nomenclature Assurance Maladie.
+                            <a href="#tarifs" class="font-medium underline ml-1" style="color: #00a7de;">Voir les tarifs</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 : Carte Vitale / Tiers payant -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 5 ? null : 5">
+                        <span class="font-semibold text-gray-900">Carte Vitale et tiers payant : comment ça marche ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 5 }"></i>
+                    </button>
+                    <div x-show="open === 5" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            La <strong>Carte Vitale</strong> est acceptée avec télétransmission automatique. 
+                            Le <strong>tiers payant</strong> est pratiqué selon droits ouverts (Assurance Maladie + mutuelle selon conditions). 
+                            <strong>CSS/CMU</strong> acceptée.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 6 : Moyens de paiement -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 6 ? null : 6">
+                        <span class="font-semibold text-gray-900">Quels moyens de paiement sont acceptés ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 6 }"></i>
+                    </button>
+                    <div x-show="open === 6" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            Le centre accepte la <strong>carte bancaire</strong> (CB, Visa, Mastercard), les <strong>espèces</strong> et les <strong>chèques</strong>.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 7 : Nouveaux patients -->
+                <div class="faq-item">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            @click="open = open === 7 ? null : 7">
+                        <span class="font-semibold text-gray-900">Acceptez-vous les nouveaux patients ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-200" style="color: #00a7de;" :class="{ 'rotate-180': open === 7 }"></i>
+                    </button>
+                    <div x-show="open === 7" x-collapse class="px-6 pb-4">
+                        <p class="text-gray-600">
+                            <strong>Oui</strong>, le centre accepte les nouveaux patients pour l'ensemble des spécialités. 
+                            Vous pouvez <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" target="_blank" rel="noopener noreferrer" class="font-medium underline" style="color: #00a7de;">réserver en ligne</a> ou nous appeler.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 8 : Urgence -->
+                <div class="faq-item border-red-200">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-red-50 transition-colors"
+                            @click="open = open === 8 ? null : 8">
+                        <span class="font-semibold text-gray-900">
+                            <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+                            Que faire en cas d'urgence médicale ?
+                        </span>
+                        <i class="fas fa-chevron-down text-red-500 transition-transform duration-200" :class="{ 'rotate-180': open === 8 }"></i>
+                    </button>
+                    <div x-show="open === 8" x-collapse class="px-6 pb-4 bg-red-50">
+                        <p class="text-gray-700">
+                            <strong class="text-red-600">En cas d'urgence vitale, appelez le 15 (SAMU) ou le 112.</strong><br>
+                            Le centre ne gère pas les urgences vitales. Pour une situation urgente non vitale, contactez-nous par téléphone pour vérifier les disponibilités.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CTA Final -->
+    <!-- ============================================ -->
+    <section class="py-12" style="background-color: #00a7de;">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">
+                Prenez rendez-vous dès maintenant
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-3">
+                <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center px-8 py-4 bg-white rounded-xl font-bold text-lg transition-colors shadow-lg hover:bg-gray-100"
+                   style="color: #00a7de;"
+                   onclick="dataLayer.push({'event': 'cta_footer_doctolib'});">
+                    <i class="fas fa-calendar-check mr-3"></i>
+                    Voir les disponibilités
+                </a>
+                <a href="tel:+33180883716" 
+                   class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-xl font-bold text-lg hover:bg-white/10 transition-colors"
+                   onclick="dataLayer.push({'event': 'cta_footer_call'});">
+                    <i class="fas fa-phone mr-3"></i>
+                    01 80 88 37 16
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Barre sticky mobile (Appeler / RDV) -->
+    <div id="mobile-sticky-cta" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50 md:hidden safe-area-bottom">
+        <div class="flex">
+            <a href="tel:+33180883716" 
+               class="flex-1 flex items-center justify-center py-3 text-gray-700 font-semibold border-r border-gray-200"
+               onclick="dataLayer.push({'event': 'cta_sticky_call'});">
+                <i class="fas fa-phone mr-2" style="color: #00a7de;"></i>
+                Appeler
+            </a>
+            <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="flex-1 flex items-center justify-center py-3 text-white font-semibold"
+               style="background-color: #00a7de;"
+               onclick="dataLayer.push({'event': 'cta_sticky_doctolib'});">
+                <i class="fas fa-calendar-check mr-2"></i>
+                RDV en ligne
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script>
+        async function loadComponent(placeholderId, componentPath) {
+            try {
+                const response = await fetch(componentPath);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const html = await response.text();
+                const placeholder = document.getElementById(placeholderId);
+                if (placeholder) {
+                    placeholder.innerHTML = html;
+                }
+            } catch (error) {
+                console.error('Erreur chargement composant:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', async function() {
+            const cacheBuster = '?v=' + Date.now();
+            await loadComponent('header-placeholder', './components/header.html' + cacheBuster);
+            await loadComponent('footer-placeholder', './components/footer.html' + cacheBuster);
+            
+            setTimeout(() => {
+                const btn = document.getElementById('mobile-menu-button');
+                const menu = document.getElementById('mobile-menu');
+                if (btn && menu) {
+                    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+                }
+            }, 100);
+        });
+        
+        // Copier l'adresse dans le presse-papier
+        function copyAddress() {
+            const address = '60 Rue Victor Hugo, 92300 Levallois-Perret';
+            navigator.clipboard.writeText(address).then(() => {
+                const btn = document.getElementById('copy-btn-text');
+                if (btn) {
+                    btn.textContent = 'Copié !';
+                    setTimeout(() => { btn.textContent = "Copier l'adresse"; }, 2000);
+                }
+            });
+        }
+        
+        // Tracking conversions Google Ads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Conversion Doctolib - Tous les liens Doctolib
+            const doctolibLinks = document.querySelectorAll('a[href*="doctolib.fr"]');
+            doctolibLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    gtagSendEventDoctolib();
+                });
+            });
+            
+            // Conversion Téléphone - Tous les liens téléphone
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    gtagSendEventTelephone(this.href);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
