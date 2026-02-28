@@ -1,0 +1,67 @@
+# ===========================================
+# Déploiement automatique vers LWS via FTP
+# ===========================================
+# 
+# Ce workflow se déclenche à chaque push sur la branche main
+# et déploie automatiquement les fichiers sur l'hébergement LWS.
+#
+# Configuration requise (une seule fois) :
+# 1. Aller sur GitHub > Settings > Secrets and variables > Actions
+# 2. Créer ces 3 secrets :
+#    - FTP_SERVER : l'adresse FTP LWS (ex: ftp.centremedicalparislevallois.fr)
+#    - FTP_USERNAME : l'utilisateur FTP
+#    - FTP_PASSWORD : le mot de passe FTP
+#
+# Les infos FTP se trouvent dans votre espace client LWS :
+# https://panel.lws.fr/ > Hébergement > Accès FTP
+# ===========================================
+
+name: 🚀 Deploy to LWS
+
+on:
+  push:
+    branches:
+      - main
+  # Permet de lancer manuellement depuis l'interface GitHub
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: 📦 Deploy to LWS FTP
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🔄 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📤 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Dossier distant sur LWS (généralement /www/ ou /public_html/)
+          server-dir: /www/
+          # Fichiers et dossiers à exclure du déploiement
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/docs/**
+            **/.windsurf/**
+            **/*.md
+            **/*-original.jpg
+            **/*-original.png
+            **/*.HEIC
+            **/*.heic
+            **/deploy-*.zip
+            **/.DS_Store
+            **/node_modules/**
+            **/.ftpconfig
+            **/index-v1-backup.html
+
+      - name: ✅ Deployment complete
+        run: |
+          echo "🎉 Déploiement terminé !"
+          echo "📍 Site: https://centremedicalparislevallois.fr/"
+          echo "⏰ Date: $(date)"
