@@ -44,7 +44,7 @@
         "name": "Prise de sang et ECBU",
         "description": "Prélèvement sanguin et urinaire pour analyses biologiques sur ordonnance",
         "procedureType": "DiagnosticProcedure",
-        "preparation": "Certains bilans nécessitent d'être à jeun (12h sans manger)",
+        "preparation": "Selon les examens prescrits : certains bilans (glycémie, lipides) nécessitent d'être à jeun 12h. Pour l'ECBU : idéalement urines du matin, au moins 4h après dernière miction, toilette intime et milieu de jet. Suivre les consignes du prescripteur ou du laboratoire.",
         "provider": {"@type": "MedicalClinic", "name": "Centre Médical Paris-Levallois"}
     }
     </script>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <p class="text-lg opacity-90 mb-6">
-                        Prises de sang sur ordonnance, analyses urinaires (ECBU). Résultats envoyés au laboratoire.
+                        Prises de sang sur ordonnance, analyses urinaires (ECBU). Échantillons transmis au laboratoire partenaire. Résultats communiqués par le laboratoire (délais selon examens).
                     </p>
                     <div class="flex flex-wrap gap-3 mb-6">
                         <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-clock mr-2"></i>10-15 min</span>
@@ -172,13 +172,14 @@
                 </div>
 
                 <div class="info-card border-l-4 border-green-500">
-                    <h3 class="font-bold text-lg mb-3"><i class="fas fa-check-circle text-[#00a7de] mr-2"></i>Pas besoin d'être à jeun</h3>
+                    <h3 class="font-bold text-lg mb-3"><i class="fas fa-check-circle text-[#00a7de] mr-2"></i>Généralement sans jeun</h3>
                     <ul class="text-gray-600 text-sm space-y-2">
                         <li><i class="fas fa-check text-[#00a7de] mr-2"></i>NFS (numération formule sanguine)</li>
-                        <li><i class="fas fa-check text-[#00a7de] mr-2"></i>Bilan thyroïdien (TSH)</li>
-                        <li><i class="fas fa-check text-[#00a7de] mr-2"></i>Bilan hépatique, rénal</li>
-                        <li><i class="fas fa-check text-[#00a7de] mr-2"></i>ECBU (analyse d'urine)</li>
+                        <li><i class="fas fa-check text-[#00a7de] mr-2"></i>Bilan thyroïdien (TSH) — en général</li>
+                        <li><i class="fas fa-check text-[#00a7de] mr-2"></i>Bilan hépatique, rénal — selon paramètres associés</li>
+                        <li><i class="fas fa-check text-[#00a7de] mr-2"></i>ECBU (voir consignes spécifiques ci-dessous)</li>
                     </ul>
+                    <p class="text-xs text-gray-500 mt-3"><i class="fas fa-exclamation-circle mr-1"></i>Toujours suivre les consignes du prescripteur ou du laboratoire.</p>
                 </div>
             </div>
         </section>
@@ -207,10 +208,28 @@
                 <div class="info-card flex gap-4 items-start">
                     <div class="step-number">3</div>
                     <div>
-                        <h3 class="font-bold mb-1">Envoi au laboratoire</h3>
-                        <p class="text-gray-600 text-sm">Échantillons transmis le jour même. Résultats sous 24-48h.</p>
+                        <h3 class="font-bold mb-1">Transmission au laboratoire</h3>
+                        <p class="text-gray-600 text-sm">Échantillons transmis le jour même. Résultats disponibles via le laboratoire partenaire (sous 24-48h selon examens).</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Consignes ECBU -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold cm-text mb-6">
+                <i class="fas fa-flask text-[#00a7de] mr-2"></i>
+                Consignes spécifiques ECBU
+            </h2>
+            <div class="info-card border-l-4 border-[#00a7de]">
+                <p class="text-gray-700 text-sm mb-3">Pour un résultat fiable, respecter les consignes suivantes :</p>
+                <ul class="text-gray-600 text-sm space-y-2">
+                    <li><i class="fas fa-sun text-[#00a7de] mr-2"></i><strong>Idéalement les urines du matin</strong> (plus concentrées)</li>
+                    <li><i class="fas fa-clock text-[#00a7de] mr-2"></i><strong>Au moins 4h</strong> après la dernière miction</li>
+                    <li><i class="fas fa-soap text-[#00a7de] mr-2"></i><strong>Toilette intime</strong> soigneuse avant le prélèvement</li>
+                    <li><i class="fas fa-tint text-[#00a7de] mr-2"></i><strong>Milieu de jet</strong> : laisser s'écouler un premier jet puis recueillir le milieu</li>
+                    <li><i class="fas fa-truck-fast text-[#00a7de] mr-2"></i><strong>Acheminement rapide</strong> au laboratoire (dans les 2h ou conservation au frais selon protocole)</li>
+                </ul>
             </div>
         </section>
 
