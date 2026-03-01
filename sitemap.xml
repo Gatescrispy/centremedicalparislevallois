@@ -5,6 +5,10 @@
     
     <!-- Pages principales -->
     <url><loc>https://www.centremedicalparislevallois.fr/pages/le-centre.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/tarifs.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/contact.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/urgences.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/equipe.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/landing/google-ads.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
     
     <!-- Pages index spécialités -->
@@ -16,7 +20,7 @@
     <!-- Pages motifs Soins Infirmiers -->
     <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/vaccination-adulte.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/vaccination-pediatrique.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/bilan-sanguin.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/bilan-sanguin-ecbu.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/injection.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/pansement-simple.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers/pansement-post-chirurgical.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

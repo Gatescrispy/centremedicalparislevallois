@@ -2,87 +2,109 @@
 <style>
     footer a { text-decoration: none !important; }
     footer a:hover { text-decoration: none !important; }
-    .text-primary-400 { color: #00a7de; }
-    .hover\:text-primary-400:hover { color: #00a7de; }
-    .footer-grid-row { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-    @media (min-width: 768px) {
-        .footer-grid-row { grid-template-columns: 2fr 1fr 1fr 1fr; }
+    .footer-link { 
+        color: white; 
+        transition: opacity 0.2s;
     }
-    .footer-logo { height: 48px; width: auto; }
+    .footer-link:hover { 
+        opacity: 0.8;
+    }
 </style>
-<footer class="text-white py-10" style="background-color: #006d91;">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<footer class="text-white" style="background-color: #003d52;">
+    <div class="max-w-7xl mx-auto px-4 py-12">
         
-        <!-- 4 colonnes sur une ligne -->
-        <div class="footer-grid-row mb-8">
+        <!-- Grille principale -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             
             <!-- Col 1: Logo + Contact -->
             <div>
-                <img src="/Logo Centre Medical Paris Levallois.png" alt="Centre Médical Paris-Levallois" class="footer-logo mb-4">
-                <div class="space-y-2">
-                    <a href="tel:+33180883716" class="block text-white hover:text-white/80 font-medium text-base">
-                        <i class="fas fa-phone mr-2"></i>01 80 88 37 16
+                <img src="/Logo Centre Medical Paris Levallois.png" alt="Centre Médical Paris-Levallois" class="h-10 w-auto mb-5" style="max-width: 200px;">
+                <div class="space-y-3">
+                    <a href="tel:+33180883716" class="footer-link flex items-center text-lg font-semibold">
+                        <i class="fas fa-phone mr-3" style="color: #00a7de;"></i>
+                        01 80 88 37 16
                     </a>
-                    <p class="text-white text-base"><i class="fas fa-map-marker-alt mr-2"></i>60 Rue Victor Hugo, 92300</p>
-                    <p class="text-white text-base"><i class="fas fa-clock mr-2"></i>Lun-Ven 9h-19h • Sam 9h-14h</p>
+                    <p class="flex items-start text-white/80">
+                        <i class="fas fa-map-marker-alt mr-3 mt-1" style="color: #00a7de;"></i>
+                        60 Rue Victor Hugo<br>92300 Levallois-Perret
+                    </p>
+                    <p class="flex items-center text-white/80">
+                        <i class="fas fa-clock mr-3" style="color: #00a7de;"></i>
+                        Lun-Ven 9h-19h • Sam 9h-14h
+                    </p>
                 </div>
             </div>
             
             <!-- Col 2: Spécialités -->
             <div>
-                <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Spécialités</h4>
-                <div class="space-y-2">
-                    <a href="/pages/specialites/ophtalmologie.html" class="block text-white hover:text-white/80 text-base">Ophtalmologie</a>
-                    <a href="/pages/specialites/orthoptie.html" class="block text-white hover:text-white/80 text-base">Orthoptie</a>
-                    <a href="/pages/specialites/medecine-generale.html" class="block text-white hover:text-white/80 text-base">Médecine générale</a>
-                    <a href="/pages/specialites/soins-infirmiers.html" class="block text-white hover:text-white/80 text-base">Soins infirmiers</a>
-                </div>
+                <h4 class="text-sm font-bold uppercase tracking-wider mb-4" style="color: #00a7de;">Nos spécialités</h4>
+                <ul class="space-y-2">
+                    <li><a href="/pages/ophtalmologie.html" class="footer-link flex items-center">
+                        <i class="fas fa-eye mr-2 text-sm opacity-60"></i> Ophtalmologie
+                    </a></li>
+                    <li><a href="/pages/medecine-generale.html" class="footer-link flex items-center">
+                        <i class="fas fa-stethoscope mr-2 text-sm opacity-60"></i> Médecine générale
+                    </a></li>
+                    <li><a href="/pages/kinesitherapie.html" class="footer-link flex items-center">
+                        <i class="fas fa-hands mr-2 text-sm opacity-60"></i> Kinésithérapie
+                    </a></li>
+                    <li><a href="/pages/soins-infirmiers.html" class="footer-link flex items-center">
+                        <i class="fas fa-syringe mr-2 text-sm opacity-60"></i> Soins infirmiers
+                    </a></li>
+                </ul>
             </div>
             
-            <!-- Col 3: Liens utiles -->
+            <!-- Col 3: Informations -->
             <div>
-                <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Liens utiles</h4>
-                <div class="space-y-2">
-                    <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" target="_blank" rel="noopener noreferrer" class="block text-white hover:text-white/80 text-base">
-                        <i class="fas fa-calendar-plus mr-1"></i> Prendre RDV
-                    </a>
-                    <a href="/pages/tarifs.html" class="block text-white hover:text-white/80 text-base">Tarifs & remboursement</a>
-                    <a href="/pages/le-centre.html#infos-pratiques" class="block text-white hover:text-white/80 text-base">Accès & Horaires</a>
-                    <a href="/pages/le-centre.html#faq" class="block text-white hover:text-white/80 text-base">Questions fréquentes</a>
-                </div>
+                <h4 class="text-sm font-bold uppercase tracking-wider mb-4" style="color: #00a7de;">Informations</h4>
+                <ul class="space-y-2">
+                    <li><a href="/pages/le-centre.html" class="footer-link">Le centre</a></li>
+                    <li><a href="/pages/tarifs.html" class="footer-link">Tarifs & remboursement</a></li>
+                    <li><a href="/#acces" class="footer-link">Accès & Horaires</a></li>
+                    <li><a href="/#faq" class="footer-link">Questions fréquentes</a></li>
+                    <li><a href="/pages/contact.html" class="footer-link">Contact</a></li>
+                </ul>
             </div>
             
-            <!-- Col 4: Infos pratiques -->
+            <!-- Col 4: Rendez-vous -->
             <div>
-                <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Infos pratiques</h4>
-                <div class="space-y-2 text-white text-base">
-                    <p><i class="fas fa-check-circle mr-2"></i>Conventionné secteur 1</p>
-                    <p><i class="fas fa-id-card mr-2"></i>Carte Vitale + Tiers payant</p>
-                    <p><i class="fas fa-wheelchair mr-2"></i>Accès PMR (RDC)</p>
-                    <p><i class="fas fa-subway mr-2"></i>Train L Clichy-Levallois</p>
+                <h4 class="text-sm font-bold uppercase tracking-wider mb-4" style="color: #00a7de;">Prendre rendez-vous</h4>
+                <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/specialities?bookingFunnelSource=profile" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center px-5 py-3 rounded-lg font-semibold text-white transition-colors mb-4" 
+                   style="background-color: #00a7de;"
+                   onmouseover="this.style.backgroundColor='#0090c0'" 
+                   onmouseout="this.style.backgroundColor='#00a7de'">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Réserver sur Doctolib
+                </a>
+                <div class="mt-4 space-y-2 text-sm text-white/70">
+                    <p><i class="fas fa-check mr-2" style="color: #00a7de;"></i>Conventionné secteur 1</p>
+                    <p><i class="fas fa-check mr-2" style="color: #00a7de;"></i>Carte Vitale acceptée</p>
+                    <p><i class="fas fa-check mr-2" style="color: #00a7de;"></i>Tiers payant</p>
+                    <p><i class="fas fa-check mr-2" style="color: #00a7de;"></i>Accès PMR</p>
                 </div>
             </div>
         </div>
-
-        <!-- Urgences -->
-        <div class="bg-red-500/20 border border-red-400/50 rounded-lg p-4 mt-8">
-            <p class="text-center text-base">
-                <i class="fas fa-exclamation-triangle text-red-300 mr-2"></i>
-                <strong class="text-white">Urgence médicale ?</strong>
-                <span class="text-white/90 ml-2">Appelez le <a href="tel:15" class="text-white font-bold hover:underline">15 (SAMU)</a> ou le <a href="tel:112" class="text-white font-bold hover:underline">112</a></span>
+        
+        <!-- Bannière urgence -->
+        <div class="bg-red-600/20 border border-red-500/40 rounded-xl p-4 mb-8">
+            <p class="text-center">
+                <i class="fas fa-exclamation-triangle text-red-400 mr-2"></i>
+                <strong>Urgence médicale ?</strong>
+                <span class="ml-2 text-white/90">Appelez le <a href="tel:15" class="font-bold hover:underline">15 (SAMU)</a> ou le <a href="tel:112" class="font-bold hover:underline">112</a></span>
             </p>
         </div>
-
+        
         <!-- Copyright -->
-        <div class="border-t border-white/30 mt-8 pt-6 text-center text-white">
+        <div class="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
             <p>&copy; 2025 Centre Médical Paris-Levallois. Tous droits réservés.</p>
-            <p class="mt-2 text-sm">
-                <a href="/pages/mentions-legales.html" class="text-white hover:text-white/80">Mentions légales</a>
-                <span class="mx-2">•</span>
-                <a href="/pages/politique-confidentialite.html" class="text-white hover:text-white/80">Politique de confidentialité</a>
-                <span class="mx-2">•</span>
-                <button onclick="showConsentManager()" class="text-white hover:text-white/80">Gestion des cookies</button>
-            </p>
+            <div class="flex gap-4 mt-3 md:mt-0">
+                <a href="/pages/mentions-legales.html" class="hover:text-white transition-colors">Mentions légales</a>
+                <a href="/pages/politique-confidentialite.html" class="hover:text-white transition-colors">Confidentialité</a>
+                <button onclick="showConsentManager()" class="hover:text-white transition-colors">Cookies</button>
+            </div>
         </div>
     </div>
 </footer> 

@@ -51,9 +51,19 @@
     
     <style>
         .cm-text { color: #252525; }
-        .motif-hero { background: linear-gradient(135deg, #00ACC1 0%, #00838F 100%); }
+        .motif-hero { background: linear-gradient(135deg, #00a7de 0%, #0090c0 100%); }
         .info-card { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 24px; }
+        .motif-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s; border: 2px solid transparent; display: flex; flex-direction: column; text-decoration: none; }
+        .motif-card:hover { border-color: #00a7de; box-shadow: 0 12px 30px rgba(0,167,222,0.15); transform: translateY(-4px); }
+        .motif-card-img { height: 160px; object-fit: cover; width: 100%; }
+        .motif-card-content { padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1; }
     </style>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Test Antigénique Levallois | COVID, Grippe">
+    <meta property="og:description" content="Tests antigéniques rapides à Levallois-Perret : COVID-19, grippe. Résultat en 15 minutes, sans ordonnance.">
+    <meta property="og:image" content="https://www.centremedicalparislevallois.fr/Test Antigène Nursing.jpeg">
+    <meta property="og:locale" content="fr_FR">
 </head>
 <body class="font-sans bg-gray-50">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ2KK9XS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -62,42 +72,59 @@
 
     <nav class="bg-white border-b" aria-label="Breadcrumb">
         <div class="max-w-6xl mx-auto px-4 py-3">
-            <ol class="flex items-center space-x-2 text-sm flex-wrap">
-                <li><a href="../../index.html" class="text-gray-500 hover:text-[#00a7de]">Accueil</a></li>
-                <li><span class="text-gray-400">/</span></li>
-                <li><a href="../soins-infirmiers.html" class="text-gray-500 hover:text-[#00a7de]">Soins Infirmiers</a></li>
-                <li><span class="text-gray-400">/</span></li>
-                <li class="text-[#00ACC1] font-medium">Test Antigénique</li>
+            <ol class="flex items-center gap-2 text-sm" style="list-style: none; margin: 0; padding: 0;">
+                <li><a href="../../index.html" class="text-gray-500 hover:text-[#00a7de]" style="text-decoration: none;">Accueil</a></li>
+                <li class="text-gray-400">/</li>
+                <li><a href="../soins-infirmiers.html" class="text-gray-500 hover:text-[#00a7de]" style="text-decoration: none;">Soins Infirmiers</a></li>
+                <li class="text-gray-400">/</li>
+                <li class="font-medium" style="color: #00a7de;">Test Antigénique</li>
             </ol>
         </div>
     </nav>
 
-    <section class="motif-hero text-white py-12 md:py-16">
+    <section class="py-12 md:py-16" style="background-color: #00a7de;">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row md:items-center gap-6">
-                <div class="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <i class="fas fa-virus text-4xl"></i>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-white">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
+                            <i class="fas fa-vial-virus text-2xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold">Test Antigénique</h1>
+                            <p class="text-white/80">COVID-19 • Résultat rapide</p>
+                        </div>
+                    </div>
+                    <p class="text-lg opacity-90 mb-6">
+                        Test antigénique COVID-19 avec résultat en 15 minutes. Sans rendez-vous selon disponibilité.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-clock mr-2"></i>15 min</span>
+                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-check mr-2"></i>Secteur 1</span>
+                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-file-prescription mr-2"></i>Ordonnance</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/availabilities?specialityId=30&telehealth=false&placeId=practice-714912&motiveIds%5B%5D=15174877&source=deep_link" 
+                           target="_blank" rel="noopener"
+                           class="inline-flex items-center justify-center gap-2 bg-white px-6 py-3 rounded-lg font-bold transition"
+                           style="color: #00a7de; text-decoration: none;"
+                           onmouseover="this.style.backgroundColor='#f3f4f6'" 
+                           onmouseout="this.style.backgroundColor='white'">
+                            <i class="fas fa-calendar-check"></i> Prendre RDV
+                        </a>
+                        <a href="tel:+33180883716" 
+                           class="inline-flex items-center justify-center gap-2 border-2 border-white px-6 py-3 rounded-lg font-bold transition text-white"
+                           style="text-decoration: none;"
+                           onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'" 
+                           onmouseout="this.style.backgroundColor='transparent'">
+                            <i class="fas fa-phone"></i> 01 80 88 37 16
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <span class="bg-white/20 text-sm px-3 py-1 rounded-full mb-2 inline-block">Soins Infirmiers</span>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Test Antigénique</h1>
-                    <p class="text-lg opacity-90">COVID-19 • Grippe • Résultat en 15 minutes</p>
+                <div class="order-first md:order-last">
+                    <img src="/Test Antigène Nursing.jpeg" alt="Test Antigénique" class="rounded-2xl shadow-2xl w-full object-cover" style="max-height: 350px;">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="bg-white border-b shadow-sm sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div class="flex items-center gap-4 text-sm">
-                <span><i class="fas fa-clock text-teal-600 mr-1"></i> ~10 min</span>
-                <span><i class="fas fa-file-certificate text-teal-600 mr-1"></i> Certificat fourni</span>
-            </div>
-            <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=30&telehealth=false&placeId=practice-714912&source=profile" 
-               target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 bg-[#00ACC1] text-white px-6 py-2 rounded-full font-medium hover:bg-[#00838F] transition">
-                <i class="fas fa-calendar-check"></i> Prendre RDV
-            </a>
         </div>
     </section>
 
@@ -106,7 +133,7 @@
         <section class="mb-12">
             <div class="info-card">
                 <h2 class="text-xl font-bold cm-text mb-4">
-                    <i class="fas fa-info-circle text-teal-600 mr-2"></i>
+                    <i class="fas fa-info-circle text-[#00a7de] mr-2"></i>
                     Tests rapides de dépistage
                 </h2>
                 <p class="text-gray-700 leading-relaxed">
@@ -118,54 +145,97 @@
 
         <section class="mb-12">
             <h2 class="text-2xl font-bold cm-text mb-6">
-                <i class="fas fa-vials text-teal-600 mr-2"></i>
+                <i class="fas fa-vials text-[#00a7de] mr-2"></i>
                 Tests disponibles
             </h2>
 
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="info-card border-l-4 border-blue-500">
                     <div class="flex items-center gap-3 mb-3">
-                        <i class="fas fa-virus-covid text-blue-500 text-2xl"></i>
+                        <i class="fas fa-virus-covid text-[#00a7de] text-2xl"></i>
                         <h3 class="font-bold text-lg">Test COVID-19</h3>
                     </div>
                     <p class="text-gray-600 text-sm mb-3">Détection du SARS-CoV-2 par test antigénique nasal.</p>
                     <ul class="text-sm text-gray-600 space-y-1">
-                        <li><i class="fas fa-clock text-blue-500 mr-2"></i>Résultat : 15 min</li>
-                        <li><i class="fas fa-file text-blue-500 mr-2"></i>Certificat SI-DEP</li>
+                        <li><i class="fas fa-clock text-[#00a7de] mr-2"></i>Résultat : 15 min</li>
+                        <li><i class="fas fa-file text-[#00a7de] mr-2"></i>Certificat SI-DEP</li>
                     </ul>
                 </div>
 
                 <div class="info-card border-l-4 border-orange-500">
                     <div class="flex items-center gap-3 mb-3">
-                        <i class="fas fa-disease text-orange-500 text-2xl"></i>
+                        <i class="fas fa-disease text-[#00a7de] text-2xl"></i>
                         <h3 class="font-bold text-lg">Test Grippe</h3>
                     </div>
                     <p class="text-gray-600 text-sm mb-3">Détection des virus grippaux A et B.</p>
                     <ul class="text-sm text-gray-600 space-y-1">
-                        <li><i class="fas fa-clock text-orange-500 mr-2"></i>Résultat : 15 min</li>
-                        <li><i class="fas fa-file text-orange-500 mr-2"></i>Certificat fourni</li>
+                        <li><i class="fas fa-clock text-[#00a7de] mr-2"></i>Résultat : 15 min</li>
+                        <li><i class="fas fa-file text-[#00a7de] mr-2"></i>Certificat fourni</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Autres soins infirmiers -->
         <section class="mb-12">
-            <h2 class="text-xl font-bold cm-text mb-4">Autres soins infirmiers</h2>
-            <div class="flex flex-wrap gap-3">
-                <a href="vaccination-adulte.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">💉 Vaccination</a>
-                <a href="bilan-sanguin-ecbu.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">🩸 Bilan sanguin</a>
-                <a href="../soins-infirmiers.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">📋 Tous les soins</a>
+            <h2 class="text-2xl font-bold mb-6" style="color: #252525;">Autres soins infirmiers</h2>
+            <div class="flex gap-6 overflow-x-auto pb-4" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+                <a href="vaccination-adulte.html" class="motif-card flex-shrink-0" style="width: 280px; scroll-snap-align: start;">
+                    <img src="/Vaccination Adulte.jpg" alt="Vaccination" class="motif-card-img">
+                    <div class="motif-card-content">
+                        <h3 class="font-bold text-lg mb-2" style="color: #252525;">Vaccination adulte</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Grippe, COVID-19, rappels DTP...</p>
+                        <span class="inline-flex items-center gap-2 text-sm font-semibold" style="color: #00a7de;">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="bilan-sanguin-ecbu.html" class="motif-card flex-shrink-0" style="width: 280px; scroll-snap-align: start;">
+                    <img src="/Test de Sang.webp" alt="Bilan sanguin" class="motif-card-img">
+                    <div class="motif-card-content">
+                        <h3 class="font-bold text-lg mb-2" style="color: #252525;">Bilan sanguin</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Prises de sang et ECBU sur ordonnance.</p>
+                        <span class="inline-flex items-center gap-2 text-sm font-semibold" style="color: #00a7de;">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="surveillance-constantes.html" class="motif-card flex-shrink-0" style="width: 280px; scroll-snap-align: start;">
+                    <img src="/Nursing Constant Monitoring.webp" alt="Surveillance constantes" class="motif-card-img">
+                    <div class="motif-card-content">
+                        <h3 class="font-bold text-lg mb-2" style="color: #252525;">Surveillance constantes</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Tension, glycémie, température, saturation.</p>
+                        <span class="inline-flex items-center gap-2 text-sm font-semibold" style="color: #00a7de;">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="injection.html" class="motif-card flex-shrink-0" style="width: 280px; scroll-snap-align: start;">
+                    <img src="/Préparation d'injection.jpg" alt="Injection" class="motif-card-img">
+                    <div class="motif-card-content">
+                        <h3 class="font-bold text-lg mb-2" style="color: #252525;">Injection</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">IM, SC, IV sur ordonnance médicale.</p>
+                        <span class="inline-flex items-center gap-2 text-sm font-semibold" style="color: #00a7de;">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
             </div>
         </section>
 
-        <section class="text-center bg-gradient-to-r from-[#00ACC1] to-[#00838F] rounded-2xl p-8 md:p-12 text-white">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">Besoin d'un test rapide ?</h2>
-            <p class="text-lg opacity-90 mb-6">Résultat en 15 minutes, certificat fourni</p>
-            <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=30&telehealth=false&placeId=practice-714912&source=profile" 
-               target="_blank" rel="noopener"
-               class="inline-flex items-center justify-center gap-2 bg-white text-teal-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
-                <i class="fas fa-calendar-check"></i> Prendre RDV Test
-            </a>
+        <!-- CTA Final -->
+        <section class="text-center rounded-2xl p-8 md:p-12" style="background-color: #00a7de;">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Besoin d'un test antigénique ?</h2>
+            <p class="text-lg mb-6 text-white/90">Prenez rendez-vous avec notre équipe infirmière</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/availabilities?specialityId=30&telehealth=false&placeId=practice-714912&motiveIds%5B%5D=15174877&source=deep_link" 
+                   target="_blank" rel="noopener"
+                   class="inline-flex items-center justify-center gap-2 bg-white px-8 py-4 rounded-lg font-bold transition shadow-lg"
+                   style="color: #00a7de; text-decoration: none;"
+                   onmouseover="this.style.backgroundColor='#f3f4f6'" 
+                   onmouseout="this.style.backgroundColor='white'">
+                    <i class="fas fa-calendar-check"></i> Prendre RDV Test
+                </a>
+                <a href="tel:+33180883716" 
+                   class="inline-flex items-center justify-center gap-2 border-2 border-white px-8 py-4 rounded-lg font-bold transition text-white"
+                   style="text-decoration: none;"
+                   onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'" 
+                   onmouseout="this.style.backgroundColor='transparent'">
+                    <i class="fas fa-phone"></i> 01 80 88 37 16
+                </a>
+            </div>
         </section>
 
     </main>
