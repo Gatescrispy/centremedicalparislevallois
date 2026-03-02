@@ -40,8 +40,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Dossier distant sur LWS (généralement /www/ ou /public_html/)
-          server-dir: /www/
+          # Dossier distant sur LWS (document root = htdocs)
+          server-dir: /htdocs/
           # Fichiers et dossiers à exclure du déploiement
           exclude: |
             **/.git*
@@ -59,6 +59,14 @@ jobs:
             **/node_modules/**
             **/.ftpconfig
             **/index-v1-backup.html
+            **/scripts/**
+            **/*.py
+            **/*.csv
+            **/src/**
+            **/package*.json
+            **/tailwind.config.js
+            **/test_*.html
+            **/centremedical-deploy.zip
 
       - name: ✅ Deployment complete
         run: |
