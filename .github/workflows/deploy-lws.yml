@@ -40,8 +40,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Dossier distant sur LWS (document root = htdocs)
-          server-dir: /htdocs/
+          # Dossier distant sur LWS (FTP root = htdocs déjà)
+          server-dir: /
           # Fichiers et dossiers à exclure du déploiement
           exclude: |
             **/.git*
