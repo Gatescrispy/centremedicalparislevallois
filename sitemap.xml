@@ -7,9 +7,11 @@
     <url><loc>https://www.centremedicalparislevallois.fr/pages/le-centre.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/tarifs.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/contact.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/acces-horaires.html</loc><lastmod>2026-03-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.centremedicalparislevallois.fr/pages/faq.html</loc><lastmod>2026-03-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/urgences.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
     <url><loc>https://www.centremedicalparislevallois.fr/pages/equipe.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.centremedicalparislevallois.fr/pages/landing/google-ads.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <!-- Landing page Google Ads exclue : noindex, nofollow -->
     
     <!-- Pages index spécialités -->
     <url><loc>https://www.centremedicalparislevallois.fr/pages/soins-infirmiers.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>

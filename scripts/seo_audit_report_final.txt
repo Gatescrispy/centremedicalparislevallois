@@ -1,0 +1,278 @@
+======================================================================
+  AUDIT SEO COMPLET — Centre Médical Paris-Levallois
+======================================================================
+
+📄 49 pages HTML à auditer
+
+
+======================================================================
+  RÉSULTATS PAR PAGE
+======================================================================
+
+✅ index.html
+   Title: "Centre Médical Levallois-Perret (92300) | Secteur 1"
+   ℹ️ Schemas: MedicalClinic, FAQPage, BreadcrumbList
+
+✅ pages/acces-horaires.html
+   Title: "Accès & Horaires | Centre Médical Paris-Levallois"
+   ℹ️ Schemas: MedicalBusiness, BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/contact.html
+   Title: "Contact | Centre Médical Paris-Levallois (92300)"
+   ℹ️ Schemas: ContactPage, BreadcrumbList, FAQPage
+
+✅ pages/equipe.html
+   Title: "Équipe Médicale | Centre Médical Paris-Levallois"
+   ℹ️ Schemas: MedicalOrganization, BreadcrumbList
+
+✅ pages/faq.html
+   Title: "FAQ — Questions Fréquentes | Centre Médical Paris-Levallois"
+   ℹ️ Schemas: FAQPage, BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie.html
+   Title: "Kinésithérapeute Levallois-Perret (92300) | Secteur 1"
+   ℹ️ Schemas: MedicalClinic, BreadcrumbList, FAQPage
+
+✅ pages/kinesitherapie/consultation-suivi.html
+   Title: "Consultation Suivi Kiné Levallois | Séance Rééducation"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/drainage-lymphatique.html
+   Title: "Drainage Lymphatique Levallois | Œdème, Jambes Lourdes"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/electrotherapie.html
+   Title: "Électrothérapie Kiné Levallois | TENS, Ultrasons"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/femme-enceinte.html
+   Title: "Kiné Femme Enceinte Levallois | Grossesse, Post-Partum"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/premiere-consultation.html
+   Title: "Première Consultation Kiné Levallois | Bilan Initial"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/rachis-cervical-dorsal-lombaire.html
+   Title: "Kiné Dos Levallois | Lombalgie, Cervicalgie, Sciatique"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/reeducation-membres-inferieurs.html
+   Title: "Rééducation Genou Hanche Cheville Levallois | Kiné"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/reeducation-membres-superieurs.html
+   Title: "Rééducation Épaule Bras Coude Levallois | Kiné"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/reeducation-post-operatoire.html
+   Title: "Rééducation Post-Opératoire Levallois | Kiné Chirurgie"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/renforcement-abdominal.html
+   Title: "Renforcement Abdominal Kiné Levallois | Gainage, Core"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/rhumatologie.html
+   Title: "Kiné Rhumatologie Levallois | Arthrose, Polyarthrite"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/scoliose-adolescent.html
+   Title: "Kiné Scoliose Adolescent Levallois | Rééducation Dos"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/seance-sans-ordonnance.html
+   Title: "Kiné Sans Ordonnance Levallois | Accès Direct 2025"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/traumatisme-adolescent.html
+   Title: "Kiné Sport Adolescent Levallois | Entorse, Fracture Jeune"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/kinesitherapie/traumatisme-adulte.html
+   Title: "Kiné Traumatologie Levallois | Entorse, Fracture, Luxation"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+🟡 pages/landing/google-ads.html
+   Title: "Ophtalmologue Levallois-Perret | RDV en Ligne"
+   ⚠️ Pas de BreadcrumbList schema
+   ℹ️ Schemas: MedicalClinic
+   ℹ️ Tailwind CSS non détecté
+   ℹ️ Pas de meta keywords
+
+✅ pages/le-centre.html
+   Title: "Le Centre | Centre Médical Paris-Levallois | Secteur 1"
+   ℹ️ Schemas: MedicalBusiness, BreadcrumbList, FAQPage
+   ℹ️ Tailwind CSS non détecté
+
+✅ pages/medecine-generale.html
+   Title: "Médecin Généraliste Levallois-Perret (92300) | Secteur 1"
+   ℹ️ Schemas: MedicalClinic, BreadcrumbList, FAQPage
+
+✅ pages/medecine-generale/consultation.html
+   Title: "Consultation Médecin Généraliste Levallois | RDV Rapide"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/medecine-generale/urgence.html
+   Title: "Médecin Urgence Levallois | Consultation Rapide"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/mentions-legales.html
+   Title: "Mentions Légales | Centre Médical Paris-Levallois"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/ophtalmologie.html
+   Title: "Ophtalmologue Levallois-Perret (92300) | Secteur 1"
+   ℹ️ Schemas: MedicalClinic, BreadcrumbList, FAQPage
+
+✅ pages/ophtalmologie/champ-visuel-humphrey.html
+   Title: "Champ Visuel Humphrey Levallois-Perret | Secteur 1"
+   ℹ️ Schemas: BreadcrumbList, MedicalProcedure, FAQPage
+
+✅ pages/ophtalmologie/consultation-suivi.html
+   Title: "Suivi Ophtalmo Levallois-Perret | Glaucome, DMLA"
+   ℹ️ Schemas: BreadcrumbList, MedicalProcedure, FAQPage
+
+✅ pages/ophtalmologie/premiere-consultation-enfant.html
+   Title: "Ophtalmologue Enfant Levallois-Perret | Secteur 1"
+   ℹ️ Schemas: BreadcrumbList, MedicalProcedure, FAQPage
+
+✅ pages/ophtalmologie/premiere-consultation.html
+   Title: "1ère Consultation Ophtalmo Levallois | Bilan Vue"
+   ℹ️ Schemas: BreadcrumbList, MedicalProcedure, FAQPage
+
+✅ pages/ophtalmologie/renouvellement-lunettes-lentilles.html
+   Title: "Renouvellement Lunettes Lentilles Levallois | Secteur 1"
+   ℹ️ Schemas: BreadcrumbList, MedicalProcedure, FAQPage
+
+✅ pages/ophtalmologie/urgence.html
+   Title: "Urgence Ophtalmo Levallois | Œil Rouge, Baisse Vision"
+   ℹ️ Schemas: BreadcrumbList, MedicalProcedure, FAQPage
+
+✅ pages/politique-confidentialite.html
+   Title: "Politique de Confidentialité | Centre Médical Paris-Levalloi"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/politique-cookies.html
+   Title: "Politique Cookies | Centre Médical Paris-Levallois"
+   ℹ️ Schemas: BreadcrumbList
+   ℹ️ Pas de meta keywords
+
+✅ pages/soins-infirmiers.html
+   Title: "Soins Infirmiers Levallois-Perret (92300) | Secteur 1"
+   ℹ️ Schemas: MedicalClinic, BreadcrumbList, FAQPage
+
+✅ pages/soins-infirmiers/bilan-prevention.html
+   Title: "Bilan Prévention Levallois | 18-25, 45-50, 60-75 Ans"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/bilan-sanguin-ecbu.html
+   Title: "Prise de Sang Levallois | Bilan Sanguin, ECBU | Infirmier"
+   ℹ️ Schemas: MedicalProcedure, BreadcrumbList
+
+✅ pages/soins-infirmiers/injection.html
+   Title: "Injection Infirmier Levallois | IM, SC, IV | Sur Ordonnance"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/pansement-post-chirurgical.html
+   Title: "Pansement Post-Chirurgical Levallois | Suivi Opération"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/pansement-simple.html
+   Title: "Pansement Infirmier Levallois | Soins Plaie, Cicatrisation"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/retrait-fils-agrafes.html
+   Title: "Retrait Fils de Suture Levallois | Ablation Points, Agrafes"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/surveillance-constantes.html
+   Title: "Surveillance Constantes Levallois | Tension, Glycémie"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/test-antigenique.html
+   Title: "Test Antigénique Levallois | COVID, Grippe | Résultat 15 min"
+   ℹ️ Schemas: BreadcrumbList
+
+✅ pages/soins-infirmiers/vaccination-adulte.html
+   Title: "Vaccination Adulte Levallois | Grippe, COVID, Rappels DTP"
+   ℹ️ Schemas: MedicalProcedure, BreadcrumbList, FAQPage
+
+✅ pages/soins-infirmiers/vaccination-pediatrique.html
+   Title: "Vaccination Enfant Levallois | Vaccins Obligatoires 2025"
+   ℹ️ Schemas: MedicalProcedure, BreadcrumbList
+
+✅ pages/tarifs.html
+   Title: "Tarifs & Remboursements | Centre Médical Levallois"
+   ℹ️ Schemas: MedicalClinic, BreadcrumbList, FAQPage
+   ℹ️ Pas de meta keywords
+
+✅ pages/urgences.html
+   Title: "Urgences Médicales Levallois | Que Faire, Qui Appeler"
+   ℹ️ Schemas: BreadcrumbList, FAQPage
+
+
+======================================================================
+  VÉRIFICATIONS CROSS-PAGES
+======================================================================
+
+--- Titles dupliqués ---
+  ✅ Aucun title dupliqué
+
+--- Descriptions dupliquées ---
+  ✅ Aucune description dupliquée
+
+--- Canonical URLs ---
+  ✅ Toutes les canonical URLs sont cohérentes
+
+
+======================================================================
+  ROBOTS.TXT & SITEMAP.XML
+======================================================================
+
+--- robots.txt ---
+  ℹ️ robots.txt présent (601 chars)
+
+--- sitemap.xml ---
+  ℹ️ sitemap.xml: 49 URLs
+
+--- Couverture sitemap ---
+  ✅ Toutes les pages sont dans le sitemap
+
+
+======================================================================
+  RÉSUMÉ DE L'AUDIT
+======================================================================
+
+  📄 Pages auditées:     49
+  🔴 Problèmes critiques: 0
+  🟡 Avertissements:      1
+  ℹ️  Informations:        75
+
+  📋 Top 10 pages avec le plus de problèmes:
+     pages/landing/google-ads.html: 0 critiques, 1 avertissements
+
+======================================================================
+  FIN DE L'AUDIT
+======================================================================

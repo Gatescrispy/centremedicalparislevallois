@@ -11,6 +11,16 @@
         }
     </style>
 
+    <!-- Consent Mode V2 — defaults avant GTM -->
+    <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{
+        'analytics_storage':'granted','ad_storage':'granted',
+        'ad_user_data':'granted','ad_personalization':'granted',
+        'functionality_storage':'granted','security_storage':'granted',
+        'wait_for_update':2000
+    });
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,22 +28,12 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MQ2KK9XS');</script>
 
-    <!-- Google tag (gtag.js) - GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHP0ZF8ZSF"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XHP0ZF8ZSF');
-    gtag('config', 'AW-11456521545');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO - Intention informationnelle -->
     <title>Équipe Médicale | Centre Médical Paris-Levallois</title>
-    <meta name="description" content="Découvrez l'équipe médicale du Centre Médical Paris-Levallois : ophtalmologues, orthoptistes, médecins généralistes, kinésithérapeutes et infirmiers. Professionnels de santé secteur 1.">
+    <meta name="description" content="Équipe médicale du Centre Médical Paris-Levallois : ophtalmologue, médecin généraliste, kinésithérapeute, infirmier. Secteur 1.">
     <meta name="keywords" content="équipe médicale Levallois, médecins centre santé 92300, ophtalmologue Levallois, kinésithérapeute Levallois, infirmière Levallois">
     <meta name="robots" content="index, follow">
     
@@ -49,28 +49,11 @@
     
     <!-- Schema.org - MedicalOrganization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MedicalOrganization",
-        "name": "Centre Médical Paris-Levallois",
-        "url": "https://www.centremedicalparislevallois.fr",
-        "member": [
-            {
-                "@type": "Physician",
-                "name": "Dr. Ophtalmologue",
-                "medicalSpecialty": "Ophthalmology",
-                "worksFor": {
-                    "@type": "MedicalClinic",
-                    "name": "Centre Médical Paris-Levallois"
+    {"@context":"https://schema.org","@type":"MedicalOrganization","name":"Centre Médical Paris-Levallois","url":"https://www.centremedicalparislevallois.fr","member": [
+            {"@type":"Physician","name":"Dr. Ophtalmologue","medicalSpecialty":"Ophthalmology","worksFor": {"@type":"MedicalClinic","name":"Centre Médical Paris-Levallois"
                 }
             },
-            {
-                "@type": "Physician",
-                "name": "Dr. Médecin Généraliste",
-                "medicalSpecialty": "GeneralPractice",
-                "worksFor": {
-                    "@type": "MedicalClinic",
-                    "name": "Centre Médical Paris-Levallois"
+            {"@type":"Physician","name":"Dr. Médecin Généraliste","medicalSpecialty":"GeneralPractice","worksFor": {"@type":"MedicalClinic","name":"Centre Médical Paris-Levallois"
                 }
             }
         ]
@@ -79,21 +62,10 @@
 
     <!-- Schema.org - BreadcrumbList -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Accueil",
-                "item": "https://www.centremedicalparislevallois.fr/"
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement": [
+            {"@type":"ListItem","position": 1,"name":"Accueil","item":"https://www.centremedicalparislevallois.fr/"
             },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Notre Équipe",
-                "item": "https://www.centremedicalparislevallois.fr/pages/equipe.html"
+            {"@type":"ListItem","position": 2,"name":"Notre Équipe","item":"https://www.centremedicalparislevallois.fr/pages/equipe.html"
             }
         ]
     }
@@ -155,6 +127,8 @@
             margin: 0 auto 1.5rem;
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/cm-consent-banner.css">
+    <script src="../assets/js/cm-consent-v2.js" defer></script>
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Google Tag Manager (noscript) -->
@@ -403,17 +377,25 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script>
-        fetch('../components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-        fetch('../components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
+        <script>
+        async function loadComponent(id, path) {
+            try {
+                const r = await fetch(path);
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                document.getElementById(id).innerHTML = await r.text();
+            } catch (e) { console.error('Erreur chargement composant:', e); }
+        }
+        document.addEventListener('DOMContentLoaded', async function() {
+            var v = '?v=' + Date.now();
+            await loadComponent('header-placeholder', '../components/header.html' + v);
+            await loadComponent('footer-placeholder', '../components/footer.html' + v);
+            setTimeout(function() {
+                var btn = document.getElementById('mobile-menu-button');
+                var menu = document.getElementById('mobile-menu');
+                if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+            }, 100);
+        });
     </script>
+    <script src="../assets/js/cm-ads-tracking.js"></script>
 </body>
 </html>

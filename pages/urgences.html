@@ -11,6 +11,16 @@
         }
     </style>
 
+    <!-- Consent Mode V2 — defaults avant GTM -->
+    <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{
+        'analytics_storage':'granted','ad_storage':'granted',
+        'ad_user_data':'granted','ad_personalization':'granted',
+        'functionality_storage':'granted','security_storage':'granted',
+        'wait_for_update':2000
+    });
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,28 +28,18 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MQ2KK9XS');</script>
 
-    <!-- Google tag (gtag.js) - GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHP0ZF8ZSF"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XHP0ZF8ZSF');
-    gtag('config', 'AW-11456521545');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO - Intention informationnelle urgences -->
-    <title>Urgences Médicales | Centre Médical Paris-Levallois | Numéros utiles</title>
-    <meta name="description" content="Urgences médicales à Levallois-Perret : SAMU 15, pompiers 18, urgences 112. Notre centre propose des créneaux urgence. Hôpitaux proches : Franco-Britannique, Beaujon.">
-    <meta name="keywords" content="urgences médicales Levallois, médecin urgence 92300, SAMU Levallois-Perret, hôpital urgences proche">
+    <title>Urgences Médicales Levallois | Que Faire, Qui Appeler</title>
+    <meta name="description" content="Urgence médicale à Levallois-Perret ? Numéros d'urgence (15, 18, 112), hôpitaux proches, gestes de premiers secours. Guide complet.">
+    <meta name="keywords" content="urgence médicale Levallois-Perret, numéro urgence 15 18 112 114, médecin urgence sans rendez-vous 92, hôpital urgences Levallois, alternatives urgences hospitalières, SOS médecins 92, premiers secours">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Urgences Médicales | Centre Médical Paris-Levallois">
-    <meta property="og:description" content="Numéros d'urgence et informations pour les situations médicales urgentes à Levallois-Perret.">
+    <meta property="og:title" content="Urgences Médicales Levallois-Perret : Que Faire, Qui Appeler ?">
+    <meta property="og:description" content="Guide complet : arbre décisionnel, numéros d'urgence, alternatives aux urgences hospitalières, hôpitaux proches, gestes de premiers secours. Créneaux urgence sur Doctolib.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.centremedicalparislevallois.fr/pages/urgences.html">
     <meta property="og:locale" content="fr_FR">
@@ -49,21 +49,10 @@
     
     <!-- Schema.org - BreadcrumbList -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Accueil",
-                "item": "https://www.centremedicalparislevallois.fr/"
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement": [
+            {"@type":"ListItem","position": 1,"name":"Accueil","item":"https://www.centremedicalparislevallois.fr/"
             },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Urgences",
-                "item": "https://www.centremedicalparislevallois.fr/pages/urgences.html"
+            {"@type":"ListItem","position": 2,"name":"Urgences","item":"https://www.centremedicalparislevallois.fr/pages/urgences.html"
             }
         ]
     }
@@ -71,26 +60,15 @@
 
     <!-- Schema.org - FAQPage -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Quel numéro appeler en cas d'urgence médicale ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "En cas d'urgence vitale, appelez le SAMU au 15 ou le numéro européen 112. Pour les pompiers (secours), composez le 18. Pour les urgences moins graves, contactez SOS Médecins au 3624."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Le Centre Médical Paris-Levallois reçoit-il les urgences ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Le centre propose des créneaux 'urgence' sur Doctolib pour les consultations non programmées en médecine générale et ophtalmologie. Pour les urgences vitales, appelez le 15."
-                }
-            }
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity": [
+            {"@type":"Question","name":"Quel numéro appeler en cas d'urgence médicale ?","acceptedAnswer": {"@type":"Answer","text":"En cas d'urgence vitale (perte de conscience, douleur thoracique, AVC, hémorragie), appelez le SAMU au 15 ou le numéro européen 112. Pour les pompiers (accident, incendie), composez le 18. Pour les personnes sourdes ou malentendantes, envoyez un SMS au 114. Pour les urgences non vitales, contactez SOS Médecins au 3624."}},
+            {"@type":"Question","name":"Quelle est la différence entre une urgence vitale et non vitale ?","acceptedAnswer": {"@type":"Answer","text":"Une urgence vitale met en jeu le pronostic vital : perte de conscience, arrêt respiratoire, douleur thoracique intense, AVC (paralysie, troubles de la parole), hémorragie abondante. Appelez le 15 immédiatement. Une urgence non vitale (fièvre élevée, douleur aiguë, infection, plaie superficielle) nécessite une consultation rapide mais peut être prise en charge par un médecin de ville ou un centre de santé comme le nôtre."}},
+            {"@type":"Question","name":"Le Centre Médical Paris-Levallois reçoit-il les urgences ?","acceptedAnswer": {"@type":"Answer","text":"Oui, notre centre propose des créneaux 'Urgence' sur Doctolib pour les consultations non programmées en médecine générale et ophtalmologie. Ces créneaux sont destinés aux urgences non vitales : fièvre, infection, douleur aiguë, corps étranger dans l'œil, baisse brutale de vision. Tarifs secteur 1, tiers payant intégral. Pour les urgences vitales, appelez le 15."}},
+            {"@type":"Question","name":"Quand appeler le 15 plutôt que le 18 ou le 112 ?","acceptedAnswer": {"@type":"Answer","text":"Appelez le 15 (SAMU) pour toute urgence médicale : malaise, douleur thoracique, difficulté respiratoire, intoxication, AVC. Appelez le 18 (pompiers) pour les accidents, incendies, noyades, personnes coincées. Le 112 est le numéro européen qui redirige vers le service adapté, utilisable dans toute l'Union Européenne. En cas de doute, appelez le 15 : un médecin régulateur évaluera la situation."}},
+            {"@type":"Question","name":"Que faire en attendant les secours ?","acceptedAnswer": {"@type":"Answer","text":"Restez calme et ne raccrochez pas. Si la personne est inconsciente mais respire, placez-la en position latérale de sécurité (PLS). En cas d'arrêt cardiaque, pratiquez un massage cardiaque (100-120 compressions/min au centre de la poitrine). Comprimez les hémorragies avec un linge propre. Ne déplacez pas une personne traumatisée. Notez l'heure de début des symptômes (crucial pour un AVC)."}},
+            {"@type":"Question","name":"Comment préparer un appel aux urgences ?","acceptedAnswer": {"@type":"Answer","text":"Préparez les informations suivantes : votre nom et numéro de téléphone, l'adresse exacte (étage, code, digicode), le nombre de personnes concernées, les symptômes observés (conscience, respiration, douleur), l'heure de début des symptômes, les antécédents médicaux et traitements en cours si connus. Parlez calmement et suivez les instructions du médecin régulateur."}},
+            {"@type":"Question","name":"Quels sont les hôpitaux avec urgences proches de Levallois-Perret ?","acceptedAnswer": {"@type":"Answer","text":"L'Hôpital Franco-Britannique (4 rue Kléber, Levallois-Perret, tél. 01 46 39 22 22) dispose d'urgences 24h/24 en secteur 1. L'Hôpital Beaujon AP-HP (100 bd du Général Leclerc, Clichy, tél. 01 40 87 50 00) est un CHU avec tous services d'urgence. L'Hôpital Américain de Paris (63 bd Victor Hugo, Neuilly, tél. 01 46 41 25 25) est un établissement privé avec urgences 24h/24."}},
+            {"@type":"Question","name":"Quelles alternatives aux urgences hospitalières pour une consultation rapide ?","acceptedAnswer": {"@type":"Answer","text":"Pour les urgences non vitales, plusieurs alternatives existent : 1) Notre centre médical avec créneaux 'Urgence' sur Doctolib (médecine générale et ophtalmologie). 2) SOS Médecins (3624) pour une visite à domicile 24h/24. 3) Les maisons médicales de garde le soir et le week-end. 4) La téléconsultation pour un avis médical rapide. 5) Votre médecin traitant qui réserve souvent des créneaux urgents dans la journée."}}
         ]
     }
     </script>
@@ -105,52 +83,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        .cm-primary { color: #00a7de; }
-        .cm-primary-bg { background-color: #00a7de; }
         .cm-text { color: #252525; }
-        
         .emergency-card {
             background: white;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             overflow: hidden;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .emergency-card:hover {
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
-        
         .emergency-number {
             font-size: 2.5rem;
             font-weight: 800;
             letter-spacing: 2px;
         }
-        
-        .urgence-vital {
-            background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
-        }
-        .urgence-important {
-            background: linear-gradient(135deg, #F39C12 0%, #D68910 100%);
-        }
-        .urgence-info {
-            background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);
-        }
-        
         .hospital-card {
             background: white;
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: box-shadow 0.2s;
         }
-        
-        .alert-banner {
-            background: linear-gradient(90deg, #E74C3C 0%, #C0392B 100%);
-            color: white;
-            padding: 16px;
-            text-align: center;
-            font-weight: 600;
+        .hospital-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/cm-consent-banner.css">
+    <script src="../assets/js/cm-consent-v2.js" defer></script>
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Google Tag Manager (noscript) -->
@@ -161,7 +123,7 @@
     <div id="header-placeholder"><div style="height:80px"></div></div>
 
     <!-- Alert Banner -->
-    <div class="alert-banner">
+    <div style="background-color:#dc2626;color:white;padding:14px 16px;text-align:center;font-weight:600;">
         <i class="fas fa-exclamation-triangle mr-2"></i>
         En cas d'urgence vitale, appelez immédiatement le <strong>15</strong> (SAMU) ou le <strong>112</strong>
     </div>
@@ -169,322 +131,595 @@
     <!-- Breadcrumb -->
     <nav class="bg-white border-b" aria-label="Breadcrumb">
         <div class="max-w-6xl mx-auto px-4 py-3">
-            <ol class="flex items-center space-x-2 text-sm" style="list-style: none; margin: 0; padding: 0;">
-                <li><a href="../index.html" class="text-gray-500 hover:text-[#00a7de]">Accueil</a></li>
+            <ol class="flex items-center space-x-2 text-sm" style="list-style:none;margin:0;padding:0;">
+                <li><a href="../index.html" class="text-gray-500" style="text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#6b7280'">Accueil</a></li>
                 <li><span class="text-gray-400">/</span></li>
-                <li class="text-[#00a7de] font-medium">Urgences</li>
+                <li class="font-medium" style="color:#00a7de;">Urgences</li>
             </ol>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-red-600 to-red-800 text-white py-12 md:py-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4">
-                <i class="fas fa-ambulance mr-3"></i>
-                Urgences Médicales
-            </h1>
-            <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-                Numéros d'urgence, hôpitaux proches et consultations urgentes à Levallois-Perret
-            </p>
+    <section class="py-12 md:py-16" style="background-color:#00a7de;">
+        <div class="max-w-6xl mx-auto px-4 text-center text-white">
+            <div class="w-16 h-16 rounded-full  flex items-center justify-center mx-auto mb-4" style="background-color:rgba(255,255,255,0.2)">
+                <i class="fas fa-ambulance text-3xl"></i>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Urgences Médicales</h1>
+            <p class="text-lg opacity-90 max-w-2xl mx-auto mb-2">Numéros d'urgence, hôpitaux proches et consultations urgentes à Levallois-Perret</p>
+            <div class="flex flex-wrap gap-3 justify-center mt-6">
+                <span class="px-4 py-2 rounded-full text-sm" style="background-color:rgba(255,255,255,0.2)"><i class="fas fa-phone mr-2"></i>SAMU 15</span>
+                <span class="px-4 py-2 rounded-full text-sm" style="background-color:rgba(255,255,255,0.2)"><i class="fas fa-fire-extinguisher mr-2"></i>Pompiers 18</span>
+                <span class="px-4 py-2 rounded-full text-sm" style="background-color:rgba(255,255,255,0.2)"><i class="fas fa-globe-europe mr-2"></i>Européen 112</span>
+            </div>
         </div>
     </section>
 
     <!-- Main Content -->
     <main class="max-w-6xl mx-auto px-4 py-12">
 
-        <!-- Numéros d'urgence -->
-        <section class="mb-12">
+        <!-- ========================================== -->
+        <!-- RÉPONSE IMMÉDIATE (pyramide inversée) -->
+        <!-- ========================================== -->
+        <section class="mb-10">
+            <div style="background-color:#fef2f2;border-left:4px solid #dc2626;padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;">
+                <h2 class="font-bold text-lg mb-2" style="color:#dc2626;"><i class="fas fa-exclamation-triangle mr-2"></i>Urgence vitale ? Appelez immédiatement</h2>
+                <p style="color:#991b1b;" class="mb-3">Perte de conscience, douleur thoracique, AVC (paralysie, troubles de la parole), hémorragie abondante, détresse respiratoire :</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="tel:15" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-bold text-white" style="background-color:#dc2626;text-decoration:none;" onmouseover="this.style.backgroundColor='#b91c1c'" onmouseout="this.style.backgroundColor='#dc2626'"><i class="fas fa-phone"></i> 15 (SAMU)</a>
+                    <a href="tel:112" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-bold text-white" style="background-color:#dc2626;text-decoration:none;" onmouseover="this.style.backgroundColor='#b91c1c'" onmouseout="this.style.backgroundColor='#dc2626'"><i class="fas fa-phone"></i> 112 (Européen)</a>
+                    <a href="tel:18" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-bold text-white" style="background-color:#ea580c;text-decoration:none;" onmouseover="this.style.backgroundColor='#c2410c'" onmouseout="this.style.backgroundColor='#ea580c'"><i class="fas fa-phone"></i> 18 (Pompiers)</a>
+                </div>
+            </div>
+            <div class="mt-4 bg-blue-50 border-l-4 p-4 rounded-r-xl text-sm text-gray-700" style="border-color:#00a7de;">
+                <p><i class="fas fa-info-circle mr-2" style="color:#00a7de;"></i><strong>Urgence non vitale ?</strong> (fièvre, douleur aiguë, infection, plaie) → Réservez un <strong>créneau"Urgence"</strong> au Centre Médical Paris-Levallois sur <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" target="_blank" rel="noopener" style="color:#00a7de;font-weight:600;">Doctolib</a>. Secteur 1, tiers payant intégral, vous ne payez rien.</p>
+            </div>
+        </section>
+
+        <!-- Sommaire -->
+        <nav class="mb-12 bg-white rounded-xl p-6 shadow-lg">
+            <h2 class="font-bold cm-text mb-3">Sur cette page</h2>
+            <ul class="grid md:grid-cols-2 gap-2 text-sm">
+                <li><a href="#arbre-decisionnel" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-sitemap mr-2"></i>Que faire selon votre situation ?</a></li>
+                <li><a href="#numeros-urgence" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-phone-volume mr-2"></i>Numéros d'urgence</a></li>
+                <li><a href="#alternatives-urgences" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-clinic-medical mr-2"></i>Alternatives aux urgences</a></li>
+                <li><a href="#hopitaux-proches" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-hospital mr-2"></i>Hôpitaux proches</a></li>
+                <li><a href="#comment-reagir" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-hands-helping mr-2"></i>Comment réagir en attendant</a></li>
+                <li><a href="#preparer-appel" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-clipboard-list mr-2"></i>Préparer votre appel</a></li>
+                <li><a href="#faq-urgences" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-comments mr-2"></i>Questions fréquentes</a></li>
+                <li><a href="#sources-officielles" style="color:#00a7de;text-decoration:none;" class="font-medium"><i class="fas fa-link mr-2"></i>Sources officielles</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================================== -->
+        <!-- ARBRE DÉCISIONNEL (SERP-critical) -->
+        <!-- ========================================== -->
+        <section id="arbre-decisionnel" class="mb-16">
+            <h2 class="text-2xl font-bold cm-text mb-6 flex items-center gap-3">
+                <i class="fas fa-sitemap" style="color:#00a7de;"></i>
+                Que faire selon votre situation ?
+            </h2>
+
+            <div class="space-y-4">
+                <!-- Urgence vitale -->
+                <div class="emergency-card p-6" style="border-left:4px solid #dc2626;">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center" style="background-color:#fef2f2;">
+                            <i class="fas fa-exclamation-triangle text-xl" style="color:#dc2626;"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1" style="color:#dc2626;">Urgence vitale</h3>
+                            <p class="text-gray-600 text-sm mb-2">Perte de conscience, arrêt respiratoire, douleur thoracique intense, AVC, hémorragie abondante, convulsions prolongées</p>
+                            <p class="font-bold" style="color:#dc2626;"><i class="fas fa-arrow-right mr-2"></i>Appelez le <a href="tel:15" style="color:#dc2626;">15 (SAMU)</a> ou le <a href="tel:112" style="color:#dc2626;">112</a> immédiatement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accident / incendie -->
+                <div class="emergency-card p-6" style="border-left:4px solid #ea580c;">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center" style="background-color:#fff7ed;">
+                            <i class="fas fa-fire text-xl" style="color:#ea580c;"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1" style="color:#ea580c;">Accident, incendie, noyade</h3>
+                            <p class="text-gray-600 text-sm mb-2">Accident de la route, incendie, personne coincée, électrocution, effondrement</p>
+                            <p class="font-bold" style="color:#ea580c;"><i class="fas fa-arrow-right mr-2"></i>Appelez le <a href="tel:18" style="color:#ea580c;">18 (Pompiers)</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urgence non vitale -->
+                <div class="emergency-card p-6" style="border-left:4px solid #00a7de;">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center" style="background-color:#e0f2fe;">
+                            <i class="fas fa-stethoscope text-xl" style="color:#00a7de;"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1" style="color:#00a7de;">Urgence non vitale (consultation rapide)</h3>
+                            <p class="text-gray-600 text-sm mb-2">Fièvre élevée, infection (angine, otite, cystite), douleur aiguë, plaie superficielle, gastro-entérite, allergie cutanée</p>
+                            <p class="font-bold" style="color:#00a7de;"><i class="fas fa-arrow-right mr-2"></i><a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" target="_blank" rel="noopener" style="color:#00a7de;">RDV"Urgence" au centre</a> ou appelez <a href="tel:3624" style="color:#00a7de;">SOS Médecins (3624)</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urgence ophtalmo -->
+                <div class="emergency-card p-6" style="border-left:4px solid #7c3aed;">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center" style="background-color:#f5f3ff;">
+                            <i class="fas fa-eye text-xl" style="color:#7c3aed;"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1" style="color:#7c3aed;">Urgence ophtalmologique</h3>
+                            <p class="text-gray-600 text-sm mb-2">Corps étranger dans l'œil, baisse brutale de vision, œil rouge douloureux, traumatisme oculaire</p>
+                            <p class="font-bold" style="color:#7c3aed;"><i class="fas fa-arrow-right mr-2"></i><a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" target="_blank" rel="noopener" style="color:#7c3aed;">RDV"Urgence ophtalmo" au centre</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- En cas de doute -->
+                <div class="emergency-card p-6" style="border-left:4px solid #6b7280;">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center bg-gray-100">
+                            <i class="fas fa-question text-xl text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1 text-gray-700">En cas de doute</h3>
+                            <p class="text-gray-600 text-sm mb-2">Vous ne savez pas si c'est grave ? Un médecin régulateur du SAMU évaluera la situation et vous orientera.</p>
+                            <p class="font-bold text-gray-700"><i class="fas fa-arrow-right mr-2"></i>Appelez le <a href="tel:15" style="color:#dc2626;font-weight:700;">15</a> — l'appel est gratuit, 24h/24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- NUMÉROS D'URGENCE -->
+        <!-- ========================================== -->
+        <section id="numeros-urgence" class="mb-16">
             <h2 class="text-2xl font-bold cm-text mb-6 text-center">
-                <i class="fas fa-phone-volume text-red-600 mr-2"></i>
+                <i class="fas fa-phone-volume mr-2" style="color:#dc2626;"></i>
                 Numéros d'urgence
             </h2>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- SAMU -->
-                <div class="emergency-card urgence-vital text-white text-center p-8">
-                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                        <i class="fas fa-heart-pulse text-4xl"></i>
+            <div class="grid md:grid-cols-4 gap-5">
+                <div class="emergency-card text-center p-6" style="border-top:4px solid #dc2626;">
+                    <div class="w-14 h-14 mx-auto mb-3 rounded-full flex items-center justify-center" style="background-color:#fef2f2;">
+                        <i class="fas fa-heart-pulse text-2xl" style="color:#dc2626;"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">SAMU</h3>
-                    <a href="tel:15" class="emergency-number block mb-2 hover:underline">15</a>
-                    <p class="opacity-90 text-sm">
-                        Urgences médicales vitales<br>
-                        Disponible 24h/24
-                    </p>
+                    <h3 class="font-bold cm-text mb-1">SAMU</h3>
+                    <a href="tel:15" class="emergency-number block mb-1" style="color:#dc2626;text-decoration:none;">15</a>
+                    <p class="text-gray-500 text-xs">Urgences médicales vitales<br>Gratuit, 24h/24</p>
                 </div>
-
-                <!-- Pompiers -->
-                <div class="emergency-card urgence-vital text-white text-center p-8">
-                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                        <i class="fas fa-fire-extinguisher text-4xl"></i>
+                <div class="emergency-card text-center p-6" style="border-top:4px solid #ea580c;">
+                    <div class="w-14 h-14 mx-auto mb-3 rounded-full flex items-center justify-center" style="background-color:#fff7ed;">
+                        <i class="fas fa-fire-extinguisher text-2xl" style="color:#ea580c;"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Pompiers</h3>
-                    <a href="tel:18" class="emergency-number block mb-2 hover:underline">18</a>
-                    <p class="opacity-90 text-sm">
-                        Secours, incendie, accident<br>
-                        Disponible 24h/24
-                    </p>
+                    <h3 class="font-bold cm-text mb-1">Pompiers</h3>
+                    <a href="tel:18" class="emergency-number block mb-1" style="color:#ea580c;text-decoration:none;">18</a>
+                    <p class="text-gray-500 text-xs">Secours, incendie, accident<br>Gratuit, 24h/24</p>
                 </div>
-
-                <!-- Numéro européen -->
-                <div class="emergency-card urgence-vital text-white text-center p-8">
-                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                        <i class="fas fa-globe-europe text-4xl"></i>
+                <div class="emergency-card text-center p-6" style="border-top:4px solid #00a7de;">
+                    <div class="w-14 h-14 mx-auto mb-3 rounded-full flex items-center justify-center" style="background-color:#e0f2fe;">
+                        <i class="fas fa-globe-europe text-2xl" style="color:#00a7de;"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Urgences Europe</h3>
-                    <a href="tel:112" class="emergency-number block mb-2 hover:underline">112</a>
-                    <p class="opacity-90 text-sm">
-                        Numéro unique européen<br>
-                        Tous types d'urgence
-                    </p>
+                    <h3 class="font-bold cm-text mb-1">Européen</h3>
+                    <a href="tel:112" class="emergency-number block mb-1" style="color:#00a7de;text-decoration:none;">112</a>
+                    <p class="text-gray-500 text-xs">Tous types d'urgence<br>Gratuit, multilingue</p>
+                </div>
+                <div class="emergency-card text-center p-6" style="border-top:4px solid #6366f1;">
+                    <div class="w-14 h-14 mx-auto mb-3 rounded-full flex items-center justify-center" style="background-color:#eef2ff;">
+                        <i class="fas fa-deaf text-2xl" style="color:#6366f1;"></i>
+                    </div>
+                    <h3 class="font-bold cm-text mb-1">Urgence SMS</h3>
+                    <a href="sms:114" class="emergency-number block mb-1" style="color:#6366f1;text-decoration:none;">114</a>
+                    <p class="text-gray-500 text-xs">Sourds / malentendants<br>Par SMS, gratuit 24h/24</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Autres numéros utiles -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold cm-text mb-6">
-                <i class="fas fa-list cm-primary mr-2"></i>
-                Autres numéros utiles
-            </h2>
-
+            <h3 class="text-xl font-bold cm-text mt-10 mb-4"><i class="fas fa-list mr-2" style="color:#00a7de;"></i>Autres numéros utiles</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- SOS Médecins -->
-                <div class="emergency-card urgence-important text-white p-6 text-center">
-                    <i class="fas fa-user-doctor text-3xl mb-3"></i>
-                    <h3 class="font-bold mb-1">SOS Médecins</h3>
-                    <a href="tel:3624" class="text-2xl font-bold block hover:underline">3624</a>
-                    <p class="text-sm opacity-90 mt-1">Médecin à domicile</p>
+                <div class="emergency-card p-5 text-center" style="border-top:3px solid #00a7de;">
+                    <i class="fas fa-user-doctor text-2xl mb-2" style="color:#00a7de;"></i>
+                    <h4 class="font-bold cm-text mb-1 text-sm">SOS Médecins</h4>
+                    <a href="tel:3624" class="text-2xl font-bold block" style="color:#00a7de;text-decoration:none;">3624</a>
+                    <p class="text-xs text-gray-500 mt-1">Médecin à domicile 24h/24</p>
                 </div>
-
-                <!-- Centre antipoison -->
-                <div class="emergency-card urgence-info text-white p-6 text-center">
-                    <i class="fas fa-skull-crossbones text-3xl mb-3"></i>
-                    <h3 class="font-bold mb-1">Centre antipoison</h3>
-                    <a href="tel:0145395959" class="text-xl font-bold block hover:underline">01 45 39 59 59</a>
-                    <p class="text-sm opacity-90 mt-1">Paris (24h/24)</p>
+                <div class="emergency-card p-5 text-center" style="border-top:3px solid #00a7de;">
+                    <i class="fas fa-skull-crossbones text-2xl mb-2" style="color:#00a7de;"></i>
+                    <h4 class="font-bold cm-text mb-1 text-sm">Centre antipoison</h4>
+                    <a href="tel:0145395959" class="text-lg font-bold block" style="color:#00a7de;text-decoration:none;">01 45 39 59 59</a>
+                    <p class="text-xs text-gray-500 mt-1">Paris, 24h/24</p>
                 </div>
-
-                <!-- Pharmacie de garde -->
-                <div class="emergency-card urgence-info text-white p-6 text-center">
-                    <i class="fas fa-prescription-bottle-medical text-3xl mb-3"></i>
-                    <h3 class="font-bold mb-1">Pharmacie de garde</h3>
-                    <a href="tel:3237" class="text-2xl font-bold block hover:underline">3237</a>
-                    <p class="text-sm opacity-90 mt-1">0,35€/min</p>
+                <div class="emergency-card p-5 text-center" style="border-top:3px solid #00a7de;">
+                    <i class="fas fa-prescription-bottle-medical text-2xl mb-2" style="color:#00a7de;"></i>
+                    <h4 class="font-bold cm-text mb-1 text-sm">Pharmacie de garde</h4>
+                    <a href="tel:3237" class="text-2xl font-bold block" style="color:#00a7de;text-decoration:none;">3237</a>
+                    <p class="text-xs text-gray-500 mt-1">0,35 €/min</p>
                 </div>
-
-                <!-- Police/Gendarmerie -->
-                <div class="emergency-card urgence-info text-white p-6 text-center">
-                    <i class="fas fa-shield-halved text-3xl mb-3"></i>
-                    <h3 class="font-bold mb-1">Police</h3>
-                    <a href="tel:17" class="text-2xl font-bold block hover:underline">17</a>
-                    <p class="text-sm opacity-90 mt-1">Urgences policières</p>
+                <div class="emergency-card p-5 text-center" style="border-top:3px solid #00a7de;">
+                    <i class="fas fa-shield-halved text-2xl mb-2" style="color:#00a7de;"></i>
+                    <h4 class="font-bold cm-text mb-1 text-sm">Police</h4>
+                    <a href="tel:17" class="text-2xl font-bold block" style="color:#00a7de;text-decoration:none;">17</a>
+                    <p class="text-xs text-gray-500 mt-1">Urgences policières</p>
                 </div>
             </div>
         </section>
 
-        <!-- Consultations urgentes au centre -->
-        <section class="mb-12">
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold cm-text mb-4 flex items-center gap-3">
-                    <i class="fas fa-clinic-medical cm-primary"></i>
-                    Consultations urgentes au Centre Médical
-                </h2>
-                
-                <p class="text-gray-600 mb-6">
-                    Le Centre Médical Paris-Levallois propose des créneaux <strong>"Urgence"</strong> sur Doctolib 
-                    pour les consultations non programmées nécessitant une prise en charge rapide.
-                </p>
+        <!-- ========================================== -->
+        <!-- ALTERNATIVES AUX URGENCES (SERP-critical) -->
+        <!-- ========================================== -->
+        <section id="alternatives-urgences" class="mb-16">
+            <h2 class="text-2xl font-bold cm-text mb-6 flex items-center gap-3">
+                <i class="fas fa-clinic-medical" style="color:#00a7de;"></i>
+                Alternatives aux urgences hospitalières
+            </h2>
+            <p class="text-gray-600 mb-6">Pour les urgences <strong>non vitales</strong>, évitez l'attente aux urgences hospitalières. Plusieurs solutions existent à Levallois-Perret et alentours :</p>
 
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div class="bg-gray-50 rounded-lg p-4">
-                        <h3 class="font-bold mb-2 flex items-center gap-2">
-                            <i class="fas fa-stethoscope cm-primary"></i>
-                            Médecine générale - Urgence
-                        </h3>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Fièvre, infection</li>
-                            <li>• Douleur aiguë</li>
-                            <li>• Symptômes inhabituels</li>
-                            <li>• Certificat médical urgent</li>
-                        </ul>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Notre centre -->
+                <div class="emergency-card p-6" style="border:2px solid #00a7de;">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background-color:#e0f2fe;">
+                            <i class="fas fa-star" style="color:#00a7de;"></i>
+                        </div>
+                        <h3 class="font-bold cm-text">Centre Médical Paris-Levallois</h3>
                     </div>
-                    <div class="bg-gray-50 rounded-lg p-4">
-                        <h3 class="font-bold mb-2 flex items-center gap-2">
-                            <i class="fas fa-eye cm-primary"></i>
-                            Ophtalmologie - Urgence
-                        </h3>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Corps étranger dans l'œil</li>
-                            <li>• Baisse brutale de vision</li>
-                            <li>• Œil rouge douloureux</li>
-                            <li>• Traumatisme oculaire</li>
-                        </ul>
+                    <p class="text-gray-600 text-sm mb-3">Créneaux <strong>"Urgence"</strong> disponibles sur Doctolib en médecine générale et ophtalmologie. Secteur 1, <strong>tiers payant intégral</strong> (vous ne payez rien).</p>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="bg-gray-50 rounded-lg p-3">
+                            <h4 class="font-bold text-xs mb-1" style="color:#00a7de;"><i class="fas fa-stethoscope mr-1"></i>Médecine générale</h4>
+                            <ul class="text-xs text-gray-600 space-y-0.5">
+                                <li>Fièvre, infection</li>
+                                <li>Douleur aiguë</li>
+                                <li>Gastro-entérite</li>
+                                <li>Certificat urgent</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3">
+                            <h4 class="font-bold text-xs mb-1" style="color:#7c3aed;"><i class="fas fa-eye mr-1"></i>Ophtalmologie</h4>
+                            <ul class="text-xs text-gray-600 space-y-0.5">
+                                <li>Corps étranger</li>
+                                <li>Baisse brutale vision</li>
+                                <li>Œil rouge douloureux</li>
+                                <li>Traumatisme oculaire</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="text-center">
                     <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" 
                        target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 cm-primary-bg text-white px-8 py-4 rounded-full font-bold hover:bg-[#0090c0] transition shadow-lg">
-                        <i class="fas fa-calendar-check"></i>
-                        Prendre RDV Urgence sur Doctolib
+                       class="inline-flex items-center gap-2 text-white px-6 py-3 rounded-lg font-bold transition w-full justify-center"
+                       style="background-color:#00a7de;text-decoration:none;"
+                       onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                        <i class="fas fa-calendar-check"></i> Prendre RDV Urgence
                     </a>
                 </div>
 
-                <p class="text-center text-sm text-gray-500 mt-4">
-                    <i class="fas fa-info-circle mr-1"></i>
-                    Pour les urgences vitales (AVC, infarctus, hémorragie...), appelez le 15.
-                </p>
+                <!-- Autres alternatives -->
+                <div class="space-y-4">
+                    <div class="emergency-card p-5">
+                        <h3 class="font-bold cm-text mb-1 flex items-center gap-2"><i class="fas fa-user-doctor" style="color:#00a7de;"></i>SOS Médecins</h3>
+                        <p class="text-sm text-gray-600 mb-1">Visite à domicile 24h/24, 7j/7. Appelez le <a href="tel:3624" style="color:#00a7de;font-weight:600;">3624</a>.</p>
+                        <p class="text-xs text-gray-500">Idéal le soir, la nuit, le week-end quand vous ne pouvez pas vous déplacer.</p>
+                    </div>
+                    <div class="emergency-card p-5">
+                        <h3 class="font-bold cm-text mb-1 flex items-center gap-2"><i class="fas fa-house-medical" style="color:#00a7de;"></i>Maison médicale de garde</h3>
+                        <p class="text-sm text-gray-600 mb-1">Consultations urgentes sans rendez-vous, soirs et week-ends.</p>
+                        <p class="text-xs text-gray-500">Neuilly-sur-Seine : <a href="tel:0147380000" style="color:#00a7de;">01 47 38 00 00</a> — 152 av. Charles de Gaulle</p>
+                    </div>
+                    <div class="emergency-card p-5">
+                        <h3 class="font-bold cm-text mb-1 flex items-center gap-2"><i class="fas fa-laptop-medical" style="color:#00a7de;"></i>Téléconsultation</h3>
+                        <p class="text-sm text-gray-600 mb-1">Avis médical rapide depuis chez vous, remboursé par la Sécu.</p>
+                        <p class="text-xs text-gray-500">Disponible sur Doctolib, Qare, Livi — 7j/7 de 6h à minuit.</p>
+                    </div>
+                    <div class="emergency-card p-5">
+                        <h3 class="font-bold cm-text mb-1 flex items-center gap-2"><i class="fas fa-user-md" style="color:#00a7de;"></i>Médecin traitant</h3>
+                        <p class="text-sm text-gray-600 mb-1">En semaine, appelez votre médecin traitant : la plupart réservent des créneaux urgents dans la journée.</p>
+                        <p class="text-xs text-gray-500">Si indisponible, notre centre vous accueille sur Doctolib.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Hôpitaux proches -->
-        <section class="mb-12">
+        <!-- ========================================== -->
+        <!-- HÔPITAUX PROCHES -->
+        <!-- ========================================== -->
+        <section id="hopitaux-proches" class="mb-16">
             <h2 class="text-2xl font-bold cm-text mb-6">
-                <i class="fas fa-hospital cm-primary mr-2"></i>
+                <i class="fas fa-hospital mr-2" style="color:#00a7de;"></i>
                 Hôpitaux proches avec urgences
             </h2>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Hôpital Franco-Britannique -->
                 <div class="hospital-card">
                     <h3 class="font-bold text-lg mb-2">Hôpital Franco-Britannique</h3>
                     <div class="space-y-2 text-sm text-gray-600">
-                        <p><i class="fas fa-map-marker-alt cm-primary mr-2"></i>4 rue Kléber, 92300 Levallois-Perret</p>
-                        <p><i class="fas fa-phone cm-primary mr-2"></i><a href="tel:0146392222" class="hover:underline">01 46 39 22 22</a></p>
-                        <p><i class="fas fa-clock cm-primary mr-2"></i>Urgences 24h/24</p>
-                        <p><i class="fas fa-euro-sign cm-primary mr-2"></i>Secteur 1 (tarifs conventionnés)</p>
+                        <p><i class="fas fa-map-marker-alt mr-2" style="color:#00a7de;"></i>4 rue Kléber, 92300 Levallois-Perret</p>
+                        <p><i class="fas fa-phone mr-2" style="color:#00a7de;"></i><a href="tel:0146392222" class="hover:underline" style="color:#252525;">01 46 39 22 22</a></p>
+                        <p><i class="fas fa-clock mr-2" style="color:#00a7de;"></i>Urgences 24h/24</p>
+                        <p><i class="fas fa-euro-sign mr-2" style="color:#00a7de;"></i>Secteur 1 (tarifs conventionnés)</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Hôpital+Franco-Britannique+Levallois-Perret" 
-                       target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 text-sm cm-primary hover:underline mt-3">
-                        <i class="fas fa-directions"></i> Itinéraire
-                    </a>
+                    <a href="https://maps.google.com/?q=Hôpital+Franco-Britannique+Levallois-Perret" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm hover:underline mt-3" style="color:#00a7de;text-decoration:none;"><i class="fas fa-directions"></i> Itinéraire</a>
                 </div>
-
-                <!-- Hôpital Beaujon -->
                 <div class="hospital-card">
                     <h3 class="font-bold text-lg mb-2">Hôpital Beaujon (AP-HP)</h3>
                     <div class="space-y-2 text-sm text-gray-600">
-                        <p><i class="fas fa-map-marker-alt cm-primary mr-2"></i>100 bd du Général Leclerc, 92110 Clichy</p>
-                        <p><i class="fas fa-phone cm-primary mr-2"></i><a href="tel:0140875000" class="hover:underline">01 40 87 50 00</a></p>
-                        <p><i class="fas fa-clock cm-primary mr-2"></i>Urgences 24h/24</p>
-                        <p><i class="fas fa-hospital-user cm-primary mr-2"></i>CHU - Tous services</p>
+                        <p><i class="fas fa-map-marker-alt mr-2" style="color:#00a7de;"></i>100 bd du Général Leclerc, 92110 Clichy</p>
+                        <p><i class="fas fa-phone mr-2" style="color:#00a7de;"></i><a href="tel:0140875000" class="hover:underline" style="color:#252525;">01 40 87 50 00</a></p>
+                        <p><i class="fas fa-clock mr-2" style="color:#00a7de;"></i>Urgences 24h/24</p>
+                        <p><i class="fas fa-hospital-user mr-2" style="color:#00a7de;"></i>CHU — Tous services</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Hôpital+Beaujon+Clichy" 
-                       target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 text-sm cm-primary hover:underline mt-3">
-                        <i class="fas fa-directions"></i> Itinéraire
-                    </a>
+                    <a href="https://maps.google.com/?q=Hôpital+Beaujon+Clichy" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm hover:underline mt-3" style="color:#00a7de;text-decoration:none;"><i class="fas fa-directions"></i> Itinéraire</a>
                 </div>
-
-                <!-- Hôpital Américain -->
                 <div class="hospital-card">
                     <h3 class="font-bold text-lg mb-2">Hôpital Américain de Paris</h3>
                     <div class="space-y-2 text-sm text-gray-600">
-                        <p><i class="fas fa-map-marker-alt cm-primary mr-2"></i>63 bd Victor Hugo, 92200 Neuilly-sur-Seine</p>
-                        <p><i class="fas fa-phone cm-primary mr-2"></i><a href="tel:0146412525" class="hover:underline">01 46 41 25 25</a></p>
-                        <p><i class="fas fa-clock cm-primary mr-2"></i>Urgences 24h/24</p>
-                        <p><i class="fas fa-euro-sign cm-primary mr-2"></i>Établissement privé</p>
+                        <p><i class="fas fa-map-marker-alt mr-2" style="color:#00a7de;"></i>63 bd Victor Hugo, 92200 Neuilly-sur-Seine</p>
+                        <p><i class="fas fa-phone mr-2" style="color:#00a7de;"></i><a href="tel:0146412525" class="hover:underline" style="color:#252525;">01 46 41 25 25</a></p>
+                        <p><i class="fas fa-clock mr-2" style="color:#00a7de;"></i>Urgences 24h/24</p>
+                        <p><i class="fas fa-euro-sign mr-2" style="color:#00a7de;"></i>Établissement privé</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Hôpital+Américain+Neuilly" 
-                       target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 text-sm cm-primary hover:underline mt-3">
-                        <i class="fas fa-directions"></i> Itinéraire
-                    </a>
+                    <a href="https://maps.google.com/?q=Hôpital+Américain+Neuilly" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm hover:underline mt-3" style="color:#00a7de;text-decoration:none;"><i class="fas fa-directions"></i> Itinéraire</a>
                 </div>
-
-                <!-- Maison médicale de garde -->
                 <div class="hospital-card">
                     <h3 class="font-bold text-lg mb-2">Maison Médicale de Garde</h3>
                     <div class="space-y-2 text-sm text-gray-600">
-                        <p><i class="fas fa-map-marker-alt cm-primary mr-2"></i>152 av. Charles de Gaulle, 92200 Neuilly-sur-Seine</p>
-                        <p><i class="fas fa-phone cm-primary mr-2"></i><a href="tel:0147380000" class="hover:underline">01 47 38 00 00</a></p>
-                        <p><i class="fas fa-clock cm-primary mr-2"></i>Soirs, week-ends, jours fériés</p>
-                        <p><i class="fas fa-user-doctor cm-primary mr-2"></i>Médecins de garde</p>
+                        <p><i class="fas fa-map-marker-alt mr-2" style="color:#00a7de;"></i>152 av. Charles de Gaulle, 92200 Neuilly-sur-Seine</p>
+                        <p><i class="fas fa-phone mr-2" style="color:#00a7de;"></i><a href="tel:0147380000" class="hover:underline" style="color:#252525;">01 47 38 00 00</a></p>
+                        <p><i class="fas fa-clock mr-2" style="color:#00a7de;"></i>Soirs, week-ends, jours fériés</p>
+                        <p><i class="fas fa-user-doctor mr-2" style="color:#00a7de;"></i>Médecins de garde</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Maison+Médicale+Garde+Neuilly" 
-                       target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 text-sm cm-primary hover:underline mt-3">
-                        <i class="fas fa-directions"></i> Itinéraire
-                    </a>
+                    <a href="https://maps.google.com/?q=Maison+Médicale+Garde+Neuilly" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm hover:underline mt-3" style="color:#00a7de;text-decoration:none;"><i class="fas fa-directions"></i> Itinéraire</a>
                 </div>
             </div>
         </section>
 
-        <!-- Quand appeler les urgences -->
-        <section class="mb-12">
-            <div class="bg-red-50 border-l-4 border-red-500 rounded-r-xl p-6">
-                <h2 class="text-xl font-bold text-red-800 mb-4">
-                    <i class="fas fa-exclamation-triangle mr-2"></i>
-                    Quand appeler le 15 (SAMU) ?
-                </h2>
-                <ul class="grid md:grid-cols-2 gap-3 text-red-800">
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Douleur thoracique, oppression</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Difficultés respiratoires sévères</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Paralysie, troubles de la parole (AVC)</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Perte de connaissance</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Hémorragie importante</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Réaction allergique sévère</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Traumatisme grave</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check-circle text-red-600 mt-1"></i>
-                        <span>Intoxication, surdosage</span>
-                    </li>
-                </ul>
+        <!-- ========================================== -->
+        <!-- COMMENT RÉAGIR (SERP-critical) -->
+        <!-- ========================================== -->
+        <section id="comment-reagir" class="mb-16">
+            <h2 class="text-2xl font-bold cm-text mb-6 flex items-center gap-3">
+                <i class="fas fa-hands-helping" style="color:#00a7de;"></i>
+                Comment réagir en attendant les secours
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="emergency-card p-6">
+                    <h3 class="font-bold cm-text mb-3"><i class="fas fa-user-injured mr-2" style="color:#dc2626;"></i>Personne inconsciente qui respire</h3>
+                    <ol class="text-sm text-gray-600 space-y-2">
+                        <li><strong>1.</strong> Vérifiez la respiration (regardez, écoutez, sentez pendant 10 sec)</li>
+                        <li><strong>2.</strong> Placez-la en <strong>Position Latérale de Sécurité (PLS)</strong></li>
+                        <li><strong>3.</strong> Appelez le <strong>15</strong> ou le <strong>112</strong></li>
+                        <li><strong>4.</strong> Surveillez la respiration jusqu'à l'arrivée des secours</li>
+                    </ol>
+                </div>
+                <div class="emergency-card p-6">
+                    <h3 class="font-bold cm-text mb-3"><i class="fas fa-heartbeat mr-2" style="color:#dc2626;"></i>Arrêt cardiaque (ne respire plus)</h3>
+                    <ol class="text-sm text-gray-600 space-y-2">
+                        <li><strong>1.</strong> Appelez le <strong>15</strong> immédiatement (ou faites appeler)</li>
+                        <li><strong>2.</strong> Débutez le <strong>massage cardiaque</strong> : 100-120 compressions/min au centre de la poitrine, bras tendus</li>
+                        <li><strong>3.</strong> Si un <strong>défibrillateur (DAE)</strong> est disponible, utilisez-le</li>
+                        <li><strong>4.</strong> Continuez jusqu'à l'arrivée des secours</li>
+                    </ol>
+                </div>
+                <div class="emergency-card p-6">
+                    <h3 class="font-bold cm-text mb-3"><i class="fas fa-tint mr-2" style="color:#dc2626;"></i>Hémorragie</h3>
+                    <ol class="text-sm text-gray-600 space-y-2">
+                        <li><strong>1.</strong> Comprimez la plaie avec un <strong>linge propre</strong>, appuyez fermement</li>
+                        <li><strong>2.</strong> Appelez le <strong>15</strong></li>
+                        <li><strong>3.</strong> Allongez la victime et surélevez le membre blessé si possible</li>
+                        <li><strong>4.</strong> Ne retirez pas le pansement, même imbibé — ajoutez par-dessus</li>
+                    </ol>
+                </div>
+                <div class="emergency-card p-6">
+                    <h3 class="font-bold cm-text mb-3"><i class="fas fa-brain mr-2" style="color:#dc2626;"></i>Suspicion d'AVC (FAST)</h3>
+                    <ol class="text-sm text-gray-600 space-y-2">
+                        <li><strong>F</strong>ace — Le visage est-il déformé ? Demandez de sourire</li>
+                        <li><strong>A</strong>rm — Un bras retombe-t-il ? Demandez de lever les 2 bras</li>
+                        <li><strong>S</strong>peech — La parole est-elle troublée ? Demandez de répéter une phrase</li>
+                        <li><strong>T</strong>ime — <strong>Appelez le 15 immédiatement</strong>. Notez l'heure des premiers symptômes</li>
+                    </ol>
+                </div>
             </div>
         </section>
 
-        <!-- Liens utiles -->
-        <section class="mb-12">
-            <h2 class="text-xl font-bold cm-text mb-4">Voir aussi</h2>
+        <!-- ========================================== -->
+        <!-- PRÉPARER SON APPEL (SERP-critical) -->
+        <!-- ========================================== -->
+        <section id="preparer-appel" class="mb-16">
+            <h2 class="text-2xl font-bold cm-text mb-6 flex items-center gap-3">
+                <i class="fas fa-clipboard-list" style="color:#00a7de;"></i>
+                Préparer votre appel aux urgences
+            </h2>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <p class="text-gray-600 mb-4">Lorsque vous appelez le <strong>15</strong>, le <strong>18</strong> ou le <strong>112</strong>, un médecin régulateur ou un opérateur vous posera ces questions. Préparez les réponses :</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm" style="background-color:#00a7de;">1</div>
+                        <div><strong class="cm-text">Votre identité</strong><br><span class="text-sm text-gray-600">Nom, prénom, numéro de téléphone</span></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm" style="background-color:#00a7de;">2</div>
+                        <div><strong class="cm-text">Localisation exacte</strong><br><span class="text-sm text-gray-600">Adresse, étage, code d'accès, digicode</span></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm" style="background-color:#00a7de;">3</div>
+                        <div><strong class="cm-text">Ce qui se passe</strong><br><span class="text-sm text-gray-600">Symptômes (conscience, respiration, douleur), circonstances</span></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm" style="background-color:#00a7de;">4</div>
+                        <div><strong class="cm-text">Heure de début</strong><br><span class="text-sm text-gray-600">Quand les symptômes ont commencé (crucial pour l'AVC)</span></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm" style="background-color:#00a7de;">5</div>
+                        <div><strong class="cm-text">Nombre de victimes</strong><br><span class="text-sm text-gray-600">Combien de personnes sont concernées</span></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm" style="background-color:#00a7de;">6</div>
+                        <div><strong class="cm-text">Antécédents</strong><br><span class="text-sm text-gray-600">Traitements en cours, allergies connues</span></div>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-yellow-50 rounded-lg text-sm" style="border-left:3px solid #f59e0b;">
+                    <p class="text-yellow-800"><i class="fas fa-lightbulb mr-2" style="color:#f59e0b;"></i><strong>Important :</strong> Ne raccrochez jamais avant que l'opérateur vous le dise. Restez calme, parlez distinctement. L'appel au 15, 18 et 112 est <strong>gratuit</strong> même sans crédit téléphonique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- FAQ ENRICHIE (8 questions) -->
+        <!-- ========================================== -->
+        <section id="faq-urgences" class="mb-16">
+            <h2 class="text-2xl font-bold cm-text mb-6 flex items-center gap-3">
+                <i class="fas fa-comments" style="color:#00a7de;"></i>
+                Questions fréquentes sur les urgences
+            </h2>
+
+            <details class="faq-details">
+                <summary><span>Quel numéro appeler en cas d'urgence médicale ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <p>En cas d'<strong>urgence vitale</strong> (perte de conscience, douleur thoracique, AVC, hémorragie), appelez le <strong>15 (SAMU)</strong> ou le <strong>112</strong> (numéro européen). Pour un accident ou un incendie, composez le <strong>18 (Pompiers)</strong>. Si vous êtes sourd ou malentendant, envoyez un SMS au <strong>114</strong>. Pour une urgence non vitale, contactez <strong>SOS Médecins (3624)</strong> ou réservez un créneau"Urgence" sur <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" target="_blank" rel="noopener" style="color:#00a7de;font-weight:600;">Doctolib</a>.</p>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Quelle est la différence entre une urgence vitale et non vitale ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <p>Une <strong>urgence vitale</strong> met en jeu le pronostic vital : perte de conscience, arrêt respiratoire, douleur thoracique intense (infarctus), AVC (paralysie, troubles de la parole), hémorragie abondante. → <strong>Appelez le 15 immédiatement.</strong></p>
+                    <p class="mt-2">Une <strong>urgence non vitale</strong> nécessite une consultation rapide mais ne met pas la vie en danger immédiat : fièvre élevée, infection (angine, otite, cystite), douleur aiguë, plaie superficielle, gastro-entérite. → <strong>Consultez au centre médical ou appelez SOS Médecins.</strong></p>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Le Centre Médical Paris-Levallois reçoit-il les urgences ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <p><strong>Oui</strong>, notre centre propose des créneaux <strong>"Urgence"</strong> sur Doctolib pour les consultations non programmées en <strong>médecine générale</strong> (fièvre, infection, douleur aiguë) et en <strong>ophtalmologie</strong> (corps étranger, baisse de vision, œil rouge). Tarifs <strong>secteur 1</strong>, <strong>tiers payant intégral</strong> : vous ne payez rien. Pour les urgences vitales, appelez le 15.</p>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Quand appeler le 15 plutôt que le 18 ou le 112 ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <ul class="space-y-2 text-sm">
+                        <li><strong>15 (SAMU)</strong> : toute urgence médicale — malaise, douleur thoracique, difficulté respiratoire, intoxication, AVC. Un <strong>médecin régulateur</strong> évalue la situation.</li>
+                        <li><strong>18 (Pompiers)</strong> : accidents, incendies, noyades, personnes coincées, électrocution. Intervention terrain.</li>
+                        <li><strong>112 (Européen)</strong> : redirige vers le service adapté. Utilisable dans <strong>toute l'Union Européenne</strong>, multilingue.</li>
+                    </ul>
+                    <p class="mt-2"><strong>En cas de doute, appelez le 15.</strong> L'appel est gratuit 24h/24, même sans crédit.</p>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Que faire en attendant les secours ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <ul class="space-y-2 text-sm">
+                        <li><strong>Restez calme</strong> et ne raccrochez pas — suivez les instructions du médecin régulateur</li>
+                        <li><strong>Personne inconsciente qui respire</strong> : placez-la en Position Latérale de Sécurité (PLS)</li>
+                        <li><strong>Arrêt cardiaque</strong> : commencez le massage cardiaque (100-120 compressions/min)</li>
+                        <li><strong>Hémorragie</strong> : comprimez avec un linge propre, ne relâchez pas</li>
+                        <li><strong>Suspicion AVC</strong> : notez l'heure exacte des premiers symptômes</li>
+                        <li><strong>Ne déplacez jamais</strong> une personne traumatisée (dos, cou)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Comment préparer un appel aux urgences ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <p>Préparez : votre <strong>nom</strong> et <strong>numéro de téléphone</strong>, l'<strong>adresse exacte</strong> (étage, code, digicode), les <strong>symptômes observés</strong> (conscience, respiration, douleur), l'<strong>heure de début</strong> des symptômes, les <strong>antécédents médicaux</strong> et traitements en cours si connus. Parlez calmement et suivez les instructions. L'appel au 15, 18 et 112 est <strong>gratuit</strong> même sans crédit téléphonique.</p>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Quels sont les hôpitaux avec urgences proches de Levallois-Perret ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <ul class="space-y-2 text-sm">
+                        <li><strong>Hôpital Franco-Britannique</strong> — 4 rue Kléber, Levallois-Perret — <a href="tel:0146392222" style="color:#00a7de;">01 46 39 22 22</a> — Urgences 24h/24, secteur 1</li>
+                        <li><strong>Hôpital Beaujon (AP-HP)</strong> — 100 bd du Général Leclerc, Clichy — <a href="tel:0140875000" style="color:#00a7de;">01 40 87 50 00</a> — CHU, tous services</li>
+                        <li><strong>Hôpital Américain de Paris</strong> — 63 bd Victor Hugo, Neuilly — <a href="tel:0146412525" style="color:#00a7de;">01 46 41 25 25</a> — Privé, 24h/24</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="faq-details">
+                <summary><span>Quelles alternatives aux urgences hospitalières pour consulter rapidement ?</span><i class="fas fa-chevron-down text-gray-400 faq-chevron transition-transform"></i></summary>
+                <div class="faq-answer">
+                    <ul class="space-y-2 text-sm">
+                        <li><strong>Centre Médical Paris-Levallois</strong> : créneaux"Urgence" sur Doctolib (médecine générale + ophtalmologie), secteur 1, tiers payant intégral</li>
+                        <li><strong>SOS Médecins (3624)</strong> : visite à domicile 24h/24, 7j/7</li>
+                        <li><strong>Maison médicale de garde</strong> : consultations soir et week-end (Neuilly : 01 47 38 00 00)</li>
+                        <li><strong>Téléconsultation</strong> : avis médical rapide depuis chez vous (Doctolib, Qare, Livi)</li>
+                        <li><strong>Médecin traitant</strong> : créneaux urgents souvent disponibles en journée</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SOURCES OFFICIELLES -->
+        <!-- ========================================== -->
+        <section id="sources-officielles" class="mb-12">
+            <h2 class="text-xl font-bold cm-text mb-4">Sources officielles & liens utiles</h2>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F33954" target="_blank" rel="noopener" class="emergency-card p-4 flex items-center gap-3" style="text-decoration:none;">
+                    <i class="fas fa-landmark text-xl" style="color:#00a7de;"></i>
+                    <div>
+                        <div class="font-bold cm-text text-sm">Service-public.gouv.fr</div>
+                        <div class="text-xs text-gray-500">Numéros d'urgence et numéros d'écoute</div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-gray-400 ml-auto"></i>
+                </a>
+                <a href="https://www.ameli.fr/assure/sante/urgence" target="_blank" rel="noopener" class="emergency-card p-4 flex items-center gap-3" style="text-decoration:none;">
+                    <i class="fas fa-shield-alt text-xl" style="color:#00a7de;"></i>
+                    <div>
+                        <div class="font-bold cm-text text-sm">Ameli.fr</div>
+                        <div class="text-xs text-gray-500">Que faire en cas d'urgence ?</div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-gray-400 ml-auto"></i>
+                </a>
+                <a href="https://www.ville-levallois.fr/solidarite-sante/sante/hopitaux/" target="_blank" rel="noopener" class="emergency-card p-4 flex items-center gap-3" style="text-decoration:none;">
+                    <i class="fas fa-city text-xl" style="color:#00a7de;"></i>
+                    <div>
+                        <div class="font-bold cm-text text-sm">Ville de Levallois</div>
+                        <div class="text-xs text-gray-500">Hôpitaux à Levallois-Perret</div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-gray-400 ml-auto"></i>
+                </a>
+                <a href="https://www.sfmu.org/fr/public/03" target="_blank" rel="noopener" class="emergency-card p-4 flex items-center gap-3" style="text-decoration:none;">
+                    <i class="fas fa-graduation-cap text-xl" style="color:#00a7de;"></i>
+                    <div>
+                        <div class="font-bold cm-text text-sm">SFMU</div>
+                        <div class="text-xs text-gray-500">Comment reconnaître une urgence ?</div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-gray-400 ml-auto"></i>
+                </a>
+            </div>
             <div class="flex flex-wrap gap-3">
-                <a href="contact.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">📍 Contact & accès</a>
-                <a href="equipe.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">👥 Notre équipe</a>
-                <a href="tarifs.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">💶 Tarifs & remboursements</a>
-                <a href="le-centre.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition">🏥 Le centre</a>
+                <a href="acces-horaires.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition" style="text-decoration:none;color:#252525;">Accès & horaires</a>
+                <a href="tarifs.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition" style="text-decoration:none;color:#252525;">Tarifs & remboursements</a>
+                <a href="faq.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition" style="text-decoration:none;color:#252525;">FAQ générale</a>
+                <a href="le-centre.html" class="bg-white border rounded-lg px-4 py-2 text-sm hover:shadow transition" style="text-decoration:none;color:#252525;">Le centre</a>
             </div>
         </section>
 
         <!-- CTA -->
         <section class="text-center">
-            <div class="bg-gradient-to-r from-[#00a7de] to-[#0077a3] rounded-2xl p-8 text-white">
-                <h2 class="text-2xl font-bold mb-4">Pour une consultation urgente au centre</h2>
-                <p class="mb-6 opacity-90">Réservez un créneau "Urgence" sur Doctolib ou appelez-nous</p>
+            <div class="rounded-2xl p-8 md:p-12 text-white" style="background-color:#00a7de;">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Besoin d'une consultation urgente ?</h2>
+                <p class="text-lg mb-6 opacity-90">Créneaux"Urgence" disponibles sur Doctolib — Secteur 1, tiers payant intégral</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois" 
                        target="_blank" rel="noopener"
-                       class="inline-flex items-center justify-center gap-2 bg-white text-[#00a7de] px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition">
-                        <i class="fas fa-calendar-check"></i>
-                        RDV Urgence Doctolib
+                       class="inline-flex items-center justify-center gap-2 bg-white px-6 py-3 rounded-lg font-bold transition shadow-lg"
+                       style="color:#00a7de;text-decoration:none;"
+                       onmouseover="this.style.backgroundColor='#f3f4f6'" onmouseout="this.style.backgroundColor='white'">
+                        <i class="fas fa-calendar-check"></i> RDV Urgence Doctolib
                     </a>
                     <a href="tel:+33180883716" 
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">
-                        <i class="fas fa-phone"></i>
-                        01 80 88 37 16
+                       class="inline-flex items-center justify-center gap-2 border-2 border-white px-6 py-3 rounded-lg font-bold transition text-white"
+                       style="text-decoration:none;"
+                       onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+                        <i class="fas fa-phone"></i> 01 80 88 37 16
                     </a>
                 </div>
             </div>
@@ -496,17 +731,25 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script>
-        fetch('../components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-        fetch('../components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
+        <script>
+        async function loadComponent(id, path) {
+            try {
+                const r = await fetch(path);
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                document.getElementById(id).innerHTML = await r.text();
+            } catch (e) { console.error('Erreur chargement composant:', e); }
+        }
+        document.addEventListener('DOMContentLoaded', async function() {
+            var v = '?v=' + Date.now();
+            await loadComponent('header-placeholder', '../components/header.html' + v);
+            await loadComponent('footer-placeholder', '../components/footer.html' + v);
+            setTimeout(function() {
+                var btn = document.getElementById('mobile-menu-button');
+                var menu = document.getElementById('mobile-menu');
+                if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+            }, 100);
+        });
     </script>
+    <script src="../assets/js/cm-ads-tracking.js"></script>
 </body>
 </html>

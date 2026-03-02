@@ -2,9 +2,17 @@
 <html lang="fr">
 <head>
     <style id="cm-stable-layout">#header-placeholder{min-height:80px;}i.fas{display:inline-block;width:1.25em;}[id]{scroll-margin-top:100px;}@media(max-width:767px){#footer-placeholder{padding-bottom:60px;}}</style>
+    <!-- Consent Mode V2 — defaults avant GTM -->
+    <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{
+        'analytics_storage':'granted','ad_storage':'granted',
+        'ad_user_data':'granted','ad_personalization':'granted',
+        'functionality_storage':'granted','security_storage':'granted',
+        'wait_for_update':2000
+    });
+    </script>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MQ2KK9XS');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHP0ZF8ZSF"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XHP0ZF8ZSF');gtag('config','AW-11456521545');</script>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Politique de Confidentialité | Centre Médical Paris-Levallois</title>
     <meta name="description" content="Politique de confidentialité du Centre Médical Paris-Levallois : collecte des données, droits RGPD, cookies, sécurité.">
@@ -18,8 +26,13 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Politique de confidentialité | Centre Médical Paris-Levallois">
     <meta property="og:description" content="Politique de confidentialité et protection des données personnelles du Centre Médical Paris-Levallois.">
+    <meta property="og:url" content="https://www.centremedicalparislevallois.fr/pages/politique-confidentialite.html">
     <meta property="og:image" content="https://www.centremedicalparislevallois.fr/hero-centre-medical.jpg">
     <meta property="og:locale" content="fr_FR">
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.centremedicalparislevallois.fr/"}, {"@type": "ListItem", "position": 2, "name": "Politique de Confidentialité", "item": "https://www.centremedicalparislevallois.fr/pages/politique-confidentialite.html"}]}</script>
+    <link rel="stylesheet" href="../assets/css/cm-consent-banner.css">
+    <script src="../assets/js/cm-consent-v2.js" defer></script>
 </head>
 <body class="font-sans bg-gray-50">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ2KK9XS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -104,6 +117,25 @@
         </div>
     </main>
     <div id="footer-placeholder"></div>
-    <script>fetch('../components/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);fetch('../components/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);</script>
+        <script>
+        async function loadComponent(id, path) {
+            try {
+                const r = await fetch(path);
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                document.getElementById(id).innerHTML = await r.text();
+            } catch (e) { console.error('Erreur chargement composant:', e); }
+        }
+        document.addEventListener('DOMContentLoaded', async function() {
+            var v = '?v=' + Date.now();
+            await loadComponent('header-placeholder', '../components/header.html' + v);
+            await loadComponent('footer-placeholder', '../components/footer.html' + v);
+            setTimeout(function() {
+                var btn = document.getElementById('mobile-menu-button');
+                var menu = document.getElementById('mobile-menu');
+                if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+            }, 100);
+        });
+    </script>
+    <script src="../assets/js/cm-ads-tracking.js"></script>
 </body>
 </html>

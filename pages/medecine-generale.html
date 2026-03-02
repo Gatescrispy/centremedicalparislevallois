@@ -8,6 +8,16 @@
         @media (max-width: 767px) { #footer-placeholder{padding-bottom:60px;} }
     </style>
 
+    <!-- Consent Mode V2 — defaults avant GTM -->
+    <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{
+        'analytics_storage':'granted','ad_storage':'granted',
+        'ad_user_data':'granted','ad_personalization':'granted',
+        'functionality_storage':'granted','security_storage':'granted',
+        'wait_for_update':2000
+    });
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -15,87 +25,79 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MQ2KK9XS');</script>
 
-    <!-- Google tag (gtag.js) - GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHP0ZF8ZSF"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XHP0ZF8ZSF');
-    gtag('config', 'AW-11456521545');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO -->
-    <title>Médecin Généraliste Levallois | Consultation, Urgence</title>
-    <meta name="description" content="Médecin généraliste à Levallois-Perret : consultations tous âges, urgences médicales, certificats. RDV en ligne sur Doctolib, secteur 1, tiers payant, carte Vitale.">
-    <meta name="keywords" content="médecin généraliste Levallois, docteur 92300, consultation médicale, médecin traitant Levallois, urgence médicale">
+    <title>Médecin Généraliste Levallois-Perret (92300) | Secteur 1</title>
+    <meta name="description" content="Médecin généraliste à Levallois-Perret : consultations, médecin traitant, vaccinations, certificats. Secteur 1, tiers payant. RDV Doctolib.">
+    <meta name="keywords" content="médecin généraliste Levallois-Perret, médecin traitant 92300, consultation médicale Levallois, docteur généraliste secteur 1, urgence médicale Levallois, vaccination Levallois, certificat médical, centre médical Levallois">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Médecine Générale | Centre Médical Paris-Levallois">
-    <meta property="og:description" content="Consultations tous âges, urgences. Médecin généraliste secteur 1.">
+    <meta property="og:title" content="Médecin Généraliste Levallois-Perret 92300 — Secteur 1 Sans Dépassement">
+    <meta property="og:description" content="Consultations adultes et enfants, médecin traitant, vaccinations, certificats, urgences. Secteur 1, tiers payant. RDV Doctolib.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.centremedicalparislevallois.fr/pages/medecine-generale.html">
+    <meta property="og:site_name" content="Centre Médical Paris-Levallois">
     
     <!-- Canonical -->
     <link rel="canonical" href="https://www.centremedicalparislevallois.fr/pages/medecine-generale.html">
     
-    <!-- Schema.org - Physician -->
+    <!-- Schema.org - MedicalClinic -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Physician",
-        "name": "Médecine Générale - Centre Médical Paris-Levallois",
-        "medicalSpecialty": "GeneralPractice",
-        "availableService": [
-            {"@type": "MedicalProcedure", "name": "Consultation de médecine générale", "description": "Consultation tous âges, suivi médical"},
-            {"@type": "MedicalProcedure", "name": "Urgence médicale", "description": "Prise en charge rapide des urgences"}
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "60 rue Victor Hugo",
-            "addressLocality": "Levallois-Perret",
-            "postalCode": "92300"
-        },
-        "telephone": "+33180883716"
+    {"@context":"https://schema.org","@type":"MedicalClinic","name":"Médecine Générale — Centre Médical Paris-Levallois","description":"Médecin généraliste à Levallois-Perret (92300). Consultations adultes et enfants, médecin traitant, suivi maladies chroniques, certificats médicaux, vaccinations, urgences. Secteur 1 sans dépassement d'honoraires.","url":"https://www.centremedicalparislevallois.fr/pages/medecine-generale.html","telephone":"+33180883716","medicalSpecialty":"GeneralPractice","availableService": [
+            {"@type":"MedicalProcedure","name":"Consultation de médecine générale","description":"Diagnostic, traitement, renouvellement ordonnances"},
+            {"@type":"MedicalProcedure","name":"Médecin traitant","description":"Déclaration médecin traitant, suivi coordonné"},
+            {"@type":"MedicalProcedure","name":"Suivi maladies chroniques","description":"Diabète, hypertension, asthme, cholestérol, thyroïde"},
+            {"@type":"MedicalProcedure","name":"Certificats médicaux","description":"Sport, aptitude, arrêt de travail, reprise"},
+            {"@type":"MedicalProcedure","name":"Vaccinations","description":"Calendrier vaccinal, grippe, rappels, voyage"},
+            {"@type":"MedicalProcedure","name":"Urgence médicale","description":"Fièvre, infection, douleur aiguë, créneaux réservés"},
+            {"@type":"MedicalProcedure","name":"Consultation enfant","description":"Suivi pédiatrique, fièvre, otite, vaccinations"}
+        ],"address": {"@type":"PostalAddress","streetAddress":"60 rue Victor Hugo","addressLocality":"Levallois-Perret","postalCode":"92300","addressRegion":"Île-de-France","addressCountry":"FR"
+        },"geo": {"@type":"GeoCoordinates","latitude": 48.8938,"longitude": 2.2876
+        },"openingHoursSpecification": [
+            {"@type":"OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},
+            {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"14:00"}
+        ],"paymentAccepted": ["Carte Vitale","Carte bancaire","Espèces","Chèque"],"priceRange":"€ (Secteur 1 conventionné)","currenciesAccepted":"EUR","parentOrganization": {"@type":"MedicalOrganization","name":"Centre Médical Paris-Levallois","url":"https://www.centremedicalparislevallois.fr/"
+        }
     }
     </script>
 
     <!-- Schema.org - BreadcrumbList -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.centremedicalparislevallois.fr/"},
-            {"@type": "ListItem", "position": 2, "name": "Médecine Générale", "item": "https://www.centremedicalparislevallois.fr/pages/medecine-generale.html"}
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement": [
+            {"@type":"ListItem","position": 1,"name":"Accueil","item":"https://www.centremedicalparislevallois.fr/"},
+            {"@type":"ListItem","position": 2,"name":"Médecine Générale","item":"https://www.centremedicalparislevallois.fr/pages/medecine-generale.html"}
         ]
     }
     </script>
 
     <!-- Schema.org - FAQPage -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Puis-je choisir un médecin traitant au centre ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, notre médecin généraliste peut devenir votre médecin traitant. Il suffit de remplir le formulaire de déclaration lors de votre consultation."
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity": [
+            {"@type":"Question","name":"Puis-je déclarer le médecin du centre comme médecin traitant ?","acceptedAnswer": {"@type":"Answer","text":"Oui, notre médecin généraliste peut devenir votre médecin traitant. Il suffit de remplir le formulaire de déclaration de médecin traitant lors de votre consultation. Ce choix vous assure un meilleur remboursement (70 % au lieu de 30 %) et un suivi coordonné de votre santé."
                 }
             },
-            {
-                "@type": "Question",
-                "name": "Faut-il prendre rendez-vous pour une urgence ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Des créneaux 'Urgence' sont disponibles sur Doctolib pour les consultations urgentes. Pour les urgences vitales, appelez le 15."
+            {"@type":"Question","name":"Faut-il prendre rendez-vous pour une urgence ?","acceptedAnswer": {"@type":"Answer","text":"Des créneaux « Urgence » sont réservés chaque jour sur Doctolib pour une prise en charge rapide (fièvre, douleur aiguë, infection). Pour les urgences vitales (malaise, douleur thoracique, difficultés respiratoires), appelez le 15 (SAMU) ou le 112."
+                }
+            },
+            {"@type":"Question","name":"Combien coûte une consultation de médecine générale ?","acceptedAnswer": {"@type":"Answer","text":"La consultation est à 30 € (tarif conventionné secteur 1, sans dépassement d'honoraires). L'Assurance Maladie rembourse 70 % soit 21 €. Votre mutuelle complète le reste. Nous pratiquons le tiers payant intégral : aucun frais à avancer dans la plupart des cas."
+                }
+            },
+            {"@type":"Question","name":"Pratiquez-vous le tiers payant ?","acceptedAnswer": {"@type":"Answer","text":"Oui, notre centre pratique le tiers payant intégral avec la Sécurité sociale et la plupart des mutuelles. Vous n'avez généralement aucun frais à avancer. Pensez à apporter votre carte Vitale et votre attestation de mutuelle."
+                }
+            },
+            {"@type":"Question","name":"Que dois-je apporter à ma consultation ?","acceptedAnswer": {"@type":"Answer","text":"Apportez votre carte Vitale à jour et votre attestation de mutuelle, votre carnet de santé ou carnet de vaccination, vos ordonnances en cours et résultats d'examens récents, ainsi qu'un courrier du médecin si vous êtes adressé par un spécialiste."
+                }
+            },
+            {"@type":"Question","name":"Faites-vous les vaccinations au centre ?","acceptedAnswer": {"@type":"Answer","text":"Oui, nous réalisons toutes les vaccinations du calendrier vaccinal (rappels DTP, coqueluche, ROR, hépatite B, HPV) ainsi que la vaccination antigrippale saisonnière et les vaccins recommandés avant un voyage. Apportez votre carnet de vaccination."
+                }
+            },
+            {"@type":"Question","name":"Consultez-vous les enfants ?","acceptedAnswer": {"@type":"Answer","text":"Oui, notre médecin généraliste assure le suivi médical des enfants : fièvre, otite, angine, vaccinations, certificats de non contre-indication au sport, suivi de croissance. Pour les nourrissons de moins de 6 mois, nous orientons vers un pédiatre."
+                }
+            },
+            {"@type":"Question","name":"Puis-je obtenir un arrêt de travail ou un certificat médical ?","acceptedAnswer": {"@type":"Answer","text":"Oui, notre médecin peut délivrer des arrêts de travail, certificats médicaux (sport, aptitude, reprise de travail), et certificats de non contre-indication. Ces documents sont établis lors de la consultation après examen médical."
                 }
             }
         ]
@@ -162,7 +164,35 @@
             padding: 24px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
+
+        /* Missing Tailwind utilities not in compiled CSS */
+        .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        @media (min-width: 768px) {
+            .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        }
+        .list-disc { list-style-type: disc; }
+        .list-inside { list-style-position: inside; }
+        .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.25rem; }
+        .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
+        .border-b { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e5e7eb; }
+        .gap-0 { gap: 0; }
+        .w-12 { width: 3rem; }
+        .h-12 { height: 3rem; }
+        .w-14 { width: 3.5rem; }
+        .h-14 { height: 3.5rem; }
+        .w-20 { width: 5rem; }
+        .h-20 { height: 5rem; }
+        .w-24 { width: 6rem; }
+        .h-24 { height: 6rem; }
+        .mt-1 { margin-top: 0.25rem; }
+        .cursor-pointer { cursor: pointer; }
+        .border-2 { border-width: 2px; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] summary .fa-chevron-down { transform: rotate(180deg); }
     </style>
+    <link rel="stylesheet" href="../assets/css/cm-consent-banner.css">
+    <script src="../assets/js/cm-consent-v2.js" defer></script>
 </head>
 <body class="font-sans bg-gray-50">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ2KK9XS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -173,7 +203,7 @@
     <nav class="bg-white border-b" aria-label="Breadcrumb">
         <div class="max-w-6xl mx-auto px-4 py-3">
             <ol class="flex items-center gap-2 text-sm" style="list-style: none; margin: 0; padding: 0;">
-                <li><a href="../index.html" class="text-gray-500 hover:text-[#00a7de]" style="text-decoration: none;">Accueil</a></li>
+                <li><a href="../index.html" class="text-gray-500" style="text-decoration: none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color=''">Accueil</a></li>
                 <li class="text-gray-400">/</li>
                 <li class="font-medium" style="color: #00a7de;">Médecine Générale</li>
             </ol>
@@ -181,28 +211,28 @@
     </nav>
 
     <!-- Hero avec image à droite -->
-    <section class="py-12 md:py-16" style="background-color: #00a7de;">
+    <section class="py-12" style="background-color: #00a7de;">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <!-- Texte à gauche -->
                 <div class="text-white">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background-color: rgba(255,255,255,0.2);">
                             <i class="fas fa-stethoscope text-2xl"></i>
                         </div>
                         <div>
                             <h1 class="text-3xl md:text-4xl font-bold">Médecine Générale</h1>
-                            <p class="text-white/80">Consultations • Suivi • Médecin traitant</p>
+                            <p class="text-white" style="opacity: 0.8;">Consultations • Suivi • Médecin traitant</p>
                         </div>
                     </div>
-                    <p class="text-lg opacity-90 mb-6">
+                    <p class="text-lg mb-6" style="opacity: 0.9;">
                         Consultations tous âges, suivi médical, urgences. 
                         Notre médecin généraliste vous accueille sur rendez-vous et peut devenir votre médecin traitant.
                     </p>
                     <div class="flex flex-wrap gap-3 mb-6">
-                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-check mr-2"></i>Secteur 1</span>
-                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-user-doctor mr-2"></i>Médecin traitant</span>
-                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm"><i class="fas fa-calendar-check mr-2"></i>RDV en ligne</span>
+                        <span class="px-4 py-2 rounded-full text-sm" style="background-color: rgba(255,255,255,0.2);"><i class="fas fa-check mr-2"></i>Secteur 1</span>
+                        <span class="px-4 py-2 rounded-full text-sm" style="background-color: rgba(255,255,255,0.2);"><i class="fas fa-user-doctor mr-2"></i>Médecin traitant</span>
+                        <span class="px-4 py-2 rounded-full text-sm" style="background-color: rgba(255,255,255,0.2);"><i class="fas fa-calendar-check mr-2"></i>RDV en ligne</span>
                     </div>
                     <!-- Boutons -->
                     <div class="flex flex-col sm:flex-row gap-3">
@@ -225,7 +255,7 @@
                 </div>
                 <!-- Image à droite -->
                 <div class="order-first md:order-last">
-                    <img src="/angle-eleve-de-femme-medecin-ecrit-une-ordonnance-au-bureau.jpg" alt="Consultation médecine générale" class="rounded-2xl shadow-2xl w-full object-cover" style="max-height: 350px;">
+                    <img src="/angle-eleve-de-femme-medecin-ecrit-une-ordonnance-au-bureau.jpg" alt="Consultation médecine générale" class="rounded-2xl shadow-xl w-full object-cover" style="max-height: 350px;">
                 </div>
             </div>
         </div>
@@ -236,17 +266,22 @@
 
         <!-- Introduction -->
         <section class="mb-12 text-center">
-            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-4">
                 Le pôle <strong>médecine générale</strong> du Centre Médical Paris-Levallois assure la prise en charge 
                 de vos besoins de santé au quotidien : consultations pour tous les âges, suivi des maladies chroniques, 
-                renouvellement d'ordonnances, certificats médicaux et gestion des urgences non vitales.
+                renouvellement d'ordonnances, certificats médicaux, vaccinations et gestion des urgences non vitales.
+            </p>
+            <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Notre <strong>médecin généraliste</strong> vous accueille au <strong>60 rue Victor Hugo à Levallois-Perret</strong>, 
+                en <strong>secteur 1 sans dépassement d'honoraires</strong>, avec pratique du <strong>tiers payant</strong>. 
+                Il peut devenir votre <strong>médecin traitant</strong> pour un suivi coordonné et un meilleur remboursement.
             </p>
         </section>
 
         <!-- Motifs de consultation -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold cm-text mb-6">
-                <i class="fas fa-list-check text-[#1ABC9C] mr-2"></i>
+                <i class="fas fa-list-check mr-2" style="color: #00a7de;"></i>
                 Nos consultations
             </h2>
 
@@ -315,76 +350,283 @@
             </div>
         </section>
 
+        <!-- Parcours patient -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" style="color: #252525;">
+                <i class="fas fa-route mr-2" style="color: #00a7de;"></i>
+                Votre parcours de consultation
+            </h2>
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center text-white font-bold" style="background-color: #00a7de;">1</div>
+                    <h3 class="font-bold mb-2" style="color: #252525;">Prise de RDV</h3>
+                    <p class="text-sm text-gray-600">Réservez en ligne sur Doctolib ou par téléphone au 01 80 88 37 16</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center text-white font-bold" style="background-color: #00a7de;">2</div>
+                    <h3 class="font-bold mb-2" style="color: #252525;">Accueil</h3>
+                    <p class="text-sm text-gray-600">Enregistrement, vérification Carte Vitale et mutuelle, mise à jour du dossier</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center text-white font-bold" style="background-color: #00a7de;">3</div>
+                    <h3 class="font-bold mb-2" style="color: #252525;">Consultation</h3>
+                    <p class="text-sm text-gray-600">Examen clinique, diagnostic, prescription, orientation si nécessaire</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center text-white font-bold" style="background-color: #00a7de;">4</div>
+                    <h3 class="font-bold mb-2" style="color: #252525;">Ordonnance & départ</h3>
+                    <p class="text-sm text-gray-600">Remise de l'ordonnance, télétransmission, pas d'avance de frais</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Ce que nous traitons -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold cm-text mb-6">
-                <i class="fas fa-notes-medical text-[#1ABC9C] mr-2"></i>
+                <i class="fas fa-notes-medical mr-2" style="color: #00a7de;"></i>
                 Motifs de consultation fréquents
             </h2>
 
             <div class="grid md:grid-cols-3 gap-4">
                 <div class="bg-white rounded-lg p-4 shadow-sm">
-                    <h3 class="font-bold mb-2"><i class="fas fa-virus text-[#1ABC9C] mr-2"></i>Infections</h3>
+                    <h3 class="font-bold mb-2"><i class="fas fa-virus mr-2" style="color: #00a7de;"></i>Infections</h3>
                     <p class="text-sm text-gray-600">Angine, grippe, gastro-entérite, infection urinaire, bronchite</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 shadow-sm">
-                    <h3 class="font-bold mb-2"><i class="fas fa-head-side-virus text-[#1ABC9C] mr-2"></i>Douleurs</h3>
+                    <h3 class="font-bold mb-2"><i class="fas fa-head-side-virus mr-2" style="color: #00a7de;"></i>Douleurs</h3>
                     <p class="text-sm text-gray-600">Maux de tête, douleurs articulaires, lombalgies, douleurs abdominales</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 shadow-sm">
-                    <h3 class="font-bold mb-2"><i class="fas fa-heart-pulse text-[#1ABC9C] mr-2"></i>Maladies chroniques</h3>
+                    <h3 class="font-bold mb-2"><i class="fas fa-heart-pulse mr-2" style="color: #00a7de;"></i>Maladies chroniques</h3>
                     <p class="text-sm text-gray-600">Diabète, hypertension, asthme, cholestérol, thyroïde</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 shadow-sm">
-                    <h3 class="font-bold mb-2"><i class="fas fa-allergies text-[#1ABC9C] mr-2"></i>Allergies</h3>
+                    <h3 class="font-bold mb-2"><i class="fas fa-allergies mr-2" style="color: #00a7de;"></i>Allergies</h3>
                     <p class="text-sm text-gray-600">Rhinite allergique, eczéma, urticaire, allergies alimentaires</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 shadow-sm">
-                    <h3 class="font-bold mb-2"><i class="fas fa-file-medical text-[#1ABC9C] mr-2"></i>Certificats</h3>
+                    <h3 class="font-bold mb-2"><i class="fas fa-file-medical mr-2" style="color: #00a7de;"></i>Certificats</h3>
                     <p class="text-sm text-gray-600">Sport, aptitude, arrêt de travail, reprise de travail</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 shadow-sm">
-                    <h3 class="font-bold mb-2"><i class="fas fa-baby text-[#1ABC9C] mr-2"></i>Pédiatrie</h3>
+                    <h3 class="font-bold mb-2"><i class="fas fa-baby mr-2" style="color: #00a7de;"></i>Pédiatrie</h3>
                     <p class="text-sm text-gray-600">Suivi enfant, fièvre, otite, vaccinations, croissance</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Vaccinations & Prévention -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" style="color: #252525;">
+                <i class="fas fa-syringe mr-2" style="color: #00a7de;"></i>
+                Vaccinations & prévention
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <h3 class="font-bold text-lg mb-3" style="color: #252525;"><i class="fas fa-shield-virus mr-2" style="color: #00a7de;"></i>Vaccinations</h3>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-600">
+                        <li><strong>Rappels obligatoires</strong> : DTP (diphtérie, tétanos, polio), coqueluche</li>
+                        <li><strong>Vaccins recommandés</strong> : ROR, hépatite B, HPV, méningocoque</li>
+                        <li><strong>Grippe saisonnière</strong> : campagne annuelle (octobre-janvier)</li>
+                        <li><strong>Vaccins voyage</strong> : hépatite A, fièvre typhoïde, fièvre jaune (orientation)</li>
+                        <li><strong>COVID-19</strong> : rappels selon recommandations en vigueur</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <h3 class="font-bold text-lg mb-3" style="color: #252525;"><i class="fas fa-heart mr-2" style="color: #00a7de;"></i>Prévention & dépistage</h3>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-600">
+                        <li><strong>Bilan de santé</strong> : check-up complet, bilan sanguin</li>
+                        <li><strong>Dépistage cancers</strong> : orientation mammographie, coloscopie, PSA</li>
+                        <li><strong>Suivi cardio-vasculaire</strong> : tension, cholestérol, glycémie</li>
+                        <li><strong>Santé mentale</strong> : écoute, orientation psychologue/psychiatre</li>
+                        <li><strong>Sevrage tabagique</strong> : accompagnement et prescription</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Que faut-il apporter -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" style="color: #252525;">
+                <i class="fas fa-clipboard-list mr-2" style="color: #00a7de;"></i>
+                Que faut-il apporter à votre consultation ?
+            </h2>
+            <div class="bg-white rounded-xl shadow-sm p-6">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle mt-1" style="color: #00a7de;"></i>
+                        <div>
+                            <p class="font-medium" style="color: #252525;">Carte Vitale à jour</p>
+                            <p class="text-sm text-gray-500">Et votre attestation de mutuelle</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle mt-1" style="color: #00a7de;"></i>
+                        <div>
+                            <p class="font-medium" style="color: #252525;">Carnet de santé / vaccination</p>
+                            <p class="text-sm text-gray-500">Surtout pour les enfants et les vaccinations</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle mt-1" style="color: #00a7de;"></i>
+                        <div>
+                            <p class="font-medium" style="color: #252525;">Ordonnances en cours</p>
+                            <p class="text-sm text-gray-500">Traitements actuels et résultats d'examens récents</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle mt-1" style="color: #00a7de;"></i>
+                        <div>
+                            <p class="font-medium" style="color: #252525;">Courrier du médecin (si adressé)</p>
+                            <p class="text-sm text-gray-500">Ou lettre d'un spécialiste pour le suivi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarifs -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" style="color: #252525;">
+                <i class="fas fa-euro-sign mr-2" style="color: #00a7de;"></i>
+                Tarifs & remboursement
+            </h2>
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="grid grid-cols-3 gap-0 text-sm font-bold p-4" style="background-color: #00a7de; color: white;">
+                    <div>Acte</div>
+                    <div>Tarif secteur 1</div>
+                    <div>Remboursement Sécu (70 %)</div>
+                </div>
+                <div class="grid grid-cols-3 gap-0 text-sm p-4 border-b">
+                    <div class="font-medium">Consultation médecin traitant</div>
+                    <div class="text-gray-700">30 €</div>
+                    <div class="text-gray-700">21 €</div>
+                </div>
+                <div class="grid grid-cols-3 gap-0 text-sm p-4 border-b">
+                    <div class="font-medium">Consultation hors parcours</div>
+                    <div class="text-gray-700">30 €</div>
+                    <div class="text-gray-700">9 € (30 %)</div>
+                </div>
+                <div class="grid grid-cols-3 gap-0 text-sm p-4 border-b">
+                    <div class="font-medium">Consultation enfant (< 6 ans)</div>
+                    <div class="text-gray-700">35 €</div>
+                    <div class="text-gray-700">24,50 €</div>
+                </div>
+                <div class="grid grid-cols-3 gap-0 text-sm p-4">
+                    <div class="font-medium">Vaccination (hors vaccin)</div>
+                    <div class="text-gray-700">7,50 €</div>
+                    <div class="text-gray-700">5,25 €</div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-4">
+                <span class="inline-flex items-center gap-2 text-sm font-medium bg-white px-4 py-2 rounded-full shadow-sm" style="color: #00a7de;">
+                    <i class="fas fa-check-circle"></i> Secteur 1 — Sans dépassement
+                </span>
+                <span class="inline-flex items-center gap-2 text-sm font-medium bg-white px-4 py-2 rounded-full shadow-sm" style="color: #00a7de;">
+                    <i class="fas fa-check-circle"></i> Tiers payant intégral
+                </span>
+                <span class="inline-flex items-center gap-2 text-sm font-medium bg-white px-4 py-2 rounded-full shadow-sm" style="color: #00a7de;">
+                    <i class="fas fa-check-circle"></i> Carte Vitale acceptée
+                </span>
             </div>
         </section>
 
         <!-- FAQ -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold cm-text mb-6">
-                <i class="fas fa-circle-question text-[#1ABC9C] mr-2"></i>
+                <i class="fas fa-circle-question mr-2" style="color: #00a7de;"></i>
                 Questions fréquentes
             </h2>
 
-            <div class="space-y-4">
+            <div class="space-y-3">
                 <details class="bg-white rounded-lg shadow group" open>
                     <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
                         <span>Puis-je déclarer le médecin du centre comme médecin traitant ?</span>
                         <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
                     </summary>
                     <div class="px-4 pb-4 text-gray-600">
-                        <p>Oui, notre médecin généraliste peut devenir votre médecin traitant. Il vous suffit de remplir le formulaire de déclaration lors de votre consultation. Cela vous permet d'être mieux remboursé (70% au lieu de 30%).</p>
+                        <p>Oui, notre médecin généraliste peut devenir votre <strong>médecin traitant</strong>. Il suffit de remplir le formulaire de déclaration de médecin traitant lors de votre consultation. Ce choix vous assure un <strong>meilleur remboursement</strong> (70 % au lieu de 30 %) et un suivi coordonné de votre santé.</p>
                     </div>
                 </details>
 
                 <details class="bg-white rounded-lg shadow group">
                     <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
-                        <span>Comment obtenir un rendez-vous rapidement ?</span>
+                        <span>Faut-il prendre rendez-vous pour une urgence ?</span>
                         <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
                     </summary>
                     <div class="px-4 pb-4 text-gray-600">
-                        <p>Utilisez la prise de rendez-vous en ligne sur Doctolib. Des créneaux "Urgence" sont disponibles pour les consultations nécessitant une prise en charge rapide. Pour les urgences vitales, appelez le 15.</p>
+                        <p>Des créneaux <strong>« Urgence »</strong> sont réservés chaque jour sur Doctolib pour une prise en charge rapide (fièvre, douleur aiguë, infection). Pour les <strong>urgences vitales</strong> (malaise, douleur thoracique, difficultés respiratoires), appelez le <strong>15</strong> (SAMU) ou le <strong>112</strong>.</p>
                     </div>
                 </details>
 
                 <details class="bg-white rounded-lg shadow group">
                     <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
-                        <span>Quel est le tarif d'une consultation ?</span>
+                        <span>Combien coûte une consultation de médecine générale ?</span>
                         <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
                     </summary>
                     <div class="px-4 pb-4 text-gray-600">
-                        <p>La consultation est à 30€ (tarif conventionné secteur 1). L'Assurance Maladie rembourse 21€ (70%) et votre mutuelle prend en charge les 9€ restants. Avec le tiers payant, vous ne payez que la part mutuelle.</p>
+                        <p class="mb-2"><strong>Tarifs secteur 1 conventionnés, sans dépassement d'honoraires :</strong></p>
+                        <ul class="list-disc list-inside space-y-1 text-sm">
+                            <li>Consultation médecin traitant : <strong>30 €</strong></li>
+                            <li>Consultation enfant (< 6 ans) : <strong>35 €</strong></li>
+                            <li>Acte de vaccination (hors vaccin) : <strong>7,50 €</strong></li>
+                        </ul>
+                        <p class="mt-2 text-sm">L'Assurance Maladie rembourse 70 % de la base de remboursement. Votre mutuelle complète généralement le reste à charge (hors participation forfaitaire de 1 €).</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Pratiquez-vous le tiers payant ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Oui, notre centre pratique le <strong>tiers payant intégral</strong> avec la Sécurité sociale et la plupart des mutuelles. Vous n'avez généralement <strong>aucun frais à avancer</strong>. Pensez à apporter votre carte Vitale et votre attestation de mutuelle.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Que dois-je apporter à ma consultation ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <ul class="list-disc list-inside space-y-1 text-sm">
+                            <li>Votre <strong>carte Vitale</strong> à jour et votre attestation de mutuelle</li>
+                            <li>Votre <strong>carnet de santé</strong> ou carnet de vaccination</li>
+                            <li>Vos <strong>ordonnances en cours</strong> et résultats d'examens récents</li>
+                            <li>Un <strong>courrier du médecin</strong> si vous êtes adressé par un spécialiste</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Faites-vous les vaccinations au centre ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Oui, nous réalisons toutes les <strong>vaccinations du calendrier vaccinal</strong> (rappels DTP, coqueluche, ROR, hépatite B, HPV) ainsi que la <strong>vaccination antigrippale saisonnière</strong> et les vaccins recommandés avant un voyage. Apportez votre carnet de vaccination.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Consultez-vous les enfants ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Oui, notre médecin généraliste assure le <strong>suivi médical des enfants</strong> : fièvre, otite, angine, vaccinations, certificats de non contre-indication au sport, suivi de croissance. Pour les nourrissons de moins de 6 mois, nous orientons vers un pédiatre.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Puis-je obtenir un arrêt de travail ou un certificat médical ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Oui, notre médecin peut délivrer des <strong>arrêts de travail</strong>, <strong>certificats médicaux</strong> (sport, aptitude, reprise de travail), et <strong>certificats de non contre-indication</strong>. Ces documents sont établis lors de la consultation après examen médical.</p>
                     </div>
                 </details>
             </div>
@@ -431,9 +673,9 @@
         </section>
 
         <!-- CTA -->
-        <section class="text-center rounded-2xl p-8 md:p-12" style="background-color: #00a7de;">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Besoin d'une consultation ?</h2>
-            <p class="text-lg mb-6 text-white/90">Prenez rendez-vous en ligne avec notre médecin généraliste</p>
+        <section class="text-center rounded-2xl p-8" style="background-color: #00a7de;">
+            <h2 class="text-2xl font-bold mb-4 text-white">Besoin d'une consultation ?</h2>
+            <p class="text-lg mb-6 text-white" style="opacity: 0.9;">Prenez rendez-vous en ligne avec notre médecin généraliste</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=2&telehealth=false&placeId=practice-714912&source=deep_link" 
                    target="_blank" rel="noopener"
@@ -457,9 +699,25 @@
 
     <div id="footer-placeholder"></div>
 
-    <script>
-        fetch('../components/header.html').then(r => r.text()).then(d => document.getElementById('header-placeholder').innerHTML = d);
-        fetch('../components/footer.html').then(r => r.text()).then(d => document.getElementById('footer-placeholder').innerHTML = d);
+        <script>
+        async function loadComponent(id, path) {
+            try {
+                const r = await fetch(path);
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                document.getElementById(id).innerHTML = await r.text();
+            } catch (e) { console.error('Erreur chargement composant:', e); }
+        }
+        document.addEventListener('DOMContentLoaded', async function() {
+            var v = '?v=' + Date.now();
+            await loadComponent('header-placeholder', '../components/header.html' + v);
+            await loadComponent('footer-placeholder', '../components/footer.html' + v);
+            setTimeout(function() {
+                var btn = document.getElementById('mobile-menu-button');
+                var menu = document.getElementById('mobile-menu');
+                if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+            }, 100);
+        });
     </script>
+    <script src="../assets/js/cm-ads-tracking.js"></script>
 </body>
 </html>

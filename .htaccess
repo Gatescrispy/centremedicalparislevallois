@@ -1,0 +1,110 @@
+# ===========================================
+# Centre Médical Paris-Levallois — .htaccess
+# Hébergement LWS (Apache)
+# ===========================================
+
+# ── Forcer HTTPS ──
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ── Redirection www → non-www (canonicalisation) ──
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ── Compression GZIP ──
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+    AddOutputFilterByType DEFLATE text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE font/woff2 font/woff font/ttf
+</IfModule>
+
+# ── Cache navigateur ──
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images : 1 an
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # CSS/JS : 1 mois
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+
+    # Polices : 1 an
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+
+    # HTML : 1 heure (pour que les mises à jour soient visibles rapidement)
+    ExpiresByType text/html "access plus 1 hour"
+
+    # XML (sitemap) : 1 jour
+    ExpiresByType application/xml "access plus 1 day"
+    ExpiresByType text/xml "access plus 1 day"
+</IfModule>
+
+# ── Headers de sécurité ──
+<IfModule mod_headers.c>
+    # Protection contre le clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Protection contre le MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Protection XSS
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions Policy
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
+
+    # Cache-Control pour les fichiers statiques
+    <FilesMatch "\.(ico|jpg|jpeg|png|webp|gif|svg|css|js|woff2|woff|ttf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache-Control pour HTML
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public, max-age=3600, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ── Types MIME corrects ──
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+    AddType text/css .css
+    AddType application/javascript .js
+    AddType image/webp .webp
+    AddType image/svg+xml .svg
+    AddType font/woff2 .woff2
+    AddType font/woff .woff
+    AddType font/ttf .ttf
+</IfModule>
+
+# ── Pages d'erreur personnalisées ──
+ErrorDocument 404 /index.html
+
+# ── Empêcher l'accès aux fichiers sensibles ──
+<FilesMatch "\.(md|py|json|gitignore|csv)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>
+
+# ── Empêcher le listing des répertoires ──
+Options -Indexes
+
+# ── ETags (désactiver pour éviter les problèmes de cache multi-serveur) ──
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None

@@ -54,6 +54,42 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 
 ---
 
+## [2.0.0] - 2026-03-02
+
+### Ajouté
+- **Pages examens** : arthroscanner, cone-beam, dentaire, doppler, échographie, IRM, mammographie, panoramique, radiologie, scanner (+ sous-pages détaillées)
+- **Pages actualités** : système d'articles avec page listing et articles individuels
+- **Pages landing** : 11 landing pages Google Ads pour différentes spécialités
+- **Landing GTM** (`pages/landing/google-ads-gtm.html`) : version sans gtag inline, 100% GTM
+- **Système FAQ** : workflow automatisé pour ajouter des questions
+
+### Modifié
+- **GTM** : Migration vers GTM-MQ2KK9XS (compte dédié centremedicalparislevallois.fr)
+  - 5 tags configurés : GA4 Config, Ads Remarketing, Conversion Linker, Conversion Doctolib, Conversion Telephone
+  - Consent Mode V2 intégré sur toutes les pages
+  - Suppression gtag.js inline sur toutes les pages (sauf legacy google-ads.html)
+- **GA4** : Migration vers G-XHP0ZF8ZSF (compte dédié)
+  - Conservation données événements : 14 mois
+  - Google Signals activé (307 régions)
+  - Association Google Ads créée (397-970-4056)
+  - Association Search Console créée (centremedicalparislevallois.fr)
+  - Événements clés : `clic_doctolib` (1€) et `clic_telephone` (1€)
+- **Tracking** : `cm-ads-tracking.js` supporte dual tracking (gtag direct + dataLayer.push GTM)
+- **SEO** : Sitemap mis à jour, canonicals corrigés, breadcrumbs corrigés
+- **.htaccess** : HTTPS, compression GZIP, cache, headers sécurité
+
+### Corrigé
+- GTM noscript manquant sur `pages/le-centre.html`
+- Landing page noindex retirée du sitemap
+- Doublons schema FAQ supprimés
+- Placeholders JSON-LD corrigés
+
+### Documentation
+- `docs/AUDIT_GTM_FINAL.md` : Rapport audit GTM complet
+- `docs/AUDIT_GA4.md` : Rapport audit GA4 complet
+
+---
+
 ## [À venir]
 
 ### Planifié
