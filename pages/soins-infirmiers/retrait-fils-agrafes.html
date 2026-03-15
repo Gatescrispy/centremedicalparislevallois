@@ -44,6 +44,22 @@
     </script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalProcedure", "name": "Retrait de fils et agrafes", "description": "Retrait de fils de suture et agrafes chirurgicales : geste technique réalisé par un(e) infirmier(e) diplômé(e).", "bodyLocation": "Zone de suture", "procedureType": "https://schema.org/TherapeuticProcedure", "url": "https://centremedicalparislevallois.fr/pages/soins-infirmiers/retrait-fils-agrafes.html", "provider": {"@type": "MedicalClinic", "name": "Centre Médical Paris-Levallois", "address": {"@type": "PostalAddress", "streetAddress": "60 Rue Victor Hugo", "addressLocality": "Levallois-Perret", "postalCode": "92300", "addressCountry": "FR"}, "telephone": "+33180883716"}}</script>
 
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity": [
+            {"@type":"Question","name":"Quel est le délai pour retirer les agrafes du cuir chevelu ?","acceptedAnswer": {"@type":"Answer","text":"Les agrafes du cuir chevelu sont généralement retirées entre 7 et 10 jours après l'intervention. Ce délai peut varier selon la taille de la plaie, la technique chirurgicale et votre cicatrisation. Suivez toujours les consignes de votre chirurgien, qui priment sur ces délais indicatifs."}
+            },
+            {"@type":"Question","name":"Est-ce normal de saigner après le retrait des points de suture ?","acceptedAnswer": {"@type":"Answer","text":"Un léger suintement ou quelques gouttes de sang au moment du retrait sont normaux. En revanche, un saignement abondant, persistant ou qui reprend plusieurs heures après l'ablation doit vous amener à consulter rapidement. Appliquez une compresse stérile et exercez une pression douce en attendant."}
+            },
+            {"@type":"Question","name":"Le retrait des fils de suture est-il douloureux ?","acceptedAnswer": {"@type":"Answer","text":"Le retrait des fils est généralement peu douloureux. Vous pouvez ressentir une légère sensation de tiraillement, mais le geste est rapide (quelques secondes par point). Pour les agrafes, un tire-agrafe spécial est utilisé, rendant le retrait quasi indolore. Aucune anesthésie n'est nécessaire."}
+            },
+            {"@type":"Question","name":"Quelle est la différence entre fils résorbables et fils non résorbables ?","acceptedAnswer": {"@type":"Answer","text":"Les fils résorbables se dégradent naturellement dans l'organisme en quelques semaines et ne nécessitent pas de retrait. Les fils non résorbables doivent être retirés par un(e) infirmier(e) après cicatrisation. Votre chirurgien vous aura précisé le type de fils utilisé lors de votre sortie."}
+            },
+            {"@type":"Question","name":"Faut-il une ordonnance pour le retrait des fils ou agrafes ?","acceptedAnswer": {"@type":"Answer","text":"Oui, le retrait des fils ou agrafes est un soin infirmier prescrit sur ordonnance médicale. Votre chirurgien vous remet cette ordonnance à la sortie de l'hôpital ou de la clinique, avec les consignes de soins post-opératoires et le délai de retrait recommandé."}
+            }
+        ]
+    }
+    </script>
+
     <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
     <link href="../../assets/css/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
@@ -57,6 +73,10 @@
         .motif-card:hover { border-color: #00a7de; box-shadow: 0 12px 30px rgba(0,167,222,0.15); transform: translateY(-4px); }
         .motif-card-img { height: 160px; object-fit: cover; width: 100%; }
         .motif-card-content { padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1; }
+        .cursor-pointer { cursor: pointer; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] summary .fa-chevron-down { transform: rotate(180deg); }
+        .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
     </style>
 
     <meta property="og:type" content="website">
@@ -200,6 +220,73 @@
             </div>
         </section>
 
+        <!-- FAQ -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold cm-text mb-6">
+                <i class="fas fa-circle-question mr-2" style="color: #00a7de;"></i>
+                Questions fréquentes sur le retrait des fils et agrafes
+            </h2>
+            <div class="space-y-3">
+                <details class="bg-white rounded-lg shadow group" open>
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Quel est le délai pour retirer les agrafes du cuir chevelu ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Les agrafes du cuir chevelu sont généralement retirées entre <strong>7 et 10 jours</strong> après l'intervention. Ce délai peut varier selon la taille de la plaie, la technique chirurgicale utilisée et la qualité de votre cicatrisation. Les agrafes du <strong>visage</strong> sont retirées plus tôt (5-7 jours), tandis que celles des <strong>membres inférieurs</strong> ou des <strong>articulations</strong> restent plus longtemps (14-21 jours). <strong>Suivez toujours les consignes de votre chirurgien</strong>, qui priment sur ces délais indicatifs.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Est-ce normal de saigner après le retrait des points de suture ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Un <strong>léger suintement</strong> ou quelques gouttes de sang au moment du retrait sont tout à fait normaux et ne doivent pas vous inquiéter. En revanche, consultez rapidement si vous observez :</p>
+                        <ul class="text-sm mt-2 space-y-1">
+                            <li><i class="fas fa-circle-dot text-red-400 mr-2"></i>Un <strong>saignement abondant</strong> ou qui ne s'arrête pas après 15 minutes de compression</li>
+                            <li><i class="fas fa-circle-dot text-red-400 mr-2"></i>Un saignement qui <strong>reprend plusieurs heures</strong> après l'ablation</li>
+                            <li><i class="fas fa-circle-dot text-red-400 mr-2"></i>Une <strong>réouverture de la plaie</strong> (désunion cicatricielle)</li>
+                        </ul>
+                        <p class="text-sm mt-2">En cas de saignement, appliquez une <strong>compresse stérile</strong> et exercez une pression douce pendant 10 minutes. Si le saignement persiste, contactez votre médecin ou le <strong>01 80 88 37 16</strong>.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Le retrait des fils de suture est-il douloureux ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Le retrait des fils est généralement <strong>peu douloureux</strong>. Vous pouvez ressentir une légère sensation de tiraillement, mais le geste est rapide (quelques secondes par point). Pour les <strong>agrafes</strong>, un tire-agrafe spécial est utilisé, rendant le retrait quasi indolore. <strong>Aucune anesthésie n'est nécessaire.</strong> Si vous êtes particulièrement anxieux(se), n'hésitez pas à le signaler à notre infirmier(e).</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Quelle est la différence entre fils résorbables et fils non résorbables ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p><strong>Fils résorbables :</strong> ils se dégradent naturellement dans l'organisme en quelques semaines à quelques mois. Ils sont souvent utilisés pour les sutures profondes, internes ou en chirurgie pédiatrique. <strong>Aucun retrait n'est nécessaire.</strong></p>
+                        <p class="mt-2"><strong>Fils non résorbables :</strong> ils doivent être retirés par un(e) infirmier(e) après cicatrisation suffisante. Ils offrent une meilleure résistance mécanique et sont privilégiés pour les zones de tension (articulations, cuir chevelu).</p>
+                        <p class="mt-2 text-sm">Votre chirurgien vous aura précisé le type de fils utilisé lors de votre sortie.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Faut-il une ordonnance pour le retrait des fils ou agrafes ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Oui, le retrait des fils ou agrafes est un <strong>soin infirmier prescrit sur ordonnance</strong> médicale. Votre chirurgien vous remet cette ordonnance à la sortie de l'hôpital ou de la clinique, avec les consignes de soins post-opératoires et le délai de retrait recommandé. Pensez à apporter cette ordonnance ainsi que votre <strong>carte Vitale</strong> le jour du rendez-vous.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
         <!-- Autres soins infirmiers -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold mb-6" style="color: #252525;">Autres soins infirmiers</h2>
@@ -272,7 +359,7 @@
             <div>
                 <p class="font-bold mb-3" style="color:#252525">Nos spécialités</p>
                 <ul class="space-y-1"><li><a href="/ophtalmologue-levallois" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-eye mr-1"></i> Ophtalmologie</a></li>
-<li><a href="/pages/medecine-generale.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-stethoscope mr-1"></i> Médecine générale</a></li>
+<li><a href="/medecin-generaliste-levallois" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-stethoscope mr-1"></i> Médecine générale</a></li>
 <li><a href="/pages/kinesitherapie.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-hands mr-1"></i> Kinésithérapie</a></li>
 <li><a href="/pages/soins-infirmiers.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-syringe mr-1"></i> Soins infirmiers</a></li>
 </ul>
