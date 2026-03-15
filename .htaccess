@@ -18,8 +18,16 @@ RewriteRule ^index\.html$ / [R=301,L]
 # ── Redirections 301 anciennes URLs ──
 RewriteRule ^politique-confidentialit[eé]/?$ /pages/politique-confidentialite.html [R=301,L,NE]
 
-# ── URLs propres Landing Pages ──
-RewriteRule ^rdv-ophtalmologue-levallois/?$ /pages/landing/google-ads-gtm.html [L]
+# ── URLs propres SEO (mots-clés locaux → pages indexables) ──
+RewriteRule ^ophtalmologue-levallois/?$ /pages/ophtalmologie.html [L]
+RewriteRule ^kinesitherapeute-levallois/?$ /pages/kinesitherapie.html [L]
+RewriteRule ^soins-infirmiers-levallois/?$ /pages/soins-infirmiers.html [L]
+RewriteRule ^medecin-generaliste-levallois/?$ /pages/medecine-generale.html [L]
+RewriteRule ^centre-medical-levallois/?$ /pages/le-centre.html [L]
+RewriteRule ^urgences-levallois/?$ /pages/urgences.html [L]
+
+# ── Redirect ancien URL landing vers nouveau ──
+RewriteRule ^rdv-ophtalmologue-levallois/?$ /pages/ophtalmologie.html [R=301,L]
 
 # ── Compression GZIP ──
 <IfModule mod_deflate.c>
