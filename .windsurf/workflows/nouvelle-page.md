@@ -58,12 +58,12 @@ Utiliser ce template de base :
     <!-- SEO - À PERSONNALISER -->
     <title>[TITRE] | Centre Médical Paris-Levallois</title>
     <meta name="description" content="[DESCRIPTION 150-160 caractères]">
-    <link rel="canonical" href="https://www.centremedicalparislevallois.fr/[URL]">
+    <link rel="canonical" href="https://centremedicalparislevallois.fr/[URL]">
     
     <!-- Open Graph -->
     <meta property="og:title" content="[TITRE]">
     <meta property="og:description" content="[DESCRIPTION]">
-    <meta property="og:url" content="https://www.centremedicalparislevallois.fr/[URL]">
+    <meta property="og:url" content="https://centremedicalparislevallois.fr/[URL]">
     <meta property="og:type" content="website">
     
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">

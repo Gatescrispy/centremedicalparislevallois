@@ -20,7 +20,7 @@ Disallow: /*-original.png
 Disallow: /*.md$
 
 # Sitemap
-Sitemap: https://www.centremedicalparislevallois.fr/sitemap.xml
+Sitemap: https://centremedicalparislevallois.fr/sitemap.xml
 
 # Crawl-delay (optionnel, respecté par certains robots)
 Crawl-delay: 1
