@@ -26,8 +26,8 @@ RewriteRule ^medecin-generaliste-levallois/?$ /pages/medecine-generale.html [L]
 RewriteRule ^centre-medical-levallois/?$ /pages/le-centre.html [L]
 RewriteRule ^urgences-levallois/?$ /pages/urgences.html [L]
 
-# ── Redirect ancien URL landing vers nouveau ──
-RewriteRule ^rdv-ophtalmologue-levallois/?$ /pages/ophtalmologie.html [R=301,L]
+# ── Landing page Google Ads (noindex, balises GAds/GTM) ──
+RewriteRule ^rdv-ophtalmologue-levallois/?$ /pages/landing/google-ads-gtm.html [L]
 
 # ── Compression GZIP ──
 <IfModule mod_deflate.c>
