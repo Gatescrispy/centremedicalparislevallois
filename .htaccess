@@ -26,7 +26,8 @@ RewriteRule ^medecin-generaliste-levallois/?$ /pages/medecine-generale.html [L]
 RewriteRule ^centre-medical-levallois/?$ /pages/le-centre.html [L]
 RewriteRule ^urgences-levallois/?$ /pages/urgences.html [L]
 
-# ── Landing page Google Ads (noindex, balises GAds/GTM) ──
+# ── Landing page RDV ophtalmo ──
+RewriteRule ^consultation-ophtalmo-levallois/?$ /pages/landing/google-ads-gtm.html [L]
 RewriteRule ^rdv-ophtalmologue-levallois/?$ /pages/landing/google-ads-gtm.html [L]
 
 # ── Compression GZIP ──
