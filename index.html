@@ -38,8 +38,8 @@
     
     <!-- SEO Optimisé selon analyse SERP -->
     <title>Centre Médical Levallois-Perret (92300) | Secteur 1</title>
-    <meta name="description" content="Centre de santé secteur 1 à Levallois-Perret. Ophtalmologie, médecine générale, kinésithérapie, soins infirmiers. Tiers payant. RDV Doctolib.">
-    <meta name="keywords" content="centre médical Levallois-Perret, centre de santé 92300, ophtalmologue Levallois, médecin généraliste Levallois-Perret, kinésithérapeute Levallois, orthoptiste, soins infirmiers, secteur 1, tiers payant, Clichy, Neuilly, Paris 17">
+    <meta name="description" content="Centre de santé secteur 1 à Levallois-Perret. Ophtalmologie, médecine générale, kinésithérapie, soins infirmiers, psychologie. Tiers payant. RDV Doctolib.">
+    <meta name="keywords" content="centre médical Levallois-Perret, centre de santé 92300, ophtalmologue Levallois, médecin généraliste Levallois-Perret, kinésithérapeute Levallois, orthoptiste, soins infirmiers, psychologue Levallois, secteur 1, tiers payant, Clichy, Neuilly, Paris 17">
     <meta name="author" content="Centre Médical Paris-Levallois">
     <meta name="robots" content="index, follow">
     
@@ -75,6 +75,8 @@
             {"@type":"MedicalProcedure","name":"Consultation médecine générale","description":"Consultations tous âges, suivi médical, vaccinations, certificats"
             },
             {"@type":"MedicalProcedure","name":"Soins infirmiers","description":"Prises de sang, injections, pansements, vaccinations"
+            },
+            {"@type":"MedicalProcedure","name":"Consultation psychologie","description":"Psychologue clinicien : première séance, Mon Soutien Psy, psychotraumatologie"
             }
         ],"priceRange":"€","paymentAccepted": ["Carte Vitale","Carte Bancaire","Espèces","Chèque"],"currenciesAccepted":"EUR","isAcceptingNewPatients": true,"address": {"@type":"PostalAddress","streetAddress":"60 rue Victor Hugo","addressLocality":"Levallois-Perret","addressRegion":"Île-de-France","postalCode":"92300","addressCountry":"FR"
         },"geo": {"@type":"GeoCoordinates","latitude":"48.8942","longitude":"2.2878"
@@ -242,6 +244,18 @@
             border-color: #00a7de;
             box-shadow: 0 12px 30px rgba(0, 167, 222, 0.15);
         }
+        .specialty-card .card-img { height: 200px; }
+        .specialty-card .card-desc {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 2.625rem;
+        }
+        .specialty-card .card-info {
+            min-height: 1.25rem;
+        }
         
         /* FAQ accordion */
         .faq-item {
@@ -369,6 +383,12 @@
                     <span class="px-5 rounded-full text-white font-medium border" style="padding-top:0.625rem;padding-bottom:0.625rem;background-color:rgba(0,0,0,0.5);backdrop-filter:blur(12px);border-color:rgba(255,255,255,0.3)">
                         <i class="fas fa-syringe mr-2" style="color:#00a7de;"></i> Soins infirmiers
                     </span>
+                    <span class="px-5 rounded-full text-white font-medium border" style="padding-top:0.625rem;padding-bottom:0.625rem;background-color:rgba(0,0,0,0.5);backdrop-filter:blur(12px);border-color:rgba(255,255,255,0.3)">
+                        <i class="fas fa-brain mr-2" style="color:#00a7de;"></i> Psychologie
+                    </span>
+                    <span class="px-5 rounded-full text-white font-medium border" style="padding-top:0.625rem;padding-bottom:0.625rem;background-color:rgba(0,0,0,0.5);backdrop-filter:blur(12px);border-color:rgba(255,255,255,0.3)">
+                        <i class="fas fa-apple-alt mr-2" style="color:#00a7de;"></i> Diététique
+                    </span>
                 </div>
             </div>
         </div>
@@ -388,11 +408,11 @@
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Ophtalmologie & Orthoptie (fusionnées) -->
                 <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative h-52">
+                    <div class="relative card-img">
                         <img src="/Femme ophtalmologie.jpg" alt="Examen ophtalmologique" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
                     </div>
@@ -403,10 +423,10 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-2" style="color: #252525;">Ophtalmologie</h3>
-                        <p class="text-sm mb-3 flex-grow" style="color: #4a4a4a;">
+                        <p class="card-desc text-sm mb-3" style="color: #4a4a4a;">
                             Examen de la vue, fond d'œil, dépistage pathologies oculaires.
                         </p>
-                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                        <p class="card-info text-xs mb-4" style="color: #6b6b6b;">
                             <i class="fas fa-user mr-1"></i> Dès 5 ans
                         </p>
                         <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=4&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
@@ -422,7 +442,7 @@
                 
                 <!-- Médecine générale -->
                 <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative h-52">
+                    <div class="relative card-img">
                         <img src="/angle-eleve-de-femme-medecin-ecrit-une-ordonnance-au-bureau.jpg" alt="Consultation médecine générale" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
                     </div>
@@ -433,10 +453,10 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-2" style="color: #252525;">Médecine générale</h3>
-                        <p class="text-sm mb-3 flex-grow" style="color: #4a4a4a;">
+                        <p class="card-desc text-sm mb-3" style="color: #4a4a4a;">
                             Consultations, suivi médical, vaccinations, certificats.
                         </p>
-                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                        <p class="card-info text-xs mb-4" style="color: #6b6b6b;">
                             <i class="fas fa-baby mr-1"></i> Dès la naissance
                         </p>
                         <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=2&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
@@ -452,7 +472,7 @@
                 
                 <!-- Kinésithérapie -->
                 <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative h-52">
+                    <div class="relative card-img">
                         <img src="/kine-hero.jpg" alt="Séance de kinésithérapie" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
                     </div>
@@ -463,10 +483,10 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-2" style="color: #252525;">Kinésithérapie</h3>
-                        <p class="text-sm mb-3 flex-grow" style="color: #4a4a4a;">
+                        <p class="card-desc text-sm mb-3" style="color: #4a4a4a;">
                             Rééducation, massages, drainage, soins post-opératoires.
                         </p>
-                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                        <p class="card-info text-xs mb-4" style="color: #6b6b6b;">
                             <i class="fas fa-file-medical mr-1"></i> Sur prescription
                         </p>
                         <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=9&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
@@ -482,7 +502,7 @@
                 
                 <!-- Soins infirmiers -->
                 <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative h-52">
+                    <div class="relative card-img">
                         <img src="/Femme médecin vaccinant collègue.jpg" alt="Soins infirmiers vaccination" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
                     </div>
@@ -493,16 +513,76 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-2" style="color: #252525;">Soins infirmiers</h3>
-                        <p class="text-sm mb-3 flex-grow" style="color: #4a4a4a;">
+                        <p class="card-desc text-sm mb-3" style="color: #4a4a4a;">
                             Prises de sang, injections, pansements, vaccinations.
                         </p>
-                        <p class="text-xs mb-4" style="color: #6b6b6b;">
+                        <p class="card-info text-xs mb-4" style="color: #6b6b6b;">
                             <i class="fas fa-file-medical mr-1"></i> Prescription si nécessaire
                         </p>
                         <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=30&telehealth=false&placeId=practice-714912&bookingFunnelSource=profile" 
                            target="_blank"
                            rel="noopener noreferrer"
                            aria-label="Prendre RDV pour soins infirmiers"
+                           class="block w-full py-3 text-white text-center rounded-lg font-semibold transition-colors mt-auto" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                            <i class="fas fa-calendar-plus mr-2"></i>
+                            Prendre RDV
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Psychologie -->
+                <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <div class="relative card-img">
+                        <img src="/assets/images/psychologie/Carrières en psychologie.webp" alt="Psychologue consultation Levallois" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
+                    </div>
+                    <div class="flex gap-2 px-6 -mt-3 relative z-10">
+                        <span class="bg-white text-sm font-semibold px-3 py-1.5 rounded-lg shadow-md" style="color: #00a7de;">
+                            <i class="fas fa-brain mr-1"></i> Psychologie
+                        </span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2" style="color: #252525;">Psychologie</h3>
+                        <p class="card-desc text-sm mb-3" style="color: #4a4a4a;">
+                            Thérapie, Mon Soutien Psy, psychotraumatologie.
+                        </p>
+                        <p class="card-info text-xs mb-4" style="color: #6b6b6b;">
+                            <i class="fas fa-hand-holding-heart mr-1"></i> Mon Soutien Psy remboursé
+                        </p>
+                        <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=14&telehealth=false&placeId=practice-714912" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Prendre RDV psychologue"
+                           class="block w-full py-3 text-white text-center rounded-lg font-semibold transition-colors mt-auto" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
+                            <i class="fas fa-calendar-plus mr-2"></i>
+                            Prendre RDV
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Diététique -->
+                <div class="specialty-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <div class="relative card-img">
+                        <img src="/assets/images/dieteticien/hero-dieteticien.webp" alt="Consultation diététicien nutritionniste Levallois" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);"></div>
+                    </div>
+                    <div class="flex gap-2 px-6 -mt-3 relative z-10">
+                        <span class="bg-white text-sm font-semibold px-3 py-1.5 rounded-lg shadow-md" style="color: #00a7de;">
+                            <i class="fas fa-apple-alt mr-1"></i> Diététique
+                        </span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2" style="color: #252525;">Diététique</h3>
+                        <p class="card-desc text-sm mb-3" style="color: #4a4a4a;">
+                            Nutrition, rééquilibrage alimentaire, grossesse, enfant, diabète.
+                        </p>
+                        <p class="card-info text-xs mb-4" style="color: #6b6b6b;">
+                            <i class="fas fa-user-md mr-1"></i> Diététicien diplômé d'État
+                        </p>
+                        <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=414&telehealth=false&placeId=practice-714912" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Prendre RDV diététicien"
                            class="block w-full py-3 text-white text-center rounded-lg font-semibold transition-colors mt-auto" style="background-color: #00a7de;" onmouseover="this.style.backgroundColor='#0090c0'" onmouseout="this.style.backgroundColor='#00a7de'">
                             <i class="fas fa-calendar-plus mr-2"></i>
                             Prendre RDV
@@ -531,7 +611,8 @@
                     <a href="/ophtalmologue-levallois" class="font-medium hover:underline text-white">ophtalmologie</a>, 
                     <a href="/medecin-generaliste-levallois" class="font-medium hover:underline text-white">médecine générale</a>, 
                     <a href="/#rdv" class="font-medium hover:underline text-white">kinésithérapie</a>, 
-                    <a href="/#rdv" class="font-medium hover:underline text-white">soins infirmiers</a>.
+                    <a href="/#rdv" class="font-medium hover:underline text-white">soins infirmiers</a>,
+                    <a href="/psychologue-levallois" class="font-medium hover:underline text-white">psychologie</a>.
                 </p>
                 <p class="text-white text-sm mb-5" style="opacity:0.87">
                     Au service des habitants de <strong>Levallois-Perret</strong>, <strong>Clichy</strong>, <strong>Neuilly-sur-Seine</strong>, <strong>Asnières</strong>, <strong>Paris 17<sup>e</sup></strong> et alentours.
@@ -1137,38 +1218,6 @@
     
     <!-- Footer -->
     
-    <!-- SEO: Liens internes statiques -->
-    <nav class="border-t" style="background-color:#f9fafb" aria-label="Navigation interne">
-        <div class="max-w-6xl mx-auto px-4 py-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-            <div>
-                <p class="font-bold mb-3" style="color:#252525">Nos spécialités</p>
-                <ul class="space-y-1"><li><a href="/ophtalmologue-levallois" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-eye mr-1"></i> Ophtalmologie</a></li>
-<li><a href="/medecin-generaliste-levallois" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-stethoscope mr-1"></i> Médecine générale</a></li>
-<li><a href="/pages/kinesitherapie.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-hands mr-1"></i> Kinésithérapie</a></li>
-<li><a href="/pages/soins-infirmiers.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-syringe mr-1"></i> Soins infirmiers</a></li>
-</ul>
-            </div>
-            <div>
-                <p class="font-bold mb-3" style="color:#252525">Informations pratiques</p>
-                <ul class="space-y-1"><li><a href="/pages/tarifs.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'">Tarifs & remboursement</a></li>
-<li><a href="/pages/acces-horaires.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'">Accès & Horaires</a></li>
-<li><a href="/pages/le-centre.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'">Le centre</a></li>
-<li><a href="/pages/contact.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'">Contact</a></li>
-<li><a href="/pages/faq.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'">Questions fréquentes</a></li>
-</ul>
-            </div>
-            <div>
-                <p class="font-bold mb-3" style="color:#252525">Aussi sur notre site</p>
-                <ul class="space-y-1">
-                    <li><a href="/pages/urgences.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-exclamation-triangle mr-1"></i> Urgences</a></li>
-                    <li><a href="/pages/equipe.html" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-user-md mr-1"></i> Notre équipe</a></li>
-                    <li><a href="/" style="color:#4a4a4a;text-decoration:none;" onmouseover="this.style.color='#00a7de'" onmouseout="this.style.color='#4a4a4a'"><i class="fas fa-home mr-1"></i> Accueil</a></li>
-                </ul>
-            </div>
-            </div>
-        </div>
-    </nav>
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->

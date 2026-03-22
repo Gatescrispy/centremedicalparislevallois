@@ -123,6 +123,7 @@
 
     // ── API globale ──
     window.showCMConsentBanner = createBanner;
+    window.showConsentManager = createBanner;
     window.resetCMConsent = function() {
         document.cookie = COOKIE_NAME + '=;expires=Thu,01 Jan 1970 00:00:01 GMT;path=/';
         applyConsent({ analytics: true, advertising: true, personalization: true });

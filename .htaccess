@@ -25,12 +25,16 @@ RewriteRule ^soins-infirmiers-levallois/?$ /pages/soins-infirmiers.html [L]
 RewriteRule ^medecin-generaliste-levallois/?$ /pages/medecine-generale.html [L]
 RewriteRule ^centre-medical-levallois/?$ /pages/le-centre.html [L]
 RewriteRule ^urgences-levallois/?$ /pages/urgences.html [L]
+RewriteRule ^psychologue-levallois/?$ /pages/psychologie.html [L]
+RewriteRule ^dieteticien-levallois/?$ /pages/dieteticien.html [L]
 
 # ── Landing pages Google Ads ──
 # VT Imagerie (gtag.js inline AW-11456521545)
 RewriteRule ^rdv-ophtalmologue-levallois/?$ /pages/landing/google-ads.html [L]
 # Compte dédié CDS (GTM seul GTM-MQ2KK9XS)
 RewriteRule ^consultation-ophtalmo-levallois/?$ /pages/landing/google-ads-gtm.html [L]
+RewriteRule ^consultation-psy-levallois/?$ /pages/landing/landing-psy.html [L]
+RewriteRule ^consultation-dieteticien-levallois/?$ /pages/landing/landing-diet.html [L]
 
 # ── Compression GZIP ──
 <IfModule mod_deflate.c>
