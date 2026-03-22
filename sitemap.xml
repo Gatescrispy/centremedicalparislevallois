@@ -15,11 +15,11 @@
     
     <!-- URLs propres SEO (mots-clés locaux) -->
     <url><loc>https://centremedicalparislevallois.fr/ophtalmologue-levallois</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://centremedicalparislevallois.fr/kinesitherapeute-levallois</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://centremedicalparislevallois.fr/soins-infirmiers-levallois</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <!-- kinesitherapeute-levallois = rewrite interne vers /pages/kinesitherapie.html (déjà en ligne 26) -->
+    <!-- soins-infirmiers-levallois = rewrite interne vers /pages/soins-infirmiers.html (déjà en ligne 25) -->
     <url><loc>https://centremedicalparislevallois.fr/medecin-generaliste-levallois</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://centremedicalparislevallois.fr/centre-medical-levallois</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://centremedicalparislevallois.fr/urgences-levallois</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <!-- centre-medical-levallois = rewrite interne vers /pages/le-centre.html (déjà en ligne 7) -->
+    <!-- urgences-levallois = rewrite interne vers /pages/urgences.html (déjà en ligne 12) -->
 
     <!-- Pages index spécialités -->
     <url><loc>https://centremedicalparislevallois.fr/pages/soins-infirmiers.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -69,14 +69,15 @@
     <url><loc>https://centremedicalparislevallois.fr/pages/ophtalmologie/urgence.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     
     <!-- Pages Psychologie -->
-    <url><loc>https://centremedicalparislevallois.fr/psychologue-levallois</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <!-- psychologue-levallois = rewrite interne vers /pages/psychologie.html -->
+    <url><loc>https://centremedicalparislevallois.fr/pages/psychologie.html</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
     <url><loc>https://centremedicalparislevallois.fr/pages/psychologie/premiere-seance.html</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://centremedicalparislevallois.fr/pages/psychologie/mon-soutien-psy.html</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://centremedicalparislevallois.fr/pages/psychologie/psychotraumatologie.html</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     
     <!-- Pages Diététique -->
-    <url><loc>https://centremedicalparislevallois.fr/dieteticien-levallois</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://centremedicalparislevallois.fr/pages/dieteticien.html</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <!-- dieteticien-levallois = rewrite interne vers /pages/dieteticien.html -->
+    <url><loc>https://centremedicalparislevallois.fr/pages/dieteticien.html</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
     <url><loc>https://centremedicalparislevallois.fr/pages/dieteticien/premiere-consultation-nutrition.html</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://centremedicalparislevallois.fr/pages/dieteticien/reequilibrage-alimentaire.html</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://centremedicalparislevallois.fr/pages/dieteticien/diabete.html</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
