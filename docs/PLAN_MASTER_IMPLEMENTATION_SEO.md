@@ -69,11 +69,13 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 | 🔲 1.1.3 | Mettre à jour `og:description` et `twitter:description` dans index.html pour mentionner les 6 spécialités | Backlinks §9.C | Partages sociaux complets | 10 min |
 | 🔲 1.1.4 | Vérifier et corriger la redirection www → non-www (canonical) | Domain Overview §4 | Résoudre cannibalisation www/non-www | 30 min |
 
+> **Note** : les corrections structured data `address` sur `equipe.html`, `tarifs.html`, `bilan-sanguin-ecbu.html`, `vaccination-pediatrique.html` ont été faites dans le commit `8c301c9` (audit Semrush). Les tâches 1.1.1-1.1.3 concernent spécifiquement `index.html`.
+
 ### Lot 1.2 — Indexation
 
 | # | Tâche | Source analyse | Impact | Effort |
 |---|---|---|---|---|
-| 🔲 1.2.1 | Vérifier que le sitemap.xml inclut toutes les ~60 pages | Keyword Gap §6.2 | Pages indexables par Google | 30 min |
+| ✅ 1.2.1 | Vérifier que le sitemap.xml inclut toutes les ~60 pages | Keyword Gap §6.2 | Pages indexables par Google | 30 min |
 | 🔲 1.2.2 | Soumettre sitemap dans GSC + demander indexation des pages récentes (psycho, diét, kiné) | Keyword Gap §6.2 | Passer de 15 à 60+ pages indexées | 30 min |
 | 🔲 1.2.3 | Vérifier robots.txt (pas de blocage involontaire) | Domain Overview | Aucun blocage | 10 min |
 
@@ -81,7 +83,7 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Tâche | Source analyse | Impact | Effort |
 |---|---|---|---|---|
-| 🔲 1.3.1 | Vérifier que l'adresse "60 rue Victor Hugo" est cohérente partout (structured data, footer, contact, acces-horaires) | Keyword Gap §3 ("48 rue" apparaît en recherche) | Cohérence NAP pour Local SEO | 30 min |
+| ✅ 1.3.1 | Vérifier que l'adresse "60 rue Victor Hugo" est cohérente partout (structured data, footer, contact, acces-horaires) | Keyword Gap §3 ("48 rue" apparaît en recherche) | Cohérence NAP pour Local SEO | 30 min | *(commit 8c301c9)* |
 | 🔲 1.3.2 | Vérifier les signaux NAP dans Google Business Profile | Keyword Gap §3 | Pas de confusion d'adresse | 15 min |
 
 ---
@@ -98,12 +100,12 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Page | Title actuel | Title optimisé proposé | KW cible (vol.) | Source |
 |---|---|---|---|---|---|
-| 🔲 2.1.1 | `ophtalmologie.html` | "Ophtalmologue Levallois-Perret (92300) \| Secteur 1" | "Ophtalmologue Paris-Levallois (92300) \| Secteur 1 \| Centre Médical" | ophtalmologue paris (8 100) | KMT §2 |
-| 🔲 2.1.2 | `kinesitherapie.html` | "Kinésithérapeute Levallois-Perret (92300) \| Secteur 1" | "Kinésithérapeute Paris-Levallois (92300) \| Secteur 1 \| Centre Médical" | kinésithérapeute paris (1 600) | KMT §3 |
-| 🔲 2.1.3 | `dieteticien.html` | "Diététicien à Levallois-Perret (92300) — Consultation Nutrition..." | "Diététicien Nutritionniste Paris-Levallois (92300) \| Centre Médical" | diététicienne nutritionniste (4 400) | KMT §5 |
-| 🔲 2.1.4 | `psychologie.html` | OK (contient déjà "Paris-Levallois") | Optimiser H1 pour "psychologue levallois" (170) | psychologue levallois (170) | KO §3.4 |
-| 🔲 2.1.5 | `soins-infirmiers.html` | Vérifier | Intégrer "prise de sang levallois" (70) dans H1/meta | prise de sang levallois (70) | KO §3.6 |
-| 🔲 2.1.6 | `medecine-generale.html` | "Médecin Généraliste Levallois-Perret (92300) \| Secteur 1" | Vérifier si "Paris-" est pertinent (déjà #10 sur "médecin généraliste levallois" 210) | médecin généraliste levallois (210) | KO §3.2 |
+| ✅ 2.1.1 | `ophtalmologie.html` | "Ophtalmologue Levallois-Perret (92300) \| Secteur 1" | "Ophtalmologue Paris-Levallois (92300) \| Secteur 1 \| Centre Médical" | ophtalmologue paris (8 100) | KMT §2 | *(commit 66dfb5f)* |
+| ✅ 2.1.2 | `kinesitherapie.html` | ~~"Kinésithérapeute Levallois-Perret (92300) \| Secteur 1"~~ | "Kinésithérapeute Paris-Levallois (92300) \| Kiné D.E." | kinésithérapeute paris (1 600) | KMT §3 | *(commits 66dfb5f + fa62484 — tarifs retirés)* |
+| ✅ 2.1.3 | `dieteticien.html` | "Diététicien à Levallois-Perret (92300) — Consultation Nutrition..." | "Diététicien Nutritionniste Paris-Levallois (92300) \| Centre Médical" | diététicienne nutritionniste (4 400) | KMT §5 | *(commit 66dfb5f)* |
+| ✅ 2.1.4 | `psychologie.html` | OK (contient déjà "Paris-Levallois") | Title raccourci ≤65 chars | psychologue levallois (170) | KO §3.4 | *(commits 8c301c9 + a8f67a3)* |
+| ✅ 2.1.5 | `soins-infirmiers.html` | Vérifier | Title optimisé "Paris-Levallois" | prise de sang levallois (70) | KO §3.6 | *(commit 66dfb5f)* |
+| ✅ 2.1.6 | `medecine-generale.html` | "Médecin Généraliste Levallois-Perret (92300) \| Secteur 1" | Title optimisé "Paris-Levallois" | médecin généraliste levallois (210) | KO §3.2 | *(commit 66dfb5f)* |
 
 ### Lot 2.2 — Sous-pages ophtalmo (fort potentiel, KD bas)
 
