@@ -36,7 +36,9 @@
             {"@type":"Question","name":"L'orthoptiste peut-il renouveler mes lunettes ?","acceptedAnswer": {"@type":"Answer","text":"Oui, dans le cadre du protocole de coopération, un orthoptiste peut renouveler la prescription de lunettes pour les patients de 16 à 42 ans sans pathologie oculaire. C'est le cas dans notre centre."}},
             {"@type":"Question","name":"Combien coûte le renouvellement ?","acceptedAnswer": {"@type":"Answer","text":"En secteur 1, la consultation coûte 31,50 €, remboursée à 70 % par la Sécurité sociale. Avec le tiers payant pratiqué dans notre centre, vous n'avancez généralement rien."}},
             {"@type":"Question","name":"Faut-il une ordonnance pour acheter des lunettes ?","acceptedAnswer": {"@type":"Answer","text":"Oui, une ordonnance en cours de validité est obligatoire pour tout achat de lunettes correctrices remboursées. En cas d'urgence (lunettes perdues ou cassées), l'opticien peut exceptionnellement vous dépanner."}},
-            {"@type":"Question","name":"Que faut-il apporter à la consultation ?","acceptedAnswer": {"@type":"Answer","text":"Apportez votre carte Vitale, votre ancienne ordonnance ophtalmologique, vos lunettes actuelles et votre attestation de mutuelle."}}
+            {"@type":"Question","name":"Que faut-il apporter à la consultation ?","acceptedAnswer": {"@type":"Answer","text":"Apportez votre carte Vitale, votre ancienne ordonnance ophtalmologique, vos lunettes actuelles et votre attestation de mutuelle."}},
+            {"@type":"Question","name":"Mon ordonnance est périmée, que faire ?","acceptedAnswer": {"@type":"Answer","text":"Si votre ordonnance est périmée, vous devez obtenir une nouvelle prescription auprès d'un ophtalmologue ou d'un orthoptiste (16-42 ans). L'opticien ne peut pas vous délivrer de lunettes remboursées sans ordonnance valide."}},
+            {"@type":"Question","name":"Puis-je avoir des lunettes gratuites avec le 100% Santé ?","acceptedAnswer": {"@type":"Answer","text":"Oui, le dispositif 100% Santé (depuis 2020) vous permet d'obtenir des lunettes entièrement remboursées (monture + verres) en choisissant le panier reste à charge zéro chez votre opticien. Conditions : ordonnance en cours de validité, mutuelle responsable, et 1 équipement tous les 2 ans."}}
         ]
     }
     </script>
@@ -162,6 +164,45 @@
             </div>
         </section>
 
+        <!-- Ophtalmo ou orthoptiste -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold cm-text mb-6"><i class="fas fa-user-md mr-2" style="color:#00a7de"></i>Renouvellement lunettes : ophtalmologue ou orthoptiste ?</h2>
+            <p class="text-gray-700 mb-4">Depuis le <strong>protocole de coopération</strong>, un <strong>orthoptiste</strong> peut renouveler votre prescription de lunettes dans certaines conditions. Voici comment choisir :</p>
+            <div class="info-card overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b bg-gray-50">
+                            <th class="text-left py-3 px-3"></th>
+                            <th class="text-left py-3 px-3 font-bold" style="color:#00a7de">Orthoptiste</th>
+                            <th class="text-left py-3 px-3">Ophtalmologue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b"><td class="py-3 px-3 font-medium">Âge</td><td class="py-3 px-3"><strong>16 à 42 ans</strong></td><td class="py-3 px-3">Tous âges</td></tr>
+                        <tr class="border-b"><td class="py-3 px-3 font-medium">Conditions</td><td class="py-3 px-3">Pas de pathologie oculaire connue, pas de diabète</td><td class="py-3 px-3">Aucune restriction</td></tr>
+                        <tr class="border-b"><td class="py-3 px-3 font-medium">Examen</td><td class="py-3 px-3">Réfraction + bilan orthoptique</td><td class="py-3 px-3">Examen complet (fond d'œil, tension, réfraction)</td></tr>
+                        <tr class="border-b"><td class="py-3 px-3 font-medium">Délai RDV</td><td class="py-3 px-3"><strong>Plus rapide</strong> (créneaux dédiés)</td><td class="py-3 px-3">Variable selon disponibilité</td></tr>
+                        <tr><td class="py-3 px-3 font-medium">Tarif / Remboursement</td><td class="py-3 px-3">31,50 € — identique</td><td class="py-3 px-3">31,50 € — identique</td></tr>
+                    </tbody>
+                </table>
+                <p class="text-xs text-gray-500 mt-3"><i class="fas fa-info-circle mr-1"></i>Si vous avez plus de 42 ans, un diabète, un glaucome ou tout antécédent oculaire, la consultation ophtalmologue est nécessaire.</p>
+            </div>
+        </section>
+
+        <!-- 100% Santé -->
+        <section class="mb-12">
+            <div class="info-card" style="border-left: 4px solid #10B981; background: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);">
+                <h2 class="text-lg font-bold mb-3" style="color: #065F46;"><i class="fas fa-hand-holding-medical text-green-500 mr-2"></i>Le saviez-vous ? Le panier « 100% Santé »</h2>
+                <p class="text-sm text-gray-700 mb-2">Depuis janvier 2020, le dispositif <strong>100% Santé</strong> (reste à charge zéro) vous permet d'obtenir des <strong>lunettes entièrement remboursées</strong> (monture + verres) si vous choisissez une offre du panier « 100% Santé » chez votre opticien.</p>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i><strong>Monture</strong> : jusqu'à 30 € de reste à charge zéro (large choix chez les opticiens)</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i><strong>Verres</strong> : tous types (unifocaux, progressifs) inclus dans le panier remboursé</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i><strong>Fréquence</strong> : 1 paire tous les 2 ans (ou 1 an si évolution de la vue)</li>
+                </ul>
+                <p class="text-xs text-gray-500 mt-2">Condition : disposer d'une <strong>ordonnance en cours de validité</strong> et d'une <strong>mutuelle responsable</strong>.</p>
+            </div>
+        </section>
+
         <!-- Tarifs -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold cm-text mb-6"><i class="fas fa-euro-sign mr-2" style="color:#00a7de"></i>Tarifs & remboursement</h2>
@@ -253,6 +294,24 @@
                             <li>Vos <strong>lunettes actuelles</strong></li>
                             <li>Vos <strong>boîtes de lentilles</strong> (si applicable)</li>
                         </ul>
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Mon ordonnance est périmée, que faire ?</span>
+                        <i class="fas fa-chevron-down transition"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Si votre ordonnance est <strong>périmée</strong>, vous devez obtenir une <strong>nouvelle prescription</strong> auprès d'un ophtalmologue ou d'un orthoptiste (16-42 ans). L'opticien ne peut pas vous délivrer de lunettes remboursées sans ordonnance valide. En cas d'urgence (lunettes cassées), l'opticien peut exceptionnellement vous dépanner avec votre ancienne correction.</p>
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Puis-je avoir des lunettes gratuites avec le 100% Santé ?</span>
+                        <i class="fas fa-chevron-down transition"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Oui, le dispositif <strong>100% Santé</strong> (depuis 2020) vous permet d'obtenir des lunettes <strong>entièrement remboursées</strong> (monture + verres) en choisissant le panier « reste à charge zéro » chez votre opticien. Conditions : ordonnance en cours de validité, mutuelle responsable, et 1 équipement tous les 2 ans (ou 1 an si évolution de la vue).</p>
                     </div>
                 </details>
             </div>
