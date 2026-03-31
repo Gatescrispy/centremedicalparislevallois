@@ -110,6 +110,12 @@
             },
             {"@type":"Question","name":"Le centre est-il accessible depuis Paris 17 et les communes voisines ?","acceptedAnswer": {"@type":"Answer","text":"Oui, le Centre Médical Paris-Levallois est situé au 60 rue Victor Hugo à Levallois-Perret (92300), accessible depuis Paris 17e (5 min en métro ligne 3, arrêt Louise Michel), Clichy (4 min à pied depuis la gare Clichy – Levallois, ligne L), Neuilly-sur-Seine (10 min en bus lignes 174, 275) et Asnières-sur-Seine (8 min en voiture). Le centre est accessible aux personnes à mobilité réduite."
                 }
+            },
+            {"@type":"Question","name":"Peut-on consulter un ophtalmologue sans rendez-vous à Levallois-Perret ?","acceptedAnswer": {"@type":"Answer","text":"Non, les consultations d'ophtalmologie se font uniquement sur rendez-vous. Vous pouvez réserver un créneau rapidement sur Doctolib (Centre Médical Paris-Levallois, spécialité ophtalmologie) ou par téléphone au 01 80 88 37 16. En cas d'urgence ophtalmologique (corps étranger, baisse brutale de vision), appelez-nous pour un créneau prioritaire."
+                }
+            },
+            {"@type":"Question","name":"Quelle différence entre ophtalmologue, orthoptiste et opticien ?","acceptedAnswer": {"@type":"Answer","text":"L'ophtalmologue est un médecin spécialiste qui diagnostique et traite les maladies de l'œil (glaucome, DMLA, cataracte) et prescrit les corrections optiques. L'orthoptiste est un professionnel paramédical qui réalise des bilans visuels, rééduque les troubles de la vision binoculaire et peut renouveler les prescriptions de lunettes (16-42 ans). L'opticien délivre et adapte les équipements optiques (lunettes, lentilles) sur ordonnance."
+                }
             }
         ]
     }
@@ -582,6 +588,33 @@
             </div>
         </section>
 
+        <!-- Troubles de la vision -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" style="color: #252525;">
+                <i class="fas fa-low-vision mr-2" style="color: #00a7de;"></i>
+                Troubles de la vision : les comprendre
+            </h2>
+            <p class="text-gray-700 mb-4">Un <strong>trouble de la réfraction</strong> empêche l'image de se former nettement sur la rétine. L'ophtalmologue mesure précisément votre correction et prescrit des <strong>verres correcteurs</strong> ou <strong>lentilles</strong> adaptés.</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl p-5 shadow-sm" style="border-left: 4px solid #00a7de;">
+                    <h3 class="font-bold mb-1" style="color:#252525;"><i class="fas fa-eye mr-2" style="color:#00a7de"></i>Myopie</h3>
+                    <p class="text-sm text-gray-600">Vision floue de loin, nette de près. Corrigée par des <strong>verres concaves</strong> ou des lentilles. En forte augmentation chez les enfants (écrans, manque de lumière naturelle). Un dépistage précoce permet de <strong>freiner la progression</strong>.</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 shadow-sm" style="border-left: 4px solid #00a7de;">
+                    <h3 class="font-bold mb-1" style="color:#252525;"><i class="fas fa-eye mr-2" style="color:#00a7de"></i>Hypermétropie</h3>
+                    <p class="text-sm text-gray-600">Fatigue visuelle, maux de tête en vision de près. L'œil est trop court : l'image se forme en arrière de la rétine. Corrigée par des <strong>verres convexes</strong>. Fréquente chez l'enfant, elle diminue souvent avec la croissance.</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 shadow-sm" style="border-left: 4px solid #00a7de;">
+                    <h3 class="font-bold mb-1" style="color:#252525;"><i class="fas fa-eye mr-2" style="color:#00a7de"></i>Astigmatisme</h3>
+                    <p class="text-sm text-gray-600">Vision déformée ou floue à toutes les distances. Dû à une <strong>cornée ovale</strong> au lieu de ronde. Souvent associé à une myopie ou une hypermétropie. Corrigé par des verres toriques ou des lentilles spécifiques.</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 shadow-sm" style="border-left: 4px solid #00a7de;">
+                    <h3 class="font-bold mb-1" style="color:#252525;"><i class="fas fa-eye mr-2" style="color:#00a7de"></i>Presbytie</h3>
+                    <p class="text-sm text-gray-600">Difficulté à lire de près après <strong>40-45 ans</strong>. Le cristallin perd de sa souplesse et ne permet plus la mise au point de près. Corrigée par des <strong>verres progressifs</strong>, des lunettes de lecture ou des lentilles multifocales.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Quand contrôler sa vue -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold mb-6" style="color: #252525;">
@@ -869,6 +902,30 @@
                             <li><strong>Asnières-sur-Seine</strong> : 8 minutes en voiture, parking à proximité</li>
                         </ul>
                         <p class="mt-2 text-sm">Le centre est accessible aux personnes à mobilité réduite. L'arrêt de bus « Victor Hugo — Levallois » est à 1 minute de l'entrée.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Peut-on consulter un ophtalmologue sans rendez-vous à Levallois-Perret ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Non, les consultations d'ophtalmologie se font uniquement <strong>sur rendez-vous</strong>. Vous pouvez réserver un créneau rapidement sur <a href="https://www.doctolib.fr/centre-de-sante/levallois-perret/centre-medical-paris-levallois/booking/motives?specialityId=4&telehealth=false&placeId=practice-714912&source=deep_link" target="_blank" rel="noopener" style="color:#00a7de;text-decoration:underline;">Doctolib</a> ou par téléphone au <a href="tel:+33180883716" style="color:#00a7de;font-weight:600;">01 80 88 37 16</a>. En cas d'<strong>urgence ophtalmologique</strong> (corps étranger, baisse brutale de vision), appelez-nous pour un créneau prioritaire.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Quelle différence entre ophtalmologue, orthoptiste et opticien ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <ul class="list-disc list-inside space-y-1 text-sm">
+                            <li><strong>Ophtalmologue</strong> : médecin spécialiste qui diagnostique et traite les maladies de l'œil (glaucome, DMLA, cataracte) et prescrit les corrections optiques.</li>
+                            <li><strong>Orthoptiste</strong> : professionnel paramédical qui réalise des bilans visuels, rééduque les troubles de la vision binoculaire et peut renouveler les prescriptions de lunettes (16-42 ans).</li>
+                            <li><strong>Opticien</strong> : délivre et adapte les équipements optiques (lunettes, lentilles) sur ordonnance.</li>
+                        </ul>
                     </div>
                 </details>
             </div>
