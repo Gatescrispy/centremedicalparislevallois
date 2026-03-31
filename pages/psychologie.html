@@ -105,6 +105,10 @@
             {"@type":"Question","name":"Comment savoir si j'ai besoin d'un psychologue ?","acceptedAnswer": {"@type":"Answer","text":"Si vous ressentez un mal-être persistant, des difficultés à accomplir vos tâches quotidiennes, des troubles du sommeil, de l'anxiété, une tristesse prolongée ou des difficultés relationnelles, consulter un psychologue peut vous aider. Plus la prise en charge est précoce, plus elle est efficace."}
             },
             {"@type":"Question","name":"Les séances peuvent-elles se faire en vidéo (téléconsultation) ?","acceptedAnswer": {"@type":"Answer","text":"Dans le cadre de Mon Soutien Psy, la première séance (entretien d'évaluation) doit se faire en présentiel. Les séances de suivi peuvent ensuite être réalisées par vidéotransmission, si le psychologue l'estime adapté à votre situation et que les conditions de confidentialité sont réunies."}
+            },
+            {"@type":"Question","name":"Qu'est-ce que la thérapie cognitivo-comportementale (TCC) ?","acceptedAnswer": {"@type":"Answer","text":"La TCC est une approche thérapeutique validée scientifiquement, recommandée par la HAS. Elle consiste à identifier les pensées automatiques négatives et les comportements inadaptés pour les remplacer par des schémas plus fonctionnels. Efficace pour l'anxiété, la dépression, les phobies, les TOC et l'insomnie. Durée moyenne : 12 à 20 séances."}
+            },
+            {"@type":"Question","name":"Faut-il consulter un psychiatre ou un psychologue ?","acceptedAnswer": {"@type":"Answer","text":"Le psychologue propose une thérapie par la parole (TCC, soutien) pour l'anxiété, le stress, le burn-out, le deuil et les difficultés relationnelles. Le psychiatre est un médecin qui peut prescrire des médicaments, indiqué pour la dépression sévère, les troubles bipolaires ou psychotiques. En cas de doute, commencez par votre médecin traitant ou un psychologue qui vous orientera si nécessaire."}
             }
         ]
     }
@@ -414,6 +418,32 @@
                 </div>
             </div>
             <p class="text-sm text-gray-500 mt-4 italic"><i class="fas fa-lightbulb mr-1" style="color: #F59E0B;"></i>Ces approches sont complémentaires. Votre psychologue peut vous orienter vers un psychiatre si un traitement médicamenteux est nécessaire.</p>
+
+            <!-- Quand consulter psychiatre ou psychologue -->
+            <div class="info-card mt-6" style="border-left: 4px solid #6366F1; background: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 100%);">
+                <h3 class="font-bold text-lg mb-3" style="color:#4338CA;"><i class="fas fa-question-circle mr-2" style="color:#6366F1;"></i>Psychiatre ou psychologue : qui consulter ?</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <p class="font-bold mb-1" style="color:#4338CA;"><i class="fas fa-brain mr-1"></i> Consultez un psychologue si :</p>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Anxiété, stress, difficultés relationnelles</li>
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Burn-out, mal-être au travail</li>
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Deuil, séparation, transitions de vie</li>
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Vous souhaitez une <strong>thérapie par la parole</strong> (TCC, soutien)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1" style="color:#4338CA;"><i class="fas fa-user-md mr-1"></i> Consultez un psychiatre si :</p>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Dépression sévère, idées suicidaires</li>
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Troubles bipolaires, psychotiques</li>
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Besoin d'un <strong>traitement médicamenteux</strong></li>
+                            <li><i class="fas fa-check text-indigo-400 mr-1"></i>Troubles graves du comportement alimentaire</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3"><i class="fas fa-info-circle mr-1"></i>En cas de doute, commencez par votre médecin traitant ou un psychologue. Ils vous orienteront vers un psychiatre si nécessaire.</p>
+            </div>
         </section>
 
         <!-- Comment se déroule la première séance -->
@@ -516,9 +546,10 @@
                 <div>
                     <h3 class="font-bold mb-3" style="color:#252525;">Méthodes utilisées</h3>
                     <div class="space-y-3">
-                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                        <div class="bg-white rounded-lg p-4 shadow-sm" style="border-left: 3px solid #00a7de;">
                             <h4 class="font-bold text-sm mb-1"><i class="fas fa-brain mr-2" style="color:#00a7de;"></i>Thérapie cognitivo-comportementale (TCC)</h4>
-                            <p class="text-xs text-gray-600">Approche validée scientifiquement, efficace pour l'anxiété, la dépression, les phobies et les TOC. Travail sur les pensées et les comportements.</p>
+                            <p class="text-xs text-gray-600 mb-2">Approche validée scientifiquement, la <strong>TCC</strong> est recommandée par la HAS pour l'anxiété, la dépression, les phobies, les TOC et l'insomnie. Elle repose sur l'identification des <strong>pensées automatiques négatives</strong> et leur remplacement par des schémas plus adaptés.</p>
+                            <p class="text-xs text-gray-600"><strong>Durée moyenne</strong> : 12 à 20 séances. Le <strong>psychologue TCC</strong> fixe des objectifs concrets et mesurables dès le début de la thérapie. Des exercices pratiques sont proposés entre les séances (journal de pensées, exposition progressive, relaxation).</p>
                         </div>
                         <div class="bg-white rounded-lg p-4 shadow-sm">
                             <h4 class="font-bold text-sm mb-1"><i class="fas fa-comments mr-2" style="color:#00a7de;"></i>Thérapie de soutien</h4>
@@ -706,6 +737,26 @@
                     </summary>
                     <div class="px-4 pb-4 text-gray-600">
                         <p>Dans le cadre de <strong>Mon Soutien Psy</strong>, la première séance (entretien d'évaluation) doit se faire <strong>en présentiel</strong>. Les séances de suivi peuvent ensuite être réalisées par <strong>vidéotransmission</strong>, si le psychologue l'estime adapté à votre situation et que les conditions de confidentialité sont réunies.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Qu'est-ce que la thérapie cognitivo-comportementale (TCC) ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>La <strong>TCC</strong> est une approche thérapeutique validée scientifiquement, recommandée par la HAS. Elle consiste à identifier les <strong>pensées automatiques négatives</strong> et les comportements inadaptés pour les remplacer par des schémas plus fonctionnels. Efficace pour l'anxiété, la dépression, les phobies, les TOC et l'insomnie. Durée moyenne : <strong>12 à 20 séances</strong>.</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg shadow group">
+                    <summary class="p-4 cursor-pointer font-medium flex justify-between items-center">
+                        <span>Faut-il consulter un psychiatre ou un psychologue ?</span>
+                        <i class="fas fa-chevron-down transition group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600">
+                        <p>Le <strong>psychologue</strong> propose une thérapie par la parole (TCC, soutien) pour l'anxiété, le stress, le burn-out, le deuil et les difficultés relationnelles. Le <strong>psychiatre</strong> est un médecin qui peut prescrire des médicaments, indiqué pour la dépression sévère, les troubles bipolaires ou psychotiques. En cas de doute, commencez par votre médecin traitant ou un psychologue qui vous orientera si nécessaire.</p>
                     </div>
                 </details>
             </div>
