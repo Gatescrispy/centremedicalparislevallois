@@ -196,18 +196,18 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Tâche | Impact | Effort |
 |---|---|---|---|
-| 🔲 4.1.1 | Auditer et renforcer les liens internes entre pillar pages et sous-pages (ex: ophtalmologie.html → 6 sous-pages, chaque sous-page → pillar + sœurs) | Transmission du PageRank interne | 2h |
-| 🔲 4.1.2 | Ajouter des liens contextuels entre spécialités (ex: dieteticien/femme-enceinte → medecine-generale, psychologie → dieteticien/troubles-comportement-alimentaire) | Maillage transversal | 1h |
-| 🔲 4.1.3 | Ajouter des liens homepage → pages spécialités dans le contenu (pas juste navigation) | Autorité transmise depuis la homepage | 30 min |
-| 🔲 4.1.4 | Vérifier que toutes les nouvelles pages (Phase 3) sont liées depuis leurs pillar pages et le sitemap | Indexation rapide | 30 min |
+| ✅ 4.1.1 | Auditer et renforcer les liens internes entre pillar pages et sous-pages (ex: ophtalmologie.html → 6 sous-pages, chaque sous-page → pillar + sœurs) | Transmission du PageRank interne | 2h | *(13 sous-pages psy+diét modifiées — commit c42bb27)* |
+| ✅ 4.1.2 | Ajouter des liens contextuels entre spécialités (ex: dieteticien/femme-enceinte → medecine-generale, psychologie → dieteticien/troubles-comportement-alimentaire) | Maillage transversal | 1h | *(6 liens cross-spécialités — commit c42bb27)* |
+| ✅ 4.1.3 | Ajouter des liens homepage → pages spécialités dans le contenu (pas juste navigation) | Autorité transmise depuis la homepage | 30 min | *(hero badges + cards + présentation — commit 7e31a33)* |
+| ✅ 4.1.4 | Vérifier que toutes les nouvelles pages (Phase 3) sont liées depuis leurs pillar pages et le sitemap | Indexation rapide | 30 min | *(vérifié OK — fait en Phase 3)* |
 
 ### Lot 4.2 — Google Business Profile & Local SEO
 
 | # | Tâche | Impact | Effort |
 |---|---|---|---|
-| 🔲 4.2.1 | Vérifier que GBP est complet : catégories primaires alignées avec les 6 spécialités, horaires, photos, lien site | Visibilité Maps + Local Pack | 1h |
-| 🔲 4.2.2 | Mettre en place une stratégie d'avis Google (email post-consultation, QR code cabinet) | "ophtalmologue levallois les mieux notés" (TR) | Recommandation |
-| 🔲 4.2.3 | Ajouter `sameAs` dans structured data (index.html, le-centre.html) avec les profils sociaux une fois créés | Signal social pour Google | 15 min |
+| ⏳ 4.2.1 | Vérifier que GBP est complet : catégories primaires alignées avec les 6 spécialités, horaires, photos, lien site | Visibilité Maps + Local Pack | 1h | *(ACTION MANUELLE — voir recommandations ci-dessous)* |
+| ⏳ 4.2.2 | Mettre en place une stratégie d'avis Google (email post-consultation, QR code cabinet) | "ophtalmologue levallois les mieux notés" (TR) | Recommandation | *(ACTION MANUELLE — voir recommandations ci-dessous)* |
+| ✅ 4.2.3 | Ajouter `sameAs` dans structured data (index.html, le-centre.html) avec les profils sociaux une fois créés | Signal social pour Google | 15 min | *(Doctolib + Google Maps — commit 87e609c)* |
 
 ---
 
