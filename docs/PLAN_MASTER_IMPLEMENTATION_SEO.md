@@ -64,10 +64,10 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Tâche | Source analyse | Impact | Effort |
 |---|---|---|---|---|
-| 🔲 1.1.1 | Ajouter `Psychology`, `PhysicalTherapy`, `Dietetics` dans `medicalSpecialty` de index.html | Backlinks §9.C | Google connaît toutes nos spécialités | 15 min |
-| 🔲 1.1.2 | Ajouter Kinésithérapie et Diététique dans `availableService` de index.html | Backlinks §9.C | Services déclarés complets | 15 min |
-| 🔲 1.1.3 | Mettre à jour `og:description` et `twitter:description` dans index.html pour mentionner les 6 spécialités | Backlinks §9.C | Partages sociaux complets | 10 min |
-| 🔲 1.1.4 | Vérifier et corriger la redirection www → non-www (canonical) | Domain Overview §4 | Résoudre cannibalisation www/non-www | 30 min |
+| ✅ 1.1.1 | Ajouter `Psychology`, `PhysicalTherapy`, `Dietetics` dans `medicalSpecialty` de index.html | Backlinks §9.C | Google connaît toutes nos spécialités | 15 min | *(déjà présent dans structured data)* |
+| ✅ 1.1.2 | Ajouter Kinésithérapie et Diététique dans `availableService` de index.html | Backlinks §9.C | Services déclarés complets | 15 min | *(déjà présent dans structured data)* |
+| ✅ 1.1.3 | Mettre à jour `og:description` et `twitter:description` dans index.html pour mentionner les 6 spécialités | Backlinks §9.C | Partages sociaux complets | 10 min | *(déjà présent : ophtalmo, méd gén, psy, kiné, diét, soins inf.)* |
+| ✅ 1.1.4 | Vérifier et corriger la redirection www → non-www (canonical) | Domain Overview §4 | Résoudre cannibalisation www/non-www | 30 min | *(.htaccess L12-13 : 301 www→non-www + canonical sans www)* |
 
 > **Note** : les corrections structured data `address` sur `equipe.html`, `tarifs.html`, `bilan-sanguin-ecbu.html`, `vaccination-pediatrique.html` ont été faites dans le commit `8c301c9` (audit Semrush). Les tâches 1.1.1-1.1.3 concernent spécifiquement `index.html`.
 
@@ -76,15 +76,15 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 | # | Tâche | Source analyse | Impact | Effort |
 |---|---|---|---|---|
 | ✅ 1.2.1 | Vérifier que le sitemap.xml inclut toutes les ~60 pages | Keyword Gap §6.2 | Pages indexables par Google | 30 min |
-| 🔲 1.2.2 | Soumettre sitemap dans GSC + demander indexation des pages récentes (psycho, diét, kiné) | Keyword Gap §6.2 | Passer de 15 à 60+ pages indexées | 30 min |
-| 🔲 1.2.3 | Vérifier robots.txt (pas de blocage involontaire) | Domain Overview | Aucun blocage | 10 min |
+| ⏳ 1.2.2 | Soumettre sitemap dans GSC + demander indexation des pages récentes (psycho, diét, kiné) | Keyword Gap §6.2 | Passer de 15 à 60+ pages indexées | 30 min | *(ACTION MANUELLE — GSC)* |
+| ✅ 1.2.3 | Vérifier robots.txt (pas de blocage involontaire) | Domain Overview | Aucun blocage | 10 min | *(vérifié OK : Allow /, sitemap déclaré, docs/ bloqué)* |
 
 ### Lot 1.3 — Corrections NAP (Name, Address, Phone)
 
 | # | Tâche | Source analyse | Impact | Effort |
 |---|---|---|---|---|
 | ✅ 1.3.1 | Vérifier que l'adresse "60 rue Victor Hugo" est cohérente partout (structured data, footer, contact, acces-horaires) | Keyword Gap §3 ("48 rue" apparaît en recherche) | Cohérence NAP pour Local SEO | 30 min | *(commit 8c301c9)* |
-| 🔲 1.3.2 | Vérifier les signaux NAP dans Google Business Profile | Keyword Gap §3 | Pas de confusion d'adresse | 15 min |
+| ⏳ 1.3.2 | Vérifier les signaux NAP dans Google Business Profile | Keyword Gap §3 | Pas de confusion d'adresse | 15 min | *(ACTION MANUELLE — GBP)* |
 
 ---
 
@@ -111,52 +111,52 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Page | KW cible (vol. / KD) | Action | Source |
 |---|---|---|---|---|
-| 🔲 2.2.1 | `ophtalmologie/champ-visuel-humphrey.html` (1733 mots) | champ visuel humphrey (880 / KD 13) | Optimiser title/H1, viser featured snippet | KO §4 |
-| 🔲 2.2.2 | `ophtalmologie/premiere-consultation-enfant.html` (1176 mots) | 1er rdv ophtalmo bébé (140 / KD 16) + ophtalmologue pédiatrique (2 400 / KD 23) | Enrichir contenu + optimiser title pour KW national | KMT §2, KO §4 |
-| 🔲 2.2.3 | `ophtalmologie/urgence.html` (1058 mots) | urgence oeil (13 300 / KD 21) | Enrichir contenu, optimiser title, structured data | KSB §4.2, KMT §2 |
-| 🔲 2.2.4 | `ophtalmologie/renouvellement-lunettes-lentilles.html` | renouvellement lunettes orthoptiste (90 / KD 13) + durée validité ordonnance lunettes (1 000 / KD 25) | Enrichir avec FAQ ordonnance | KO §3.1 |
-| 🔲 2.2.5 | `ophtalmologie.html` (pillar, 2872 mots) | Ajouter section tarifs/remboursement détaillée | consultation ophtalmo prix (1 000 / KD 29), prix ophtalmo (880 / KD 30) | Keyword Gap §4.2 |
+| ✅ 2.2.1 | `ophtalmologie/champ-visuel-humphrey.html` (1733 mots) | champ visuel humphrey (880 / KD 13) | Optimiser title/H1, viser featured snippet | KO §4 | *(commit 11283dd)* |
+| ✅ 2.2.2 | `ophtalmologie/premiere-consultation-enfant.html` (1176 mots) | 1er rdv ophtalmo bébé (140 / KD 16) + ophtalmologue pédiatrique (2 400 / KD 23) | Enrichir contenu + optimiser title pour KW national | KMT §2, KO §4 | *(commit dfc7ed2)* |
+| ✅ 2.2.3 | `ophtalmologie/urgence.html` (1058 mots) | urgence oeil (13 300 / KD 21) | Enrichir contenu, optimiser title, structured data | KSB §4.2, KMT §2 | *(commit 16db2d9)* |
+| ✅ 2.2.4 | `ophtalmologie/renouvellement-lunettes-lentilles.html` | renouvellement lunettes orthoptiste (90 / KD 13) + durée validité ordonnance lunettes (1 000 / KD 25) | Enrichir avec FAQ ordonnance | KO §3.1 | *(commit b436770)* |
+| ✅ 2.2.5 | `ophtalmologie.html` (pillar, 2872 mots) | Ajouter section tarifs/remboursement détaillée | consultation ophtalmo prix (1 000 / KD 29), prix ophtalmo (880 / KD 30) | Keyword Gap §4.2 | *(commit 8547479)* |
 
 ### Lot 2.3 — Page psychologie (plus gros potentiel volumétrique)
 
 | # | Page | KW cible (vol. / KD) | Action | Source |
 |---|---|---|---|---|
-| 🔲 2.3.1 | `psychologie/mon-soutien-psy.html` | mon soutien psy (49 500 / KD 58), prise en charge psychologue (137 200 / KD 47), liste psychologue conventionné cpam (18 100 / KD 42), remboursement psychologue (8 100 / KD 37) | **PRIORITÉ #1** — Enrichir massivement : FAQ CPAM, 8 séances, remboursement, liste conditions. Viser featured snippet. | KSB §4.2, KMT §4, KO §3.4 |
-| 🔲 2.3.2 | `psychologie.html` section TCC | psychologue tcc (4 400 / KD 36), thérapie cognitivo-comportementaliste (28 300 / KD 38) | Développer la section TCC existante | KMT §4, KSB §4.2 |
-| 🔲 2.3.3 | `psychologie.html` section Psy vs Psychiatre | psychiatre ou psychologue (21 300 / KD 26-31) | Enrichir la section comparative existante | KSB §4.2, TR §4.2 |
-| 🔲 2.3.4 | `psychologie/psychotraumatologie.html` | EMDR psychologue (2 400 / KD 35) | Enrichir contenu EMDR, ajouter FAQ | KO §3.4 |
+| ✅ 2.3.1 | `psychologie/mon-soutien-psy.html` | mon soutien psy (49 500 / KD 58), prise en charge psychologue (137 200 / KD 47), liste psychologue conventionné cpam (18 100 / KD 42), remboursement psychologue (8 100 / KD 37) | **PRIORITÉ #1** — Enrichir massivement : FAQ CPAM, 8 séances, remboursement, liste conditions. Viser featured snippet. | KSB §4.2, KMT §4, KO §3.4 | *(commit a96ea2c)* |
+| ✅ 2.3.2 | `psychologie.html` section TCC | psychologue tcc (4 400 / KD 36), thérapie cognitivo-comportementaliste (28 300 / KD 38) | Développer la section TCC existante | KMT §4, KSB §4.2 | *(commit 822324f)* |
+| ✅ 2.3.3 | `psychologie.html` section Psy vs Psychiatre | psychiatre ou psychologue (21 300 / KD 26-31) | Enrichir la section comparative existante | KSB §4.2, TR §4.2 | *(commit 822324f)* |
+| ✅ 2.3.4 | `psychologie/psychotraumatologie.html` | EMDR psychologue (2 400 / KD 35) | Enrichir contenu EMDR, ajouter FAQ | KO §3.4 | *(commit dfbc3aa)* |
 
 ### Lot 2.4 — Page diététique
 
 | # | Page | KW cible (vol. / KD) | Action | Source |
 |---|---|---|---|---|
-| 🔲 2.4.1 | `dieteticien.html` section "Différences" | différence diététicien nutritionniste (1 600 / KD 22), diététicienne ou nutritionniste (2 400 / KD 26) | Optimiser SEO on-page de la section existante | KMT §5, KO §3.5 |
-| 🔲 2.4.2 | `dieteticien.html` section remboursement | remboursement nutritionniste (8 600 / KD 22), prix consultation diététicien (90 / KD 19) | Enrichir section tarifs/remboursement | KSB §4.2 |
-| 🔲 2.4.3 | `dieteticien/femme-enceinte-nutrition.html` | aliments interdits grossesse (1 600 / KD 25) | Enrichir avec guide grossesse + aliments interdits | KO §3.5 |
+| ✅ 2.4.1 | `dieteticien.html` section "Différences" | différence diététicien nutritionniste (1 600 / KD 22), diététicienne ou nutritionniste (2 400 / KD 26) | Optimiser SEO on-page de la section existante | KMT §5, KO §3.5 | *(commit fdcae2d)* |
+| ✅ 2.4.2 | `dieteticien.html` section remboursement | remboursement nutritionniste (8 600 / KD 22), prix consultation diététicien (90 / KD 19) | Enrichir section tarifs/remboursement | KSB §4.2 | *(commit fdcae2d)* |
+| ✅ 2.4.3 | `dieteticien/femme-enceinte-nutrition.html` | aliments interdits grossesse (1 600 / KD 25) | Enrichir avec guide grossesse + aliments interdits | KO §3.5 | *(commit ab1b1a3)* |
 
 ### Lot 2.5 — Soins infirmiers (niche KD ultra-bas)
 
 | # | Page | KW cible (vol. / KD) | Action | Source |
 |---|---|---|---|---|
-| 🔲 2.5.1 | `soins-infirmiers/pansement-post-chirurgical.html` (666 mots) | pansement post opératoire (210 / KD 11), pansement en chirurgie (260 / KD 19) | Enrichir à 1200+ mots | Keyword Gap §6.1 |
-| 🔲 2.5.2 | `soins-infirmiers/retrait-fils-agrafes.html` (2244 mots) | ablation fils de suture (90 / KD 24), retrait agrafes (90 / KD 18) | Optimiser title/H1/meta pour KW cibles | Keyword Gap §3 |
-| 🔲 2.5.3 | `soins-infirmiers/bilan-sanguin-ecbu.html` | prise de sang levallois (70 / KD 19) | Optimiser title/H1 pour KW local | KO §3.6 |
+| ✅ 2.5.1 | `soins-infirmiers/pansement-post-chirurgical.html` (666 mots) | pansement post opératoire (210 / KD 11), pansement en chirurgie (260 / KD 19) | Enrichir à 1200+ mots | Keyword Gap §6.1 | *(commit 3192ff5 — 350→469 lignes)* |
+| ✅ 2.5.2 | `soins-infirmiers/retrait-fils-agrafes.html` (2244 mots) | ablation fils de suture (90 / KD 24), retrait agrafes (90 / KD 18) | Optimiser title/H1/meta pour KW cibles | Keyword Gap §3 | *(commit 793fba4)* |
+| ✅ 2.5.3 | `soins-infirmiers/bilan-sanguin-ecbu.html` | prise de sang levallois (70 / KD 19) | Optimiser title/H1 pour KW local | KO §3.6 | *(commit 793fba4)* |
 
 ### Lot 2.6 — Kinésithérapie
 
 | # | Page | KW cible (vol. / KD) | Action | Source |
 |---|---|---|---|---|
-| 🔲 2.6.1 | `kinesitherapie.html` (pillar) | centre de kinésithérapeutes (1 300 / KD 21) | Ajouter KW dans contenu, H2, meta | KMT §3 |
-| 🔲 2.6.2 | `kinesitherapie/drainage-lymphatique.html` | drainage lymphatique levallois (90 / KD 14) | Optimiser title/H1 pour KW local | KO §3.3 |
+| ✅ 2.6.1 | `kinesitherapie.html` (pillar) | centre de kinésithérapeutes (1 300 / KD 21) | Ajouter KW dans contenu, H2, meta | KMT §3 | *(commit 5b1d9f2)* |
+| ✅ 2.6.2 | `kinesitherapie/drainage-lymphatique.html` | drainage lymphatique levallois (90 / KD 14) | Optimiser title/H1 pour KW local | KO §3.3 | *(commit 5b1d9f2)* |
 
 ### Lot 2.7 — Pages transversales
 
 | # | Page | KW cible (vol. / KD) | Action | Source |
 |---|---|---|---|---|
-| 🔲 2.7.1 | `tarifs.html` | remboursement consultation (8 100 / KD 25), tarif médecin généraliste secteur 1 (40) | Enrichir FAQ remboursement + maillage vers pages spécialités | KSB §4.2, KO §3.2 |
-| 🔲 2.7.2 | `le-centre.html` | Ajouter cartes Psychologie et Diététique manquantes dans "Nos spécialités" | Topic Research §10.E | Complétude du site |
-| 🔲 2.7.3 | `le-centre.html` | Optimiser alt tags des 4 photos spécialités (alt trop génériques) | Topic Research §10.A | SEO images |
-| 🔲 2.7.4 | `urgences.html` (top-level, 2246 mots) | hopital levallois urgence (70 / KD 19), urgences levallois perret | Optimiser title/H1 pour KW locaux urgence | Keyword Gap §3 |
+| ✅ 2.7.1 | `tarifs.html` | remboursement consultation (8 100 / KD 25), tarif médecin généraliste secteur 1 (40) | Enrichir FAQ remboursement + maillage vers pages spécialités | KSB §4.2, KO §3.2 | *(commit 84b33b9)* |
+| ✅ 2.7.2 | `le-centre.html` | Ajouter cartes Psychologie et Diététique manquantes dans "Nos spécialités" | Topic Research §10.E | Complétude du site | *(commit c00b47a)* |
+| ✅ 2.7.3 | `le-centre.html` | Optimiser alt tags des 4 photos spécialités (alt trop génériques) | Topic Research §10.A | SEO images | *(4 alt tags enrichis avec lieu + spécialité)* |
+| ✅ 2.7.4 | `urgences.html` (top-level, 2246 mots) | hopital levallois urgence (70 / KD 19), urgences levallois perret | Optimiser title/H1 pour KW locaux urgence | Keyword Gap §3 | *(commit c00b47a)* |
 
 ---
 
@@ -171,9 +171,9 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Page à créer | KW cible (vol. / KD) | Justification | Source |
 |---|---|---|---|---|
-| 🔲 3.1.1 | `kinesitherapie/kine-sport.html` | kine sport (3 100 / KD 31), kinésithérapeute sport (720 / KD 29) | Cluster 691 KW non couvert, concurrent physiosportlevallois.fr | KSB + KMT |
-| 🔲 3.1.2 | `psychologie/enfant-adolescent.html` | psychologue enfant (4 400 / KD 36) | Mentionné en FAQ mais pas de page dédiée | KSB + KMT |
-| 🔲 3.1.3 | `dieteticien/nutrition-sport.html` | nutritionniste du sport (4 200 / KD 24) | Pas couvert, KD faible, fort volume | KSB |
+| ✅ 3.1.1 | `kinesitherapie/kine-sport.html` | kine sport (3 100 / KD 31), kinésithérapeute sport (720 / KD 29) | Cluster 691 KW non couvert, concurrent physiosportlevallois.fr | KSB + KMT | *(commit e27593b)* |
+| ✅ 3.1.2 | `psychologie/enfant-adolescent.html` | psychologue enfant (4 400 / KD 36) | Mentionné en FAQ mais pas de page dédiée | KSB + KMT | *(commit d28d1d7)* |
+| ✅ 3.1.3 | `dieteticien/nutrition-sport.html` | nutritionniste du sport (4 200 / KD 24) | Pas couvert, KD faible, fort volume | KSB | *(commit d12e4ec)* |
 
 ### Lot 3.2 — Articles informationnels à fort potentiel
 
@@ -181,8 +181,8 @@ Le plan est divisé en **5 phases** séquentielles. Chaque phase contient des **
 
 | # | Page à créer | KW cible (vol. / KD) | Type | Source |
 |---|---|---|---|---|
-| 🔲 3.2.1 | `ophtalmologie/fond-oeil.html` | fond d'oeil (5 400 / KD 20) | Article expert + viser featured snippet + Schema MedicalProcedure | KO §4, Keyword Gap §6.2 |
-| 🔲 3.2.2 | `ophtalmologie/oct.html` | (à rechercher) | Article examen OCT, lié à ophtalmologie.html | Keyword Gap §6.2 |
+| ✅ 3.2.1 | `ophtalmologie/fond-oeil.html` | fond d'oeil (5 400 / KD 20) | Article expert + viser featured snippet + Schema MedicalProcedure | KO §4, Keyword Gap §6.2 | *(commit bc622d2)* |
+| ✅ 3.2.2 | `ophtalmologie/oct.html` | (à rechercher) | Article examen OCT, lié à ophtalmologie.html | Keyword Gap §6.2 | *(commit 7d6f41c)* |
 
 ---
 
